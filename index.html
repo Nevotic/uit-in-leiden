@@ -1418,6 +1418,8 @@ function stopFrom(x, time, anchor){
   return {id:x.id, t:x.t, url:x.url||"", where:x.where||"", town:x.town||"Leiden", note, time, c:x.c, io:x.io, anchor:!!anchor, kind:isStop?x.kind:"event", dur: x.long?240 : x.short?45 : isExpo(x)?90 : isStop?(x.kind==="drink"?75:90) : 120};
 }
 
+// Times after midnight belong at the end of an evening, not the start.
+const nightKey = t => (t < "06:00" ? "1" : "0") + t;
 function buildIdea(anchors, w, avoid){
   const part = P.part;
   const stops = [];
@@ -1432,7 +1434,7 @@ function buildIdea(anchors, w, avoid){
       const canBefore = t >= "13:00";
       const f = pickStop("day", ["food"], w, avoid, s => (!s.before || canBefore) && s.not!==a.id);
       if (f) { avoid.add(f.id); stops.push(stopFrom(f, f.before ? plusMin(t, -100) : plusMin(t, stops[0].dur+20))); }
-      const lastStop = [...stops].sort((x,y)=>x.time.localeCompare(y.time)).at(-1);
+      const lastStop = [...stops].sort((x,y)=>nightKey(x.time).localeCompare(nightKey(y.time))).at(-1);
       if (late && stops.length<3 && beachAt > plusMin(lastStop.time, lastStop.dur+30)) { avoid.add(late.id); stops.push(stopFrom(late, beachAt)); }
       else if (a.short && stops.length<3) { const s=pickStop("day",["stroll"],w,avoid); if (s){ avoid.add(s.id); stops.push(stopFrom(s, plusMin(stops.at(-1).time, 90))); } }
     }
@@ -1454,7 +1456,7 @@ function buildIdea(anchors, w, avoid){
     } else if (din) stops.push(stopFrom(din, "18:30"));
   }
   if (part==="whole" && stops.length<3) { const f = pickStop("day",["food"],w,avoid, s=>!s.before && s.not!==stops[0].id); if (f){ avoid.add(f.id); stops.splice(1,0,stopFrom(f, plusMin(stops[0].time, stops[0].dur+20))); } }
-  stops.sort((a,b)=>a.time.localeCompare(b.time));
+  stops.sort((a,b)=>nightKey(a.time).localeCompare(nightKey(b.time)));
   if (stops.length < 2) return null;
   return finishIdea(stops, w);
 }
