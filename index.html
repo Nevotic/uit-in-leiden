@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Uit in Leiden</title>
 <meta name="theme-color" id="themecolor" content="#f7f4f6">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("uil-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}
@@ -529,6 +529,19 @@ body.locked{overflow:hidden}
   .cover .flags{right:.75rem}
 }
 html{background:var(--bg)}
+
+/* ---- Phones: no fixed bar at the top (so Safari lets the page show under the status bar,
+   like Pathé), and the section menu floats at the bottom, within thumb reach ---- */
+@media (max-width:48rem){
+  .top{position:relative;padding-top:max(.75rem, env(safe-area-inset-top))}
+  .top::before{display:none}
+  .nav{position:fixed;z-index:50;left:50%;bottom:calc(.625rem + env(safe-area-inset-bottom));transform:translateX(-50%);margin:0;
+    max-width:calc(100% - 1.25rem);padding:.3rem;box-shadow:0 10px 30px -8px rgba(20,10,30,.35),0 0 0 .5px var(--glass-edge)}
+  .navbtn{padding:.6rem .9rem}
+  .wrap{padding-bottom:6.5rem}
+  footer{padding-bottom:7rem}
+  .toast{bottom:calc(5.25rem + env(safe-area-inset-bottom))}
+}
 </style>
 </head>
 <body>
