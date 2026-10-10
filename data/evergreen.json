@@ -1,0 +1,126 @@
+[
+ {
+  "id": "burcht",
+  "t": "De Burcht",
+  "cat": "Outdoors",
+  "where": "City centre",
+  "d": "Free, older than the city itself (around 1150), with a view over the rooftops.",
+  "url": "https://www.dagjeweg.nl/tip/11690/Burcht-van-Leiden",
+  "v": [
+   "cosy",
+   "cultural"
+  ],
+  "short": 1
+ },
+ {
+  "id": "singel",
+  "t": "Singelpark walk",
+  "cat": "Outdoors",
+  "where": "Around the old city",
+  "d": "Loop of green and water around the historic centre. Pair it with a hofje or two.",
+  "url": "https://www.dagjeweg.nl/nieuwsredactie/25930/Leiden%3A-de-favorieten-van-Willeke",
+  "v": [
+   "cosy",
+   "active"
+  ]
+ },
+ {
+  "id": "boot",
+  "t": "Bootjes en Broodjes",
+  "cat": "Outdoors",
+  "where": "Leiden & Kagerplassen",
+  "d": "Rent a small boat and sail the canals out to the Kagerplassen.",
+  "url": "https://www.dagjeweg.nl/tip/8585/Bootjes-en-Broodjes",
+  "c": 2,
+  "dry": 1,
+  "months": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "v": [
+   "cosy",
+   "active",
+   "surprise"
+  ]
+ },
+ {
+  "id": "sup",
+  "t": "Leiden Supping",
+  "cat": "Outdoors",
+  "where": "City canals",
+  "d": "Paddle-board through the city. Better on a dry, windless day.",
+  "url": "https://leidensupping.nl/",
+  "c": 2,
+  "dry": 1,
+  "calm": 1,
+  "months": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "v": [
+   "active",
+   "surprise"
+  ]
+ },
+ {
+  "id": "dune",
+  "t": "Dune & Sea bike route",
+  "cat": "Outdoors",
+  "where": "Leiden – Wassenaar – Katwijk",
+  "town": "Wassenaar & Katwijk",
+  "d": "About 33 km through dunes to the coast and back. The sea is only 8 km away.",
+  "url": "https://trainerday.com/nl/events/netherlands/leiden",
+  "dry": 1,
+  "long": 1,
+  "v": [
+   "active"
+  ]
+ },
+ {
+  "id": "heem",
+  "t": "Heempark",
+  "cat": "Outdoors",
+  "where": "Leiden",
+  "d": "Winding paths through miniature Dutch landscapes. Nice in autumn colours.",
+  "url": "https://www.dagjeweg.nl/tip/12257/Heempark-Leiden",
+  "v": [
+   "cosy",
+   "active"
+  ]
+ },
+ {
+  "id": "matilo",
+  "t": "Archeologiepark Matilo",
+  "cat": "Outdoors",
+  "where": "Leiden-Roomburg",
+  "d": "Remains of the Roman fort, laid out as a park.",
+  "url": "https://www.dagjeweg.nl/tip/12929/Park-Matilo",
+  "v": [
+   "cultural",
+   "active"
+  ]
+ },
+ {
+  "id": "rembrandt",
+  "t": "Young Rembrandt Studio",
+  "cat": "Culture",
+  "where": "City centre",
+  "d": "7-minute 3D video experience about young Rembrandt. Free.",
+  "url": "https://www.visitleiden.nl/nl/agenda/2684463483/bezoek-gratis-de-young-rembrandt-studio",
+  "c": 0,
+  "short": 1,
+  "v": [
+   "cultural"
+  ]
+ }
+]

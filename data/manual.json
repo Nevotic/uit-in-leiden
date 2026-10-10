@@ -1,0 +1,175 @@
+{
+ "_help": "events: your own events (same fields as the page). patch: tweak a scraped event, keyed by its URL or id. hide: URLs or ids to leave out.",
+ "events": [
+  {
+   "id": "liff",
+   "t": "Leiden International Film Festival",
+   "s": "2026-10-08",
+   "e": "2026-10-18",
+   "cat": "Film",
+   "where": "Venues across Leiden",
+   "d": "11 days, 100+ films from arthouse to blockbuster, plus premieres and parties. Biggest film festival in the Netherlands by visitors.",
+   "url": "https://www.liff.nl/en/",
+   "hl": 1,
+   "slot": "any",
+   "v": [
+    "cosy",
+    "cultural",
+    "surprise"
+   ]
+  },
+  {
+   "id": "run",
+   "t": "Leiden Run Club",
+   "s": "2026-10-11",
+   "time": "10:30",
+   "cat": "Outdoors",
+   "where": "Start at De Morspoort",
+   "d": "Free social run every Sunday, with coffee afterwards.",
+   "url": "https://trainerday.com/nl/events/netherlands/leiden",
+   "weekly": 0,
+   "v": [
+    "active"
+   ]
+  },
+  {
+   "id": "smid",
+   "t": "Smeden weekend",
+   "s": "2026-10-17",
+   "e": "2026-10-18",
+   "cat": "Outdoors",
+   "where": "Alphen aan den Rijn",
+   "town": "Alphen aan den Rijn",
+   "d": "Blacksmithing through the ages, from flint knapping to metal forging. About 20 minutes from Leiden.",
+   "url": "https://www.dagjeweg.nl/kalender/zuid-holland/historie-zuid-holland/outdoor",
+   "c": 1,
+   "v": [
+    "active",
+    "surprise",
+    "cultural"
+   ]
+  },
+  {
+   "id": "zesuur",
+   "t": "Zes uur van de Haarlemmermeer",
+   "s": "2026-10-24",
+   "e": "2026-10-24",
+   "cat": "Outdoors",
+   "where": "Hoofddorp",
+   "town": "Hoofddorp",
+   "d": "25th edition of the six-hour run, also the Dutch and Belgian championship. Registration closes 18 October.",
+   "url": "https://gotrail.run/trail-running-kalender/nederland/zuid-holland/katwijk-aan-zee",
+   "noIdea": 1
+  },
+  {
+   "id": "beach",
+   "t": "Eleven beaches walk",
+   "s": "2026-10-31",
+   "e": "2026-10-31",
+   "cat": "Outdoors",
+   "where": "North Sea coast",
+   "town": "Katwijk",
+   "d": "Walk past eleven Dutch beaches in 5, 12.5, 25 or 50 km.",
+   "url": "https://gotrail.run/trail-running-kalender/nederland/zuid-holland/katwijk-aan-zee",
+   "c": 1
+  },
+  {
+   "id": "goud",
+   "t": "In de ban van GOUD",
+   "e": "2026-10-26",
+   "cat": "Exhibition",
+   "where": "Wereldmuseum Leiden",
+   "d": "Gold across cultures. Almost two years on show, closing soon.",
+   "url": "https://www.dagjeweg.nl/kalender/noordwijk-aan-zee"
+  },
+  {
+   "id": "leer",
+   "t": "Romeins leer",
+   "s": "2026-09-17",
+   "e": "2028-12-03",
+   "cat": "Exhibition",
+   "where": "Rijksmuseum van Oudheden",
+   "d": "Leather in Roman times, from the RMO's own collection.",
+   "url": "https://www.rmo.nl/tentoonstellingen/tijdelijke-tentoonstellingen/romeins-leer/",
+   "isNew": 1
+  }
+ ],
+ "patch": {
+  "https://www.visitleiden.nl/nl/agenda/3158438098/leids-strip-festival": {
+   "c": 1
+  },
+  "https://www.visitleiden.nl/nl/agenda/235984713/herfstvakantie-bij-naturalis-ontdekken-vragen-stellen-en-meekijken-met-experts": {
+   "c": 2
+  },
+  "https://www.visitleiden.nl/nl/agenda/528886012/zondagwandeling-paddenstoelen": {
+   "v": [
+    "active",
+    "cosy"
+   ],
+   "c": 1
+  },
+  "https://www.visitleiden.nl/nl/agenda/3117498092/filosofie-de-geest-in-de-machine-kun-je-bewustzijn-bouwen": {
+   "slot": "any"
+  },
+  "https://www.visitleiden.nl/nl/agenda/608459459/open-mic-comedy-sunday-afternoon-21": {
+   "v": [
+    "cosy",
+    "surprise"
+   ],
+   "slot": "day"
+  },
+  "https://www.visitleiden.nl/nl/agenda/3642339051/pittige-panter-pubquiz-9": {
+   "v": [
+    "cosy",
+    "surprise"
+   ]
+  },
+  "https://www.visitleiden.nl/nl/agenda/1949095750/two-choirs-in-concert-sing-along": {
+   "c": 1
+  },
+  "https://www.visitleiden.nl/nl/agenda/2262592759/wereldmuziek-in-de-x-selawy-hamboz-bedoeienenmuziek-uit-de-levant": {
+   "v": [
+    "cultural",
+    "surprise"
+   ]
+  },
+  "https://www.visitleiden.nl/nl/agenda/1467327129/evensong-hooglandse-kerk-vocaal-ensemble-magnificat": {
+   "c": 0
+  },
+  "https://www.visitleiden.nl/nl/agenda/3703842209/audrey-horne": {
+   "v": [
+    "active",
+    "surprise"
+   ]
+  },
+  "https://www.visitleiden.nl/nl/agenda/48665605/nobel-sessions-17": {
+   "v": [
+    "cosy",
+    "surprise"
+   ],
+   "c": 1
+  },
+  "https://www.visitleiden.nl/nl/agenda/434200408/greg-shapiro-king-me-250-years-of-donald-trump": {
+   "c": 2
+  },
+  "https://www.visitleiden.nl/nl/agenda/48860647/pitchnight-awesome-leiden": {
+   "v": [
+    "surprise"
+   ],
+   "c": 0
+  },
+  "https://www.visitleiden.nl/nl/agenda/1593934981/size-matters-werk-van-jette-clover-gabi-mett-1": {
+   "c": 0
+  },
+  "https://www.visitleiden.nl/nl/agenda/2674047245/k-pop-a-snapshop-tentoonstelling": {
+   "v": [
+    "cultural",
+    "surprise"
+   ]
+  },
+  "https://www.visitleiden.nl/nl/agenda/3638281436/tuin-der-lusten-de-zeventiende-eeuw-in-bloei": {
+   "isNew": 1
+  }
+ },
+ "hide": []
+}
