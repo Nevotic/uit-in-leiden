@@ -1,0 +1,64 @@
+# Every morning: refresh the events, commit the new data, publish index.html to GitHub Pages.
+# A push to main (your own edits) only republishes; it doesn't fetch events.
+name: Update and publish
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # 05:00 UTC = 06:00 (winter) / 07:00 (summer) in Leiden
+  workflow_dispatch:       # "Run workflow" button on the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit the refreshed data back
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: github.event_name != 'push'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the Claude SDK (only if an API key secret is set)
+        if: github.event_name != 'push' && env.ANTHROPIC_API_KEY != ''
+        run: pip install anthropic
+
+      - name: Refresh events
+        if: github.event_name != 'push'
+        run: python update_events.py
+
+      - name: Commit refreshed data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/
+          git diff --cached --quiet || git commit -m "Update events $(date -u +%Y-%m-%d)"
+          git push
+
+      # Publish only the page itself, not the scripts and data.
+      - name: Prepare site
+        run: mkdir _site && cp index.html _site/
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

@@ -3,6 +3,12 @@
 A one-file website (`index.html`) with what's on in and around Leiden, plus a date planner that checks the weather.
 `update_events.py` refreshes the events inside `index.html`; upload that file to your host afterwards.
 
+## Hosting (GitHub Pages)
+
+`.github/workflows/publish.yml` runs every morning at 05:00 UTC on GitHub: it runs `update_events.py`, commits the new data and publishes `index.html` to GitHub Pages. A push of your own changes republishes the page straight away (without fetching events). To refresh by hand: the repository's **Actions** tab → **Update and publish** → **Run workflow**.
+
+For Claude-written descriptions, add your key under **Settings → Secrets and variables → Actions → New repository secret**, named `ANTHROPIC_API_KEY`.
+
 ## Update the events
 
 ```bash
