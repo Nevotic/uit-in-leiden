@@ -102,7 +102,7 @@ svg{display:block}
 
 /* ---- Motion: entrances, scroll reveals ---- */
 .motion #out.in .rv{animation:rise .75s var(--settle) both;animation-delay:calc(var(--d,0) * 55ms)}
-@keyframes rise{from{opacity:0;transform:translateY(20px) scale(.98);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .motion .sr{transition:opacity .9s var(--settle),transform .9s var(--settle)}
 .motion .sr:not(.seen){opacity:0;transform:translateY(32px)}
 .motion .idea.re{animation:rise .6s var(--settle) both}
@@ -113,8 +113,8 @@ svg{display:block}
 @keyframes pop{0%{transform:scale(.7)}45%{transform:scale(1.28)}100%{transform:scale(1)}}
 
 /* Tilt + glare on hover (pointer devices only; values set from JS) */
-[data-tilt]{transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--lift,0px)) scale(var(--press,1));
-  transition:transform .7s var(--settle),box-shadow .45s ease}
+[data-tilt]{transition:transform .7s var(--settle),box-shadow .45s ease}
+[data-tilt].tilting{transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--lift,0px)) scale(var(--press,1))}
 [data-tilt].tilting{--lift:-5px;box-shadow:var(--shadow-hi);transition:transform .14s ease-out,box-shadow .3s ease}
 [data-tilt]:active{--press:.985}
 [data-tilt]::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s ease;z-index:3;
@@ -458,6 +458,21 @@ footer a{color:inherit;text-underline-offset:2px}
   .sbody{padding-top:1.25rem}
 }
 body.locked{overflow:hidden}
+
+/* ---- Performance: fewer live blurs and endless animations; skip off-screen rows ---- */
+:root{--glass:rgba(255,255,255,.8);--glass-strong:rgba(255,255,255,.9)}
+:root[data-theme="dark"]{--glass:rgba(30,27,38,.86);--glass-strong:rgba(34,31,44,.92)}
+.tile,.planner,.idea,.wx,.empty,.banner,.pillbtn,.arrow,.search input,.themebtn,.catpill,.dbadge{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.dbadge{background:var(--badge)}
+.catpill{background:rgba(0,0,0,.35)}
+.glow{contain:strict}
+.glow i{filter:none;opacity:calc(var(--glow-o) * .9)}
+.motion .grad{animation:none}
+.motion .t-plan::before{animation:none}
+.planglow{display:none}
+.rail{-webkit-mask-image:none;mask-image:none}
+.sec{content-visibility:auto;contain-intrinsic-size:auto 27rem}
+.more-btn{display:flex;margin:1.25rem auto 0}
 </style>
 </head>
 <body>
@@ -1046,7 +1061,7 @@ function introFor(k){
 }
 
 let tab = "home", cat = "All", query = "", lastSection = "weekend";
-let openId = null, openDay = null, pendingImport = [];
+let openId = null, openDay = null, pendingImport = [], limit = 36;
 try { const h = location.hash.slice(1); if (VIEWS.includes(h)) tab = h; } catch(_){}
 
 const $ = id => document.getElementById(id);
@@ -1125,7 +1140,7 @@ function card(x, on, d = 0){
   const place = x.where + (x.town!=="Leiden" && !x.where.includes(x.town) ? ", "+x.town : "");
   const isS = saved.has(x.id);
   return `<article class="card rv" style="--cc:${cc};--d:${d}" data-tilt>
-    <div class="cover${x.img?" has-img":""}">${x.img ? `<img class="photo" src="${esc(x.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove('has-img');this.remove()">` : ""}<span class="glyph" aria-hidden="true">${glyph}</span>
+    <div class="cover${x.img?" has-img":""}">${x.img ? imgTag(x.img, "photo", 560, 240) : ""}<span class="glyph" aria-hidden="true">${glyph}</span>
       <div class="dbadge"><span>${top}</span><b>${big}</b><span>${bot}</span></div>
       <div class="flags"><span class="catpill">${x.cat}</span>${flags.join("")}</div></div>
     <div class="cbody">
@@ -1184,7 +1199,7 @@ function renderHome(){
     </section>
     ${wxTile()}`;
   if (hl) { const [cc, g] = CAT_STYLE[hl.cat]; const dl = hl.e ? daysBetween(TODAY, hl.e) : 0;
-    html += `<a class="tile t-hl rv${hl.img?" has-img":""}" style="--d:3;--cc:${cc}" href="#e/${hl.id}" data-open="${hl.id}" data-tilt>${hl.img?`<img class="hlphoto" src="${esc(hl.img)}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:""}<span class="lbl">Highlight</span><span class="hlglyph" aria-hidden="true">${g}</span>
+    html += `<a class="tile t-hl rv${hl.img?" has-img":""}" style="--d:3;--cc:${cc}" href="#e/${hl.id}" data-open="${hl.id}" data-tilt>${hl.img ? imgTag(hl.img, "hlphoto", 640, 640, false) : ""}<span class="lbl">Highlight</span><span class="hlglyph" aria-hidden="true">${g}</span>
       <b class="hltitle">${esc(hl.t)}</b><span class="hlsub">${hl.s!==hl.e && hl.e ? `Until ${shortNice(hl.e)} · ${dl} day${dl===1?"":"s"} left` : shortNice(hl.s)}</span></a>`; }
   html += `<a class="tile t-ton rv" style="--d:4" href="#${tKey}" data-go="${tKey}" data-tilt><span class="lbl">${tSet[0]}</span>
       <span class="big" data-count="${tSet[1].length}">${tSet[1].length}</span><span class="tsub">thing${tSet[1].length===1?"":"s"} on</span>
@@ -1230,7 +1245,11 @@ function renderSection(){
       const label = k==="multi" ? (tab==="weekend"?"Running all weekend":"Running all week") : (k===TODAY ? `<span class="todaytag">Today</span>` : "") + nice(k);
       return `<h2 class="day rv" style="--d:${Math.min(d++,14)}">${label}</h2><div class="grid">${groups[k].map(([x,day])=>card(x, day, Math.min(d++,14))).join("")}</div>`;
     }).join("");
-  } else html += `<div class="grid" style="margin-top:1.5rem">${list.map(x=>card(x, undefined, Math.min(d++,14))).join("")}</div>`;
+  } else {
+    const shown = list.slice(0, limit);
+    html += `<div class="grid" style="margin-top:1.5rem">${shown.map(x=>card(x, undefined, Math.min(d++,14))).join("")}</div>`;
+    if (list.length > shown.length) html += `<button class="btn more-btn" type="button" data-more>Show ${Math.min(36, list.length - shown.length)} more <span class="count">${list.length - shown.length} left</span></button>`;
+  }
   return html;
 }
 
@@ -1561,6 +1580,15 @@ function ideaToCal(it){
 }
 
 
+/* ---------- images ---------- */
+// Event photos are often 1–2 MB originals shown at ~250px. Ask a resizing cache for the size we show.
+const thumb = (src, w, h) => `https://images.weserv.nl/?url=${encodeURIComponent(src)}&w=${w}${h?`&h=${h}&fit=cover&a=attention`:""}&output=webp&q=72&we`;
+const imgTag = (src, cls, w, h, lazy = true) => `<img class="${cls}" src="${esc(thumb(src, w, h))}" data-o="${esc(src)}" alt="" ${lazy?'loading="lazy" ':""}decoding="async" referrerpolicy="no-referrer" onerror="imgFail(this)">`;
+function imgFail(img){
+  if (img.dataset.o && !img.dataset.f) { img.dataset.f = 1; img.src = img.dataset.o; return; }
+  img.parentNode?.classList.remove("has-img"); img.remove();
+}
+
 /* ---------- detail sheet ---------- */
 const SHARE_SVG = ico(`<path d="M12 15V3M7.5 7.5L12 3l4.5 4.5M5 12v6.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V12"/>`);
 const PIN_SVG = ico(`<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>`);
@@ -1587,7 +1615,7 @@ function sheetHTML(x, day){
   const maps = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${x.where}, ${x.town||"Leiden"}`);
   const dutch = /\.nl\//.test(x.url||"");
   const on = saved.has(x.id);
-  return `<div class="shero" style="--cc:${cc}">${x.img ? `<img src="${esc(x.img)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${x.img ? "" : `<span class="glyph" aria-hidden="true">${glyph}</span>`}</div>
+  return `<div class="shero" style="--cc:${cc}">${x.img ? imgTag(x.img, "", 880, 550, false) : ""}${x.img ? "" : `<span class="glyph" aria-hidden="true">${glyph}</span>`}</div>
     <div class="scat" style="--cc:${cc}"><span class="spill">${x.cat}</span>${x.hl?`<span class="spill hot">Highlight</span>`:""}${x.isNew?`<span class="spill hot">New</span>`:""}</div>
     <h2 class="stitle" id="sheettitle">${esc(x.t)}</h2>
     <ul class="facts">
@@ -1658,6 +1686,7 @@ function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("on"
 /* ---------- events ---------- */
 function go(k){
   if (k==="agenda") k = lastSection;
+  limit = 36;
   const changed = k!==tab || !!query;
   tab = k; cat = "All"; query = ""; $("q").value = "";
   try { history.replaceState(null, "", "#"+k); } catch(_){}
@@ -1733,6 +1762,7 @@ $("out").addEventListener("click", async e=>{
   }
   if (e.target.closest("[data-import]")) { pendingImport.forEach(id=>saved.add(id)); const n = pendingImport.length; pendingImport = []; persist(); render(); toast(`Added ${n} to Saved`); return; }
   if (e.target.closest("[data-noimport]")) { pendingImport = []; render(); return; }
+  if (e.target.closest("[data-more]")) { limit += 36; render(); return; }
   const cal = e.target.closest("[data-cal]");
   if (cal){ const x = E.find(y=>y.id===cal.dataset.cal); downloadIcs(x.t, eventToCal(x, cal.dataset.on)); return; }
   if (e.target.closest("#reroll")){ current.forEach(it=>it.stops.forEach(s=>{ if (s.anchor) shuffledAway.add(s.id); })); suggestAll(); render(true); return; }
