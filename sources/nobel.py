@@ -4,6 +4,7 @@ No feed, so we read the agenda page. Each show is a link like
 /agenda/audrey-horne-13-oct-2026 with a title, a one-line tagline and a genre.
 The date comes from the end of the link.
 """
+import html
 import re
 from datetime import date
 
@@ -31,6 +32,7 @@ def fetch(today: date, horizon: date) -> list:
             continue
         tagline = clean((re.search(r"<p>(.*?)</p>", body, re.S) or [None, ""])[1])
         genre = clean((re.search(r'<span class="genre">(.*?)</span>', body, re.S) or [None, ""])[1])
+        img = (re.search(r'<img[^>]*src="([^"]+)"', body) or [None, ""])[1]
         events.append({
             "id": "nb-" + href.rsplit("/", 1)[-1][:48],
             "t": title,
@@ -44,5 +46,6 @@ def fetch(today: date, horizon: date) -> list:
             "nl": tagline,
             "s": day.isoformat(),
             "e": day.isoformat(),
+            **({"img": "https://nobel.nl" + html.unescape(img)} if img.startswith("/") else {}),
         })
     return events

@@ -8,7 +8,8 @@ from datetime import date, datetime
 from .common import clean, get_json, nice_title, parse_price, shape_dates
 
 NAME = "Schouwburg & Stadsgehoorzaal"
-API = "https://leidseschouwburg-stadsgehoorzaal.nl/wp-json/wp/v2/show?per_page=100&_fields=id,link,title,excerpt,acf&page={}"
+API = ("https://leidseschouwburg-stadsgehoorzaal.nl/wp-json/wp/v2/show?per_page=100&_embed=wp:featuredmedia"
+       "&_fields=id,link,title,excerpt,acf,_links,_embedded&page={}")
 
 GENRES = {
     "cabaret": "Comedy",
@@ -79,5 +80,10 @@ def fetch(today: date, horizon: date) -> list:
         }
         if prices:
             ev["price"] = min(prices)
+        media = ((show.get("_embedded") or {}).get("wp:featuredmedia") or [{}])[0]
+        sizes = (media.get("media_details") or {}).get("sizes") or {}
+        img = (sizes.get("medium_large") or sizes.get("large") or {}).get("source_url") or media.get("source_url")
+        if img:
+            ev["img"] = img
         events.append(ev)
     return events

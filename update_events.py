@@ -26,9 +26,10 @@ EVENTS = DATA / "events.json"              # last generated agenda; also the fal
 DESCRIPTIONS = DATA / "descriptions.json"  # event URL -> English one-liner (edit freely)
 MANUAL = DATA / "manual.json"              # your own events, tweaks and hidden events
 EVERGREEN = DATA / "evergreen.json"        # "Always good" places
+VENUES = DATA / "venues.json"              # street address -> venue name (learned automatically; add your own)
 
 # Fields the page uses. Everything else (Dutch text, source name...) stays in data/events.json.
-PAGE_FIELDS = ["id", "t", "s", "e", "dates", "time", "weekly", "cat", "where", "town", "d", "url",
+PAGE_FIELDS = ["id", "t", "s", "e", "dates", "time", "weekly", "cat", "where", "town", "d", "auto", "url", "img", "price",
                "c", "io", "slot", "v", "hl", "isNew", "noIdea", "dry", "calm", "long", "short", "months"]
 START, END = "/* AGENDA:START", "/* AGENDA:END */"
 
@@ -69,7 +70,7 @@ def merge(lists):
             if twin is None:
                 merged.append(ev)
                 continue
-            for field in ("time", "price", "genre"):
+            for field in ("time", "price", "genre", "img"):
                 if twin.get(field) is None and ev.get(field) is not None:
                     twin[field] = ev[field]
             if len(ev.get("nl") or "") > len(twin.get("nl") or ""):
@@ -146,6 +147,17 @@ def main():
     events = merge([mine] + collected)
     hidden = set(manual.get("hide", []))
     events = [ev for ev in events if ev["id"] not in hidden and ev.get("url") not in hidden]
+
+    # Venue names: Visit Leiden often gives only a street address. Learn address -> name from
+    # events that have both, keep what you've added by hand, and fill in the rest.
+    venues = load(VENUES, {})
+    for ev in events:
+        a = ev.get("addr")
+        if a and ev["where"] != a and a not in venues:
+            venues[a] = ev["where"]
+    for ev in events:
+        if ev.get("addr") and ev["where"] == ev["addr"] and ev["addr"] in venues:
+            ev["where"] = venues[ev["addr"]]
     for ev in events:
         patch = manual.get("patch", {}).get(ev.get("url")) or manual.get("patch", {}).get(ev["id"])
         if patch:
@@ -161,7 +173,9 @@ def main():
             if not ev.get("catSure") and w.get("cat"):
                 ev["cat"] = w["cat"]
         if not ev.get("d"):
-            ev["d"] = descriptions.get(ev.get("url")) or describe.template(ev)
+            ev["d"] = descriptions.get(ev.get("url"))
+        if not ev.get("d"):
+            ev["d"], ev["auto"] = describe.template(ev), 1  # the page hides these in lists
         level = cost_level(ev.get("price"))
         if level is not None and "c" not in ev:
             ev["c"] = level
@@ -185,6 +199,7 @@ def main():
         return
     save(EVENTS, events)
     save(DESCRIPTIONS, dict(sorted(descriptions.items())))
+    save(VENUES, dict(sorted(venues.items())))
 
     page = PAGE.read_text(encoding="utf-8")
     a, b = page.find(START), page.find(END)

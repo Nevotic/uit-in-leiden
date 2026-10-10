@@ -89,6 +89,13 @@ def _normalise(url, it, kw, today, horizon):
         "src": NAME,
         "nl": text[:700],
     }
+    if addr.get("streetAddress"):
+        ev["addr"] = clean(addr["streetAddress"])
+    images = it.get("image") or []
+    if isinstance(images, str):
+        images = [images]
+    if images:
+        ev["img"] = images[0]
     prices = [p for p in (parse_price(o.get("price")) for o in it.get("offers") or []) if p is not None]
     if prices:
         ev["price"] = min(prices)
