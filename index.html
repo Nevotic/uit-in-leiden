@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uit in Leiden</title>
+<meta name="description" content="What's on in and around Leiden, plus date ideas that check the weather.">
+<meta name="theme-color" content="#b5121b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23b5121b' stroke-width='4' stroke-linecap='round'%3E%3Cg transform='rotate(45 24 24)'%3E%3Ccircle cx='24' cy='9' r='5'/%3E%3Cpath d='M24 14v28M24 34h6M24 39h5'/%3E%3C/g%3E%3Cg transform='rotate(-45 24 24)'%3E%3Ccircle cx='24' cy='9' r='5'/%3E%3Cpath d='M24 14v28M24 34h-6M24 39h-5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a city "uitagenda" — crossed-keys masthead, tab rail by time horizon, dense agenda rows with a mono date column */
+:root{
+  --bg:#f6f7f8; --surface:#ffffff; --fg:#17191c; --muted:#5d636b; --line:#dfe2e6;
+  --red:#b5121b; --red-soft:#fbe9ea; --canal:#1f5c66; --canal-soft:#e4f0f1; --amber:#8a5a00; --amber-soft:#fdf1d8;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121417; --surface:#1a1d21; --fg:#eceef0; --muted:#9aa1a9; --line:#2b3036;
+  --red:#ff5a5f; --red-soft:#3a1a1c; --canal:#6cc3cf; --canal-soft:#16302f; --amber:#f2b84b; --amber-soft:#3a2c10; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121417; --surface:#1a1d21; --fg:#eceef0; --muted:#9aa1a9; --line:#2b3036;
+  --red:#ff5a5f; --red-soft:#3a1a1c; --canal:#6cc3cf; --canal-soft:#16302f; --amber:#f2b84b; --amber-soft:#3a2c10; color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:28px 48px}
+header{display:flex;gap:14px;align-items:center}
+header svg{flex:none;width:48px;height:48px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(30px,6vw,42px);line-height:1;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0;font-size:14px}
+.sub b{color:var(--fg);font-weight:600}
+.search{margin:22px 0 0;position:relative}
+.search input{width:100%;font:500 15px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px 10px 36px}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted)}
+.tabs{display:flex;gap:4px;margin:14px 0 0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{font:600 14px var(--body);color:var(--muted);background:none;border:0;padding:10px 12px;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--red)}
+.tab.plan{color:var(--red)}
+.tab:focus-visible,.chip:focus-visible,.star:focus-visible,.ico:focus-visible,a:focus-visible,.btn:focus-visible,.seg input:focus-visible+span,input:focus-visible{outline:2px solid var(--canal);outline-offset:2px;border-radius:4px}
+.count{font:500 11px var(--mono);color:var(--muted);margin-left:4px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 4px}
+.chip{font:500 13px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:5px 11px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.intro{color:var(--muted);font-size:14px;margin:12px 0 4px;max-width:62ch}
+.day{font:700 12px var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--red);margin:22px 0 4px}
+h2.day{font-size:12px}
+ul.list{list-style:none;margin:0;padding:0}
+.row{display:grid;grid-template-columns:62px 1fr auto;gap:12px;align-items:start;padding:13px 0;border-bottom:1px solid var(--line)}
+.date{font:500 12px var(--mono);color:var(--muted);line-height:1.35;padding-top:3px;font-variant-numeric:tabular-nums}
+.date strong{display:block;font-size:17px;color:var(--fg);font-weight:500}
+.main{min-width:0}
+.title{font-family:var(--display);font-weight:700;font-size:17px;line-height:1.25;color:var(--fg);text-decoration:none}
+a.title:hover{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:4px;font-size:13px;color:var(--muted)}
+.desc{margin:4px 0 0;font-size:14px;max-width:62ch}
+.tag{font:600 11px var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--canal);background:var(--canal-soft);padding:2px 7px;border-radius:4px}
+.flag{font:600 11px var(--body);letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:4px}
+.flag.ending{color:var(--red);background:var(--red-soft)}
+.flag.new{color:var(--amber);background:var(--amber-soft)}
+.acts{display:flex;flex-direction:column;align-items:center;gap:2px}
+.star,.ico{background:none;border:0;cursor:pointer;padding:4px;color:var(--muted);font-size:20px;line-height:1;border-radius:6px}
+.ico svg{width:18px;height:18px;display:block}
+.ico:hover,.star:hover{color:var(--fg)}
+.star[aria-pressed="true"]{color:var(--red)}
+.empty{color:var(--muted);padding:24px 0;font-size:14px}
+.cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{font:600 14px var(--body);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn[aria-pressed="true"]{background:var(--red-soft);border-color:var(--red);color:var(--red)}
+.btn svg{width:15px;height:15px}
+/* Planner */
+.planner{margin-top:16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.field{margin:0 0 14px}
+.field:last-child{margin-bottom:0}
+.flabel{display:block;font:700 12px var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 6px}
+.seg{display:flex;flex-wrap:wrap;gap:6px;border:0;margin:0;padding:0}
+.seg legend{padding:0}
+.seg label{cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:inline-block;font:500 13px var(--body);border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:5px 11px;border-radius:999px}
+.seg input:checked+span{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.inrow{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:flex-end}
+input[type=date]{font:500 14px var(--body);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.toggle{display:inline-flex;gap:8px;align-items:center;font-size:14px;cursor:pointer;padding-bottom:6px}
+.toggle input{width:16px;height:16px;accent-color:var(--red)}
+.wx{display:flex;gap:10px;align-items:center;margin:16px 0 0;padding:10px 12px;border-radius:10px;background:var(--canal-soft);color:var(--fg);font-size:14px}
+.wx b{font-family:var(--mono);font-weight:500;font-size:13px}
+.wx .wxi{font-size:20px;line-height:1}
+.idea{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:14px}
+.idea.done{opacity:.6}
+.ideahd{font:700 12px var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--red);margin:0}
+.ideatitle{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.25;margin:4px 0 0;text-wrap:balance}
+.stops{list-style:none;margin:12px 0 0;padding:0;border-left:2px solid var(--line)}
+.stops li{position:relative;padding:0 0 10px 16px;display:grid;grid-template-columns:48px 1fr;gap:8px}
+.stops li:last-child{padding-bottom:0}
+.stops li::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--surface);border:2px solid var(--red)}
+.stops .tm{font:500 13px var(--mono);color:var(--muted);padding-top:1px}
+.stops .st{font-weight:600}
+.stops .st a{color:var(--fg);text-decoration-color:var(--red);text-underline-offset:3px}
+.stops .nt{font-size:13.5px;color:var(--muted)}
+.why{margin:12px 0 0;font-size:14px;color:var(--fg);background:var(--bg);border-radius:8px;padding:8px 10px}
+.why b{font-weight:600}
+.ideabtns{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.ideabtns .btn{font-size:13px;padding:6px 10px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);background:var(--fg);color:var(--bg);font:600 14px var(--body);padding:9px 14px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:calc(100vw - 32px)}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+footer a{color:var(--muted)}
+[hidden]{display:none!important}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:440px){.row{grid-template-columns:52px 1fr auto;gap:10px}.stops li{grid-template-columns:42px 1fr}}
+@media (prefers-reduced-motion:no-preference){.row,.idea{animation:in .25s ease both}@keyframes in{from{transform:translateY(3px)}to{transform:none}}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <g fill="none" stroke="var(--red)" stroke-width="3.4" stroke-linecap="round">
+        <g transform="rotate(45 24 24)"><circle cx="24" cy="9" r="5"/><line x1="24" y1="14" x2="24" y2="42"/><path d="M24 34h6M24 39h5"/></g>
+        <g transform="rotate(-45 24 24)"><circle cx="24" cy="9" r="5"/><line x1="24" y1="14" x2="24" y2="42"/><path d="M24 34h-6M24 39h-5"/></g>
+      </g>
+    </svg>
+    <div>
+      <h1>Uit in Leiden</h1>
+      <p class="sub">What's on in and around the Sleutelstad · <b>agenda updated 10 Oct 2026</b></p>
+    </div>
+  </header>
+
+  <div class="search" role="search">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <label class="vh" for="q">Search everything</label>
+    <input id="q" type="search" placeholder="Search events, venues, places…" autocomplete="off">
+  </div>
+
+  <nav class="tabs" role="tablist" id="tabs" aria-label="Sections"></nav>
+  <p class="intro" id="intro"></p>
+  <div class="chips" id="chips"></div>
+  <div id="out"></div>
+
+  <div class="cta" id="cta">
+    <button class="btn primary" id="goplan" type="button">Plan a date</button>
+    <span class="intro" style="margin:0">Three ideas for any day, checked against the forecast.</span>
+  </div>
+
+  <footer>
+    Agenda collected on Saturday 10 October 2026 from <a href="https://www.visitleiden.nl/nl/agenda" target="_blank" rel="noopener">Visit Leiden UITagenda</a>, <a href="https://www.dagjeweg.nl/kalender/leiden/10-oktober-2026" target="_blank" rel="noopener">DagjeWeg.NL</a> and <a href="https://www.liff.nl/en/" target="_blank" rel="noopener">LIFF</a>. Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>. Times and tickets can change, so check the event page before you go. Stars and saved ideas are kept in this browser only.
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const VL = "https://www.visitleiden.nl/nl/agenda/";
+/* Event data. Fields: id, t (title), s/e (start/end YYYY-MM-DD), time, cat, where, town, d, url.
+   Planner hints (optional; defaults come from the category): c = cost 0–3, io = "in"/"out",
+   slot = "day"/"eve"/"any", v = vibes, weekly = day of week (0 = Sunday), dry/calm = needs that weather, noIdea = skip in planner. */
+const E = [
+  {id:"liff",t:"Leiden International Film Festival",s:"2026-10-08",e:"2026-10-18",cat:"Film",where:"Venues across Leiden",d:"11 days, 100+ films from arthouse to blockbuster, plus premieres and parties. Biggest film festival in the Netherlands by visitors.",url:"https://www.liff.nl/en/",hl:1,slot:"any",v:["cosy","cultural","surprise"]},
+  {id:"strip",t:"Leids Strip Festival",s:"2026-10-10",e:"2026-10-10",cat:"Culture",where:"Hooglandse Kerk",d:"Big comics fair inside the Hooglandse Kerk. Today is the last day.",url:VL+"3158438098/leids-strip-festival",c:1},
+  {id:"natfall",t:"Herfstvakantie at Naturalis",s:"2026-10-10",e:"2026-10-25",cat:"Culture",where:"Naturalis",d:"Look over the shoulders of preparators, open discovery boxes and talk to experts. Busy with families during the autumn break.",url:VL+"235984713/herfstvakantie-bij-naturalis-ontdekken-vragen-stellen-en-meekijken-met-experts",c:2},
+  {id:"run",t:"Leiden Run Club",s:"2026-10-11",time:"10:30",cat:"Outdoors",where:"Start at De Morspoort",d:"Free social run every Sunday, with coffee afterwards.",url:"https://trainerday.com/nl/events/netherlands/leiden",weekly:0,v:["active"]},
+  {id:"padd",t:"Zondagwandeling Paddenstoelen",s:"2026-10-11",e:"2026-10-11",cat:"Outdoors",where:"Leiden",d:"Guided mushroom walk with local fungi experts. Peak season.",url:VL+"528886012/zondagwandeling-paddenstoelen",c:1,v:["active","cosy"]},
+  {id:"geest",t:"Filosofie: De geest in de machine",s:"2026-10-11",e:"2026-10-11",cat:"Talks",where:"Leiden",d:"Philosophy session on whether you can build consciousness. Fits right in with all the AI talk.",url:VL+"3117498092/filosofie-de-geest-in-de-machine-kun-je-bewustzijn-bouwen",slot:"any"},
+  {id:"laken",t:"Het Geheim van het Leids Laken",s:"2026-10-11",e:"2026-10-11",cat:"Culture",where:"Lakenhal area",d:"The story of the Laecken-Halle, once the inspection hall for Leiden's world-famous cloth.",url:VL+"4228435255/het-geheim-van-het-leids-laken"},
+  {id:"openmic",t:"Open Mic Comedy Sunday Afternoon",s:"2026-10-11",e:"2026-10-11",cat:"Comedy",where:"Leiden",d:"Up-and-coming Dutch-language comedians try out new material.",url:VL+"608459459/open-mic-comedy-sunday-afternoon-21",slot:"day",v:["cosy","surprise"]},
+  {id:"quiz",t:"Pittige Panter PubQuiz: Code Name Panther",s:"2026-10-11",e:"2026-10-11",cat:"Comedy",where:"Leiden",d:"Spy-themed pub quiz. Good one to do as a pair.",url:VL+"3642339051/pittige-panter-pubquiz-9",v:["cosy","surprise"]},
+  {id:"choirs",t:"Two choirs in concert & sing-along",s:"2026-10-11",e:"2026-10-11",cat:"Music",where:"Leiden",d:"PUIC from Leiden and the Jericho Singers from Oxford, with a sing-along.",url:VL+"1949095750/two-choirs-in-concert-sing-along",c:1},
+  {id:"x",t:"Wereldmuziek in de X: Selawy & Hamboz",s:"2026-10-11",e:"2026-10-11",cat:"Music",where:"De X",d:"Bedouin music from the Levant.",url:VL+"2262592759/wereldmuziek-in-de-x-selawy-hamboz-bedoeienenmuziek-uit-de-levant",v:["cultural","surprise"]},
+  {id:"ndo",t:"Nederlands Dokters Orkest: benefit concert",s:"2026-10-11",e:"2026-10-11",cat:"Music",where:"Leiden",d:"Doctors and medical students from across the country play a benefit concert.",url:VL+"3386877606/nederlands-dokters-orkest-benefietconcert-ndo-voor-xenia"},
+  {id:"evensong",t:"Evensong: Vocaal Ensemble Magnificat",s:"2026-10-11",e:"2026-10-11",time:"17:00",cat:"Music",where:"Hooglandse Kerk",d:"Choral evensong in one of the city's most beautiful churches.",url:VL+"1467327129/evensong-hooglandse-kerk-vocaal-ensemble-magnificat",c:0},
+  {id:"ibsen",t:"Crashtest Ibsen: Volksvijand",s:"2026-10-11",e:"2026-10-11",cat:"Theatre",where:"Leiden",d:"Ibsen's An Enemy of the People. Also plays on several dates next week, see the event page.",url:VL+"578187456/crashtest-ibsen-volksvijand"},
+
+  {id:"horne",t:"Audrey Horne",s:"2026-10-13",e:"2026-10-13",cat:"Music",where:"Nobel",d:"Straight-up hard rock with big riffs and sing-along choruses.",url:VL+"3703842209/audrey-horne",v:["active","surprise"]},
+  {id:"pfas",t:"Science Café: PFAS",s:"2026-10-13",e:"2026-10-13",cat:"Talks",where:"Science Café Leiden",d:"Accessible evening talk on PFAS and what it means for future generations.",url:VL+"178105339/lezing-pfas-een-blijvende-erfenis-voor-de-gezondheid-van-toekomstige-generaties"},
+  {id:"emily",t:"Miss Emily",s:"2026-10-13",e:"2026-10-13",cat:"Music",where:"Leiden",d:"First and only Dutch show by the Canadian singer, touring her sixth album.",url:VL+"281382588/miss-emily-enige-eerste-optreden-nl-van-canadese-powerhouse"},
+  {id:"nobel",t:"Nobel Sessions",s:"2026-10-14",e:"2026-10-14",cat:"Music",where:"Nobel",d:"Monthly jam session hosted by Leidse Geluiden.",url:VL+"48665605/nobel-sessions-17",c:1,v:["cosy","surprise"]},
+  {id:"caat",t:"Caat Comedy: The Stand-up Club #1",s:"2026-10-14",e:"2026-10-14",cat:"Comedy",where:"Café Caat",d:"Touring stand-up night produced by Club Haug.",url:VL+"3542363980/caat-comedy-the-stand-up-club-1"},
+  {id:"shapiro",t:"Greg Shapiro: King Me",s:"2026-10-14",e:"2026-10-14",cat:"Comedy",where:"Leiden",d:"English-language stand-up and storytelling about 250 years of America and Trump.",url:VL+"434200408/greg-shapiro-king-me-250-years-of-donald-trump",c:2},
+  {id:"awesome",t:"Pitchnight Awesome Leiden",s:"2026-10-14",e:"2026-10-14",cat:"Talks",where:"Leiden",d:"Pitch an awesome idea for Leiden and maybe win €1,000 to make it happen.",url:VL+"48860647/pitchnight-awesome-leiden",c:0,v:["surprise"]},
+
+  {id:"smid",t:"Smeden weekend",s:"2026-10-17",e:"2026-10-18",cat:"Outdoors",where:"Alphen aan den Rijn",town:"Alphen aan den Rijn",d:"Blacksmithing through the ages, from flint knapping to metal forging. About 20 minutes from Leiden.",url:"https://www.dagjeweg.nl/kalender/zuid-holland/historie-zuid-holland/outdoor",c:1,v:["active","surprise","cultural"]},
+  {id:"dance",t:"30·40·50+ Dancing Party",s:"2026-10-24",e:"2026-10-24",time:"20:00–01:00",cat:"Music",where:"Scheltema",d:"Night of dancing in the old textile factory.",url:"https://www.dagjeweg.nl/kalender/leiden/meivakantie",c:1,v:["active","surprise"]},
+  {id:"zesuur",t:"Zes uur van de Haarlemmermeer",s:"2026-10-24",e:"2026-10-24",cat:"Outdoors",where:"Hoofddorp",town:"Hoofddorp",d:"25th edition of the six-hour run, also the Dutch and Belgian championship. Registration closes 18 October.",url:"https://gotrail.run/trail-running-kalender/nederland/zuid-holland/katwijk-aan-zee",noIdea:1},
+  {id:"beach",t:"Eleven beaches walk",s:"2026-10-31",e:"2026-10-31",cat:"Outdoors",where:"North Sea coast",town:"Katwijk",d:"Walk past eleven Dutch beaches in 5, 12.5, 25 or 50 km.",url:"https://gotrail.run/trail-running-kalender/nederland/zuid-holland/katwijk-aan-zee",c:1},
+
+  {id:"textiel",t:"Heilig textiel uit Mekka en Medina",e:"2026-10-23",cat:"Exhibition",where:"Leiden",d:"Textiles from Saudi Arabia and how they are used around the holy sites.",url:VL+"2033309580/heilig-textiel-uit-mekka-en-medina"},
+  {id:"kuster",t:"Giselle Kuster: De Leidse jaren",e:"2026-10-25",cat:"Exhibition",where:"Museum De Lakenhal",d:"Kuster's best-known paintings from her Leiden period.",url:VL+"3741494617/giselle-kuster-de-leidse-jaren"},
+  {id:"muertos",t:"Día de Muertos",e:"2026-10-25",cat:"Exhibition",where:"Wereldmuseum Leiden",d:"The Mexican Day of the Dead, celebrated in the museum.",url:VL+"2015042676/dia-de-muertos-bij-het-wereldmuseum-leiden"},
+  {id:"goud",t:"In de ban van GOUD",e:"2026-10-26",cat:"Exhibition",where:"Wereldmuseum Leiden",d:"Gold across cultures. Almost two years on show, closing soon.",url:"https://www.dagjeweg.nl/kalender/noordwijk-aan-zee"},
+  {id:"size",t:"Size Matters: Jette Clover & Gabi Mett",e:"2026-10-31",cat:"Exhibition",where:"Galerie Zône",d:"Duo show in a small gallery. Quick stop on a city walk.",url:VL+"1593934981/size-matters-werk-van-jette-clover-gabi-mett-1",c:0},
+  {id:"galleria",t:"Galleria",e:"2026-11-01",cat:"Exhibition",where:"Rijksmuseum van Oudheden",d:"Twelve mini-exhibitions where ancient treasures meet contemporary art.",url:VL+"3131834986/galleria-twaalf-tentoonstellingen-in-een"},
+  {id:"kpop",t:"K-pop: A Snapshot",e:"2026-12-31",cat:"Exhibition",where:"Leiden",d:"From underground scene to global visual culture.",url:VL+"2674047245/k-pop-a-snapshop-tentoonstelling",v:["cultural","surprise"]},
+  {id:"waarheid",t:"Waarheid? Kunst van de twijfel",e:"2027-01-03",cat:"Exhibition",where:"Rijksmuseum Boerhaave",d:"Scientists and artists on how we decide what is true, in a time of fake news and AI.",url:VL+"1744606890/waarheid-kunst-van-de-twijfel"},
+  {id:"planten",t:"Planten & Planeten",e:"2027-02-07",cat:"Exhibition",where:"Leiden",d:"A journey through time and space, from the Big Bang onward.",url:VL+"2547279923/planten-planeten"},
+  {id:"deshima",t:"Licht over Deshima",e:"2027-02-28",cat:"Exhibition",where:"Leiden",d:"What Japan looked like when photography had only just been invented.",url:VL+"468892838/licht-over-deshima"},
+  {id:"tuin",t:"Tuin der lusten: De zeventiende eeuw in bloei",s:"2026-09-26",e:"2027-03-28",cat:"Exhibition",where:"Museum De Lakenhal",d:"The Lakenhal's big new autumn show with The Phoebus Foundation, on the Golden Age in bloom.",url:VL+"3638281436/tuin-der-lusten-de-zeventiende-eeuw-in-bloei",isNew:1},
+  {id:"suriname",t:"Het bos van Suriname",e:"2027-05-02",cat:"Exhibition",where:"Naturalis",d:"The Surinamese rainforest told from the perspective of everything that lives in it.",url:VL+"4203489830/het-bos-van-suriname-1"},
+  {id:"leer",t:"Romeins leer",s:"2026-09-17",e:"2028-12-03",cat:"Exhibition",where:"Rijksmuseum van Oudheden",d:"Leather in Roman times, from the RMO's own collection.",url:"https://www.rmo.nl/tentoonstellingen/tijdelijke-tentoonstellingen/romeins-leer/",isNew:1},
+
+  // Always good (no dates)
+  {id:"burcht",t:"De Burcht",cat:"Outdoors",where:"City centre",d:"Free, older than the city itself (around 1150), with a view over the rooftops.",url:"https://www.dagjeweg.nl/tip/11690/Burcht-van-Leiden",v:["cosy","cultural"],short:1},
+  {id:"singel",t:"Singelpark walk",cat:"Outdoors",where:"Around the old city",d:"Loop of green and water around the historic centre. Pair it with a hofje or two.",url:"https://www.dagjeweg.nl/nieuwsredactie/25930/Leiden%3A-de-favorieten-van-Willeke",v:["cosy","active"]},
+  {id:"boot",t:"Bootjes en Broodjes",cat:"Outdoors",where:"Leiden & Kagerplassen",d:"Rent a small boat and sail the canals out to the Kagerplassen.",url:"https://www.dagjeweg.nl/tip/8585/Bootjes-en-Broodjes",c:2,dry:1,months:[3,4,5,6,7,8,9],v:["cosy","active","surprise"]},
+  {id:"sup",t:"Leiden Supping",cat:"Outdoors",where:"City canals",d:"Paddle-board through the city. Better on a dry, windless day.",url:"https://leidensupping.nl/",c:2,dry:1,calm:1,months:[3,4,5,6,7,8,9],v:["active","surprise"]},
+  {id:"dune",t:"Dune & Sea bike route",cat:"Outdoors",where:"Leiden – Wassenaar – Katwijk",town:"Wassenaar & Katwijk",d:"About 33 km through dunes to the coast and back. The sea is only 8 km away.",url:"https://trainerday.com/nl/events/netherlands/leiden",dry:1,long:1,v:["active"]},
+  {id:"heem",t:"Heempark",cat:"Outdoors",where:"Leiden",d:"Winding paths through miniature Dutch landscapes. Nice in autumn colours.",url:"https://www.dagjeweg.nl/tip/12257/Heempark-Leiden",v:["cosy","active"]},
+  {id:"matilo",t:"Archeologiepark Matilo",cat:"Outdoors",where:"Leiden-Roomburg",d:"Remains of the Roman fort, laid out as a park.",url:"https://www.dagjeweg.nl/tip/12929/Park-Matilo",v:["cultural","active"]},
+  {id:"rembrandt",t:"Young Rembrandt Studio",cat:"Culture",where:"City centre",d:"7-minute 3D video experience about young Rembrandt. Free.",url:VL+"2684463483/bezoek-gratis-de-young-rembrandt-studio",c:0,short:1,v:["cultural"]},
+];
+
+/* Food, drink and stroll stops that glue a date together. Not shown in the agenda.
+   part: when it fits; kind: food | drink | stroll; days: only on these weekdays. */
+const STOPS = [
+  {id:"coffee",t:"Coffee and apple pie in the Pieterskwartier",d:"The quiet streets around the Pieterskerk have a few good cafés.",c:1,io:"in",part:["day"],kind:"food",v:["cosy","cultural"]},
+  {id:"choc",t:"Hot chocolate in a café in the centre",d:"Warm up with whipped cream on top.",c:1,io:"in",part:["day"],kind:"food",v:["cosy"],cold:1},
+  {id:"lunch",t:"Lunch on the Breestraat",d:"Plenty of choice on Leiden's main street.",before:1,c:2,io:"in",part:["day"],kind:"food",v:["cultural","surprise"]},
+  {id:"market",t:"Saturday market on the Nieuwe Rijn",d:"Herring, stroopwafels or cheese from the stalls along the water.",before:1,c:1,io:"out",part:["day"],kind:"food",days:[3,6],v:["active","surprise","cosy"]},
+  {id:"picnic",t:"Picnic in the Singelpark",d:"Bring bread, cheese and a thermos.",not:"singel",c:0,io:"out",part:["day"],kind:"food",v:["cosy","active"],dry:1},
+  {id:"hofjes",t:"Hofjes walk",d:"Peek into the quiet almshouse courtyards in the centre. People live there, so keep your voices down.",c:0,io:"out",part:["day"],kind:"stroll",v:["cosy","cultural"]},
+  {id:"tea",t:"Tea and something sweet at home",d:"Pick up pastries on the way back.",c:0,io:"in",part:["day"],kind:"food",v:["cosy"]},
+  {id:"din2",t:"Dinner at a canal-side restaurant",d:"Book ahead on Fridays and Saturdays.",c:2,io:"in",part:["eve"],kind:"food",v:["cosy","cultural","surprise"]},
+  {id:"din3",t:"Dinner somewhere special in the centre",d:"Go for a tasting menu and make an evening of it. Book ahead.",c:3,io:"in",part:["eve"],kind:"food",v:["cosy","cultural","surprise"]},
+  {id:"din1",t:"Pizza or ramen in town",d:"Quick, cheap and filling before the main event.",c:1,io:"in",part:["eve"],kind:"food",v:["active","surprise"]},
+  {id:"cook",t:"Cook dinner together at home",d:"Pick a recipe neither of you has made before.",c:0,io:"in",part:["eve"],kind:"food",v:["cosy","surprise"]},
+  {id:"terrace",t:"Drinks on a terrace by the Nieuwe Rijn",d:"Grab a spot on one of the floating terraces.",c:1,io:"out",part:["eve"],kind:"drink",v:["active","surprise"],dry:1},
+  {id:"bruin",t:"Nightcap in a brown café",d:"A proper Leiden bruin café with candles and old wood.",c:1,io:"in",part:["eve"],kind:"drink",v:["cosy","cultural"]},
+  {id:"lights",t:"Evening walk along the lit canals",d:"Rapenburg and the Oude Rijn are at their best after dark.",c:0,io:"out",part:["eve"],kind:"stroll",v:["cosy","active"]},
+  {id:"beachsun",t:"Sunset on the beach at Katwijk",d:"About 30 minutes by bike or bus. Bring a jumper.",c:0,io:"out",part:["day"],kind:"stroll",town:"Katwijk",v:["active","surprise","cosy"],dry:1,late:1},
+];
+
+const CATDEF = {
+  Film:{c:1,io:"in",slot:"any",v:["cosy","cultural"]},
+  Music:{c:2,io:"in",slot:"eve",v:["cosy","cultural"]},
+  Comedy:{c:1,io:"in",slot:"eve",v:["cosy","surprise"]},
+  Talks:{c:1,io:"in",slot:"eve",v:["cultural"]},
+  Theatre:{c:2,io:"in",slot:"eve",v:["cultural"]},
+  Culture:{c:1,io:"in",slot:"day",v:["cultural"]},
+  Exhibition:{c:2,io:"in",slot:"day",v:["cultural","cosy"]},
+  Outdoors:{c:0,io:"out",slot:"day",v:["active"]},
+};
+const CATS = ["Film","Music","Comedy","Talks","Theatre","Culture","Exhibition","Outdoors"];
+E.forEach(x=>{ const D=CATDEF[x.cat]; for (const k of ["c","io","slot","v"]) if (x[k]===undefined) x[k]=D[k]; if (!x.town) x.town="Leiden"; if (x.s && !x.e && x.weekly===undefined) x.e=x.s; });
+
+/* ---------- dates ---------- */
+const DAY = 864e5;
+const DOW = ["ZO","MA","DI","WO","DO","VR","ZA"], MON=["jan","feb","mrt","apr","mei","jun","jul","aug","sep","okt","nov","dec"];
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const pd = s => { const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); };
+const iso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const add = (d,n) => { const r=new Date(d); r.setDate(r.getDate()+n); return r; };
+const today = new Date(); today.setHours(0,0,0,0);
+const TODAY = iso(today);
+const daysBetween = (a,b) => Math.round((pd(b)-pd(a))/DAY);
+const nice = s => { const d=pd(s); return `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}`; };
+const shortNice = s => { const d=pd(s); return `${DAYS[d.getDay()].slice(0,3)} ${d.getDate()} ${MONTHS[d.getMonth()].slice(0,3)}`; };
+
+// Time windows relative to today, so the page stays right after it's uploaded.
+const dow = today.getDay();
+let wkStart, wkEnd;
+if (dow===6 || dow===0 || dow===5) { wkStart = today; wkEnd = add(today, (7-dow)%7); }
+else { wkStart = add(today, 6-dow); wkEnd = add(wkStart, 1); }
+let wnStart = (dow>=1 && dow<=4) ? today : add(today, ((8-dow)%7)||7);
+const wnEnd = add(wnStart, 4-wnStart.getDay());
+const W = {
+  weekend:[iso(wkStart), iso(wkEnd)],
+  next:[iso(wnStart), iso(wnEnd)],
+  soon:[iso(add(wkEnd > wnEnd ? wkEnd : wnEnd, 1)), iso(add(today, 60))],
+};
+
+const isEvergreen = x => !x.s && !x.e;
+const isExpo = x => x.cat==="Exhibition";
+function occurs(x, day){ // does event x happen on YYYY-MM-DD day?
+  if (isEvergreen(x)) return true;
+  if (x.weekly!==undefined) return day>=x.s && pd(day).getDay()===x.weekly;
+  return (!x.s || x.s<=day) && (!x.e || day<=x.e);
+}
+function datesIn(x, [a,b]){ const out=[]; for (let d=pd(a); iso(d)<=b; d=add(d,1)) if (occurs(x, iso(d))) out.push(iso(d)); return out; }
+const ended = x => x.e && x.e < TODAY && x.weekly===undefined;
+
+/* ---------- storage ---------- */
+const load = (k,f) => { try { const v=JSON.parse(localStorage.getItem(k)); return v ?? f; } catch(_) { return f; } };
+const store = (k,v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch(_){} };
+let saved = new Set(load("uil-saved", []));
+let ideas = load("uil-ideas", []); // saved/done date ideas
+const persist = () => { store("uil-saved",[...saved]); store("uil-ideas",ideas); };
+
+/* ---------- agenda ---------- */
+const TABS = [
+  {k:"weekend",l:"This weekend"},
+  {k:"next",l:"Weeknights"},
+  {k:"soon",l:"Coming up"},
+  {k:"expo",l:"Exhibitions"},
+  {k:"always",l:"Always good"},
+  {k:"saved",l:"★ Saved"},
+  {k:"plan",l:"♥ Plan a date"},
+];
+function introFor(k){
+  const r = (a,b) => a===b ? nice(a) : `${nice(a)} to ${nice(b)}`;
+  return {
+    weekend: r(...W.weekend) + ". " + (occurs(E[0], W.weekend[0]) ? "LIFF is the big one this week." : ""),
+    next: r(...W.next) + ". Good for a midweek concert or comedy night after work.",
+    soon: "The next two months, in Leiden and nearby.",
+    expo: "Sorted by closing date. Red tags close within three weeks.",
+    always: "No date needed. For when nothing on the agenda clicks.",
+    saved: "Your starred picks and date ideas, saved in this browser.",
+    plan: "Pick a day and a mood. You get three plans built from what's on that day, checked against the forecast.",
+  }[k];
+}
+
+let tab = "weekend", cat = "All", query = "";
+try { const h = location.hash.slice(1); if (TABS.some(t=>t.k===h)) tab = h; } catch(_){}
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fold = s => String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+
+function itemsFor(k){
+  const live = E.filter(x=>!ended(x));
+  let list;
+  if (k==="saved") list = live.filter(x=>saved.has(x.id));
+  else if (k==="expo") list = live.filter(isExpo).sort((a,b)=>a.e.localeCompare(b.e));
+  else if (k==="always") list = live.filter(isEvergreen);
+  else if (k==="soon") list = live.filter(x=>!isExpo(x) && !isEvergreen(x) && x.weekly===undefined && datesIn(x,W.soon).length && !datesIn(x,W.weekend).length && !datesIn(x,W.next).length)
+                        .sort((a,b)=>datesIn(a,W.soon)[0].localeCompare(datesIn(b,W.soon)[0]));
+  else if (W[k]) list = live.filter(x=>!isExpo(x) && !isEvergreen(x) && datesIn(x,W[k]).length);
+  else list = [];
+  return list;
+}
+
+function searchItems(q){
+  const f = fold(q);
+  return E.filter(x=>!ended(x) && fold([x.t,x.d,x.where,x.town,x.cat].join(" ")).includes(f))
+          .sort((a,b)=>(isEvergreen(a)?"9":(a.s||a.e)).localeCompare(isEvergreen(b)?"9":(b.s||b.e)));
+}
+
+function renderTabs(){
+  $("tabs").innerHTML = TABS.map(t=>{
+    const n = t.k==="plan" ? "" : t.k==="saved" ? itemsFor("saved").length + ideas.length : itemsFor(t.k).length;
+    const sel = !query && t.k===tab;
+    return `<button class="tab${t.k==="plan"?" plan":""}" role="tab" type="button" aria-selected="${sel}" data-k="${t.k}">${t.l}${n!==""?`<span class="count">${n}</span>`:""}</button>`;
+  }).join("");
+  const sel = $("tabs").querySelector('[aria-selected="true"]');
+  if (sel) { const bar=$("tabs"); const l=sel.offsetLeft-bar.offsetLeft; if (l < bar.scrollLeft || l+sel.offsetWidth > bar.scrollLeft+bar.clientWidth) bar.scrollLeft = l - 16; }
+}
+
+function dateCell(x, on){
+  if (isEvergreen(x)) return `<div class="date">any<strong>day</strong></div>`;
+  if (on) { const d=pd(on); return `<div class="date">${DOW[d.getDay()]}<strong>${d.getDate()} ${MON[d.getMonth()]}</strong></div>`; }
+  if (!x.s || (isExpo(x) && x.s!==x.e)){ const e=pd(x.e); return `<div class="date">until<strong>${e.getDate()} ${MON[e.getMonth()]}</strong></div>`; }
+  const s = pd(x.s);
+  if (x.weekly!==undefined){ const n = datesIn(x,[TODAY,iso(add(today,7))])[0] || x.s; const d=pd(n); return `<div class="date">${DOW[d.getDay()]}<strong>${d.getDate()} ${MON[d.getMonth()]}</strong></div>`; }
+  if (x.s!==x.e){ const e=pd(x.e); return `<div class="date">${s.getDate()}${s.getMonth()!==e.getMonth()?" "+MON[s.getMonth()]:""}–${e.getDate()}<strong>${MON[e.getMonth()]}</strong></div>`; }
+  return `<div class="date">${DOW[s.getDay()]}<strong>${s.getDate()} ${MON[s.getMonth()]}</strong></div>`;
+}
+
+const CAL_SVG = `<svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2.5" y="3.5" width="13" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2.5 7.5h13M6 2v3M12 2v3M9 9.5v4M7 11.5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`;
+
+function row(x, on){
+  const flags = [];
+  if (isExpo(x)) { const dl = daysBetween(TODAY, x.e); if (dl<=21) flags.push(`<span class="flag ending">${dl===0?"Last day":dl+" days left"}</span>`); }
+  if (x.isNew) flags.push(`<span class="flag new">New</span>`);
+  if (x.hl) flags.push(`<span class="flag new">Highlight</span>`);
+  const when = [x.time, x.weekly!==undefined ? "every "+DAYS[x.weekly] : ""].filter(Boolean).join(" · ");
+  const isS = saved.has(x.id);
+  return `<li class="row">
+    ${dateCell(x, on)}
+    <div class="main">
+      <a class="title" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.t)}</a>
+      <div class="meta"><span class="tag">${esc(x.cat)}</span><span>${esc(x.where)}${x.town!=="Leiden" && !x.where.includes(x.town) ? ", "+esc(x.town) : ""}</span>${when?`<span>${esc(when)}</span>`:""}${flags.join("")}</div>
+      <p class="desc">${esc(x.d)}</p>
+    </div>
+    <div class="acts">
+      <button class="star" type="button" aria-pressed="${isS}" aria-label="${isS?"Remove from saved":"Save"}: ${esc(x.t)}" data-id="${x.id}">${isS?"★":"☆"}</button>
+      ${isEvergreen(x) ? "" : `<button class="ico" type="button" title="Add to calendar" aria-label="Add to calendar: ${esc(x.t)}" data-cal="${x.id}"${on?` data-on="${on}"`:""}>${CAL_SVG}</button>`}
+    </div>
+  </li>`;
+}
+
+function render(){
+  renderTabs();
+  const planning = tab==="plan" && !query;
+  $("cta").hidden = planning;
+  if (query) {
+    const list = searchItems(query);
+    $("intro").textContent = list.length ? `${list.length} result${list.length===1?"":"s"} for “${query}” across everything.` : "";
+    $("chips").innerHTML = "";
+    $("out").innerHTML = list.length ? `<ul class="list">${list.map(x=>row(x)).join("")}</ul>` : `<p class="empty">Nothing matches “${esc(query)}”. Try a venue, a town or a category.</p>`;
+    return;
+  }
+  $("intro").textContent = introFor(tab);
+  if (planning) { $("chips").innerHTML = ""; renderPlanner(); return; }
+
+  const base = itemsFor(tab);
+  const present = new Set(base.map(x=>x.cat));
+  const cats = ["All", ...CATS.filter(c=>present.has(c))];
+  if (!cats.includes(cat)) cat = "All";
+  $("chips").innerHTML = cats.length>2 ? cats.map(c=>`<button class="chip" type="button" aria-pressed="${c===cat}" data-c="${esc(c)}">${esc(c)}</button>`).join("") : "";
+  const list = base.filter(x=>cat==="All"||x.cat===cat);
+
+  let html = "";
+  if (tab==="saved") {
+    if (ideas.length) html += `<h2 class="day">Date ideas</h2>` + ideas.map((it,i)=>ideaCard(it,{saved:true,i})).join("");
+    if (list.length) html += (ideas.length?`<h2 class="day">Events and places</h2>`:"") + `<ul class="list">${list.map(x=>row(x)).join("")}</ul>`;
+    if (!html) html = `<p class="empty">Nothing saved yet. Tap the ☆ next to anything that looks good, or save an idea from Plan a date, and it shows up here.</p>`;
+    $("out").innerHTML = html; return;
+  }
+  if (!list.length){ $("out").innerHTML = `<p class="empty">${base.length ? "Nothing in this category." : "Nothing on the list for these dates yet."}</p>`; return; }
+
+  if (tab==="weekend" || tab==="next"){
+    const groups = {};
+    list.forEach(x=>{
+      const ds = datesIn(x, W[tab]);
+      if (x.weekly===undefined && x.s!==x.e) (groups.multi=groups.multi||[]).push([x]);
+      else ds.forEach(d=>(groups[d]=groups[d]||[]).push([x,d]));
+    });
+    const order = Object.keys(groups).sort((a,b)=> a==="multi"?-1 : b==="multi"?1 : a.localeCompare(b));
+    html = order.map(k=>{
+      const label = k==="multi" ? (tab==="weekend"?"Running all weekend":"Running all week") : (k===TODAY ? "Today · " : "") + nice(k);
+      return `<h2 class="day">${label}</h2><ul class="list">${groups[k].map(([x,d])=>row(x,d)).join("")}</ul>`;
+    }).join("");
+  } else html = `<ul class="list">${list.map(x=>row(x)).join("")}</ul>`;
+  $("out").innerHTML = html;
+}
+
+/* ---------- calendar (.ics) ---------- */
+const icsEsc = s => String(s).replace(/\\/g,"\\\\").replace(/\n/g,"\\n").replace(/,/g,"\\,").replace(/;/g,"\\;");
+const icsDate = s => s.replace(/-/g,"");
+const icsDT = (s,t) => icsDate(s)+"T"+t.replace(":","")+"00";
+function fold75(line){ const out=[]; while (line.length>74){ out.push(line.slice(0,74)); line=" "+line.slice(74); } out.push(line); return out.join("\r\n"); }
+function downloadIcs(name, ev){
+  const stamp = new Date().toISOString().replace(/[-:]/g,"").replace(/\.\d+/,"");
+  const lines = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Uit in Leiden//EN","CALSCALE:GREGORIAN","BEGIN:VEVENT",
+    `UID:${ev.uid}@uit-in-leiden`,`DTSTAMP:${stamp}`,
+    ...(ev.allDay ? [`DTSTART;VALUE=DATE:${icsDate(ev.start)}`,`DTEND;VALUE=DATE:${icsDate(iso(add(pd(ev.end||ev.start),1)))}`]
+                  : [`DTSTART:${icsDT(ev.start,ev.startTime)}`,`DTEND:${icsDT(ev.endDate||ev.start,ev.endTime)}`]),
+    `SUMMARY:${icsEsc(ev.title)}`, ev.location?`LOCATION:${icsEsc(ev.location)}`:"", ev.notes?`DESCRIPTION:${icsEsc(ev.notes)}`:"", ev.url?`URL:${ev.url}`:"",
+    "END:VEVENT","END:VCALENDAR"].filter(Boolean).map(fold75);
+  const blob = new Blob([lines.join("\r\n")+"\r\n"], {type:"text/calendar;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = name.replace(/[^\w-]+/g,"-").replace(/-+/g,"-").toLowerCase()+".ics";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
+  toast("Calendar file downloaded. Open it to add the event.");
+}
+const firstTime = t => (t||"").match(/\d{1,2}:\d{2}/)?.[0];
+const plusMin = (t, m) => { const [h,mm]=t.split(":").map(Number); const x=h*60+mm+m; return `${String(Math.floor(x/60)%24).padStart(2,"0")}:${String(x%60).padStart(2,"0")}`; };
+
+function eventToCal(x, on){
+  const loc = x.where + (x.where.includes(x.town) ? "" : ", "+x.town);
+  const t = firstTime(x.time);
+  if (isExpo(x)) {
+    const day = on || x.e;
+    return {uid:x.id+"-"+day, title:`${on?"":"Last day: "}${x.t}`, start:day, allDay:true, location:loc, notes:x.d+"\n"+x.url, url:x.url};
+  }
+  const day = on || (x.weekly!==undefined ? (datesIn(x,[TODAY,iso(add(today,7))])[0]||x.s) : x.s);
+  if (t) return {uid:x.id+"-"+day, title:x.t, start:day, startTime:t, endTime:plusMin(t,120), endDate: plusMin(t,120) < t ? iso(add(pd(day),1)) : day, location:loc, notes:x.d+"\n"+x.url, url:x.url};
+  if (!on && x.s!==x.e) return {uid:x.id, title:x.t, start:x.s, end:x.e, allDay:true, location:loc, notes:x.d+"\n"+x.url, url:x.url};
+  return {uid:x.id+"-"+day, title:x.t, start:day, allDay:true, location:loc, notes:"Check the event page for the time.\n"+x.d+"\n"+x.url, url:x.url};
+}
+
+/* ---------- weather (Open-Meteo, no key) ---------- */
+let WX = null, wxState = "idle";
+const WXC = c => c===0?["☀️","clear"]:c<=2?["⛅","partly cloudy"]:c===3?["☁️","cloudy"]:c<=48?["🌫️","foggy"]:c<=57?["🌦️","drizzle"]:c<=67?["🌧️","rain"]:c<=77?["🌨️","snow"]:c<=82?["🌦️","showers"]:["⛈️","thunderstorms"];
+async function loadWeather(){
+  if (wxState!=="idle") return;
+  wxState = "loading";
+  try {
+    const u = "https://api.open-meteo.com/v1/forecast?latitude=52.16&longitude=4.49&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_speed_10m_max&timezone=Europe%2FAmsterdam&forecast_days=16";
+    const r = await fetch(u); if (!r.ok) throw 0;
+    const j = await r.json(); WX = {};
+    j.daily.time.forEach((d,i)=>{ WX[d] = {code:j.daily.weather_code[i], tmax:j.daily.temperature_2m_max[i], tmin:j.daily.temperature_2m_min[i], psum:j.daily.precipitation_sum[i], pp:j.daily.precipitation_probability_max[i] ?? 0, wind:j.daily.wind_speed_10m_max[i]}; });
+    wxState = "ok";
+  } catch(_) { wxState = "error"; }
+  if (tab==="plan" && !query) { suggestAll(); render(); }
+}
+function wxFor(day){
+  const w = WX && WX[day];
+  if (!w) return {known:false};
+  const wet = w.pp>=55 || w.psum>=3 || (w.code>=51 && w.code<=99 && w.pp>=50);
+  const calm = w.wind < 22;
+  return {...w, known:true, wet, dryCalm: !wet && w.pp<35 && calm, calm, cold: w.tmax<11};
+}
+
+/* ---------- date ideas ---------- */
+const nextSat = (() => { const d = dow===6 ? today : add(today, 6-dow); return iso(d); })();
+let P = load("uil-plan", null);
+if (!P || !P.date || P.date < TODAY) P = {date:nextSat, part:"eve", vibe:"surprise", budget:2, indoor:false};
+let current = []; // three ideas on screen
+let shuffledAway = new Set();
+
+const usedRecently = () => { const s=new Set(); ideas.forEach(it=>it.stops.forEach(st=>{ if (st.anchor) s.add(st.id); })); return s; };
+const rnd = n => Math.random()*n;
+const slotOf = x => { const t=firstTime(x.time); if (t) return +t.slice(0,2) >= 17 ? "eve" : "day"; return x.slot; };
+
+function anchorPool(day, part, w){
+  const used = usedRecently();
+  const pool = [];
+  E.forEach(x=>{
+    if (x.noIdea || !occurs(x, day) || ended(x)) return;
+    const sl = slotOf(x);
+    if (!(sl==="any" || sl===part)) return;
+    if (x.c > P.budget) return;
+    if (x.io==="out" && P.indoor) return;
+    if (w.known && x.dry && w.wet) return;
+    if (w.known && x.calm && !w.dryCalm) return;
+    if (x.long && part!=="day") return;
+    if (x.months && !x.months.includes(pd(day).getMonth())) return;
+    let s = rnd(2);
+    if (isEvergreen(x)) s += 1; else if (isExpo(x)) s += 2 + (daysBetween(day, x.e) <= 21 ? 1 : 0); else s += 3.5;
+    if (x.hl) s += 1;
+    if (P.vibe==="surprise") s += rnd(3); else if (x.v.includes(P.vibe)) s += 3;
+    if (w.known){ if (x.io==="out" && w.wet) s -= 5; if (x.io==="out" && w.dryCalm) s += 2.5; if (x.io==="in" && w.wet) s += 1; if (x.io==="out" && w.cold) s -= 1; }
+    if (used.has(x.id)) s -= 4;
+    if (shuffledAway.has(x.id)) s -= 6;
+    pool.push({x, s});
+  });
+  // A lit-canal walk can anchor an evening when nothing else is on.
+  if (part==="eve" && !P.indoor && !(w.known && w.wet)) pool.push({x:{...STOPS.find(s=>s.id==="lights"), cat:"Outdoors", town:"Leiden", where:"City centre"}, s:rnd(1.5)});
+  pool.sort((a,b)=>b.s-a.s);
+  if (w.known && w.wet && pool.filter(p=>p.x.io==="in").length >= 3) return pool.filter(p=>p.x.io==="in");
+  return pool;
+}
+
+function pickStop(part, kinds, w, avoid, ok = () => true){
+  const day = pd(P.date).getDay();
+  const pool = STOPS.filter(s=>ok(s) && s.part.includes(part) && kinds.includes(s.kind) && s.c<=P.budget && !avoid.has(s.id)
+    && !(P.indoor && s.io==="out") && !(s.days && !s.days.includes(day)) && !(w.known && s.dry && w.wet) && !(s.io==="out" && w.known && w.wet));
+  if (!pool.length) return null;
+  const sc = s => rnd(2) + (P.vibe!=="surprise" && s.v.includes(P.vibe) ? 2 : 0) + (s.cold && w.known && w.cold ? 2 : 0)
+    + (s.io==="out" && w.dryCalm ? 1 : 0) + (P.budget>=3 && s.c===3 ? 2 : 0) + (P.budget===0 && s.c===0 ? 1 : 0) - Math.abs(Math.min(P.budget,2)-s.c)*0.5;
+  return pool.map(s=>({s, v:sc(s)})).sort((a,b)=>b.v-a.v)[0].s;
+}
+
+function stopFrom(x, time, anchor){
+  const isStop = !!x.kind;
+  let note = x.d;
+  if (isExpo(x)) { const dl=daysBetween(P.date,x.e); note = (dl<=21 ? `Closes ${shortNice(x.e)}. ` : "") + x.d; }
+  return {id:x.id, t:x.t, url:x.url||"", where:x.where||"", town:x.town||"Leiden", note, time, c:x.c, io:x.io, anchor:!!anchor, kind:isStop?x.kind:"event", dur: x.long?240 : x.short?45 : isExpo(x)?90 : isStop?(x.kind==="drink"?75:90) : 120};
+}
+
+function buildIdea(anchors, w, avoid){
+  const part = P.part;
+  const stops = [];
+  if (part==="day" || part==="whole") {
+    const a = anchors.day; if (!a) return null;
+    const t = firstTime(a.time) || (a.long ? "11:00" : "13:30");
+    stops.push(stopFrom(a, t, true));
+    const late = !a.long && !(w.known && w.wet) && !P.indoor && Math.random()<0.3 ? STOPS.find(s=>s.id==="beachsun" && s.c<=P.budget && !avoid.has(s.id)) : null;
+    const sunset = SUNSET[pd(P.date).getMonth()], beachAt = plusMin(sunset, -40);
+    if (part==="day") {
+      // Lunch and the market go before the main stop; everything else after it.
+      const canBefore = t >= "13:00";
+      const f = pickStop("day", ["food"], w, avoid, s => (!s.before || canBefore) && s.not!==a.id);
+      if (f) { avoid.add(f.id); stops.push(stopFrom(f, f.before ? plusMin(t, -100) : plusMin(t, stops[0].dur+20))); }
+      const lastStop = [...stops].sort((x,y)=>x.time.localeCompare(y.time)).at(-1);
+      if (late && stops.length<3 && beachAt > plusMin(lastStop.time, lastStop.dur+30)) { avoid.add(late.id); stops.push(stopFrom(late, beachAt)); }
+      else if (a.short && stops.length<3) { const s=pickStop("day",["stroll"],w,avoid); if (s){ avoid.add(s.id); stops.push(stopFrom(s, plusMin(stops.at(-1).time, 90))); } }
+    }
+  }
+  if (part==="eve" || part==="whole") {
+    const e = anchors.eve;
+    const din = pickStop("eve", ["food"], w, avoid);
+    if (din) avoid.add(din.id);
+    if (e) {
+      const et = firstTime(e.time) || (e.kind==="stroll" ? "21:00" : "20:00");
+      const early = +et.slice(0,2) < 19;
+      if (din && !early) stops.push(stopFrom(din, plusMin(et, -120)));
+      stops.push(stopFrom(e, et, !e.kind));
+      if (din && early) stops.push(stopFrom(din, plusMin(et, 90)));
+      if (part==="eve" && stops.length<3 && e.kind!=="stroll") {
+        const d = pickStop("eve", ["drink","stroll"], w, avoid);
+        if (d) { avoid.add(d.id); stops.push(stopFrom(d, plusMin(stops.at(-1).time, stops.at(-1).dur+15))); }
+      }
+    } else if (din) stops.push(stopFrom(din, "18:30"));
+  }
+  if (part==="whole" && stops.length<3) { const f = pickStop("day",["food"],w,avoid, s=>!s.before && s.not!==stops[0].id); if (f){ avoid.add(f.id); stops.splice(1,0,stopFrom(f, plusMin(stops[0].time, stops[0].dur+20))); } }
+  stops.sort((a,b)=>a.time.localeCompare(b.time));
+  if (stops.length < 2) return null;
+  return finishIdea(stops, w);
+}
+
+function finishIdea(stops, w){
+  const towns = [...new Set(stops.map(s=>s.town))];
+  const cost = Math.max(...stops.map(s=>s.c));
+  const out = stops.filter(s=>s.io==="out");
+  let why;
+  if (!w.known) why = wxState==="error" ? "Couldn't load the forecast, so check the weather before you go." : `No forecast yet for ${shortNice(P.date)} (it reaches about two weeks ahead).` + (out.length ? ` ${out[0].t} is outdoors, so have an indoor backup.` : " Everything here is indoors anyway.");
+  else {
+    const [, desc] = WXC(w.code);
+    const base = `${Math.round(w.tmax)}° and ${desc}, ${w.pp}% chance of rain`;
+    if (w.wet && out.length) why = `${base}. ${out[0].t} is outdoors, so bring rain jackets or swap it for a museum.`;
+    else if (w.wet) why = `${base}. Rain is likely, so this plan stays indoors.`;
+    else if (w.dryCalm && out.length) why = `${base}, light wind. Good weather for ${out[0].t}.`;
+    else if (out.length) why = `${base}. Should stay dry enough for the outdoor part, but bring a jacket.`;
+    else why = `${base}. All indoors, so the weather doesn't matter.`;
+    if (w.cold && stops.some(s=>s.id==="choc")) why += " Cold enough to earn that hot chocolate.";
+  }
+  const title = stops.map(s=>s.t.length>34 ? s.t.split(/[:–(]/)[0].trim() : s.t).join(" → ");
+  return {id: P.date+"|"+stops.map(s=>s.id).join("+"), date:P.date, part:P.part, title, stops, towns, cost, why, created:TODAY};
+}
+
+function suggestAll(){
+  const w = wxFor(P.date);
+  const dayPool = (P.part==="eve") ? [] : anchorPool(P.date, "day", w);
+  const evePool = (P.part==="day") ? [] : anchorPool(P.date, "eve", w);
+  const usedA = new Set(), avoid = new Set(), out = [];
+  const take = pool => { const c = pool.filter(p=>!usedA.has(p.x.id)); if (!c.length) return null; const pick = c[Math.min(c.length-1, Math.floor(rnd(Math.min(2,c.length))))].x; usedA.add(pick.id); return pick; };
+  for (let i=0; i<3; i++){
+    // Let each idea reuse food stops from the others only when the pool runs dry.
+    const a = {day: P.part==="eve" ? null : take(dayPool), eve: P.part==="day" ? null : take(evePool)};
+    if (!a.day && !a.eve) break;
+    const idea = buildIdea(a, w, avoid) || buildIdea(a, w, new Set());
+    if (idea) out.push(idea);
+  }
+  current = out;
+}
+function shuffleOne(i){
+  current[i]?.stops.forEach(s=>{ if (s.anchor || s.kind==="stroll") shuffledAway.add(s.id); });
+  const w = wxFor(P.date);
+  const otherA = new Set(), avoid = new Set();
+  current.forEach((it,j)=>{ if (j!==i) it.stops.forEach(s=>{ otherA.add(s.id); avoid.add(s.id); }); });
+  const pickFrom = pool => { const c = pool.filter(p=>!otherA.has(p.x.id)); return c.length ? c[Math.floor(rnd(Math.min(3,c.length)))].x : null; };
+  const a = {day: P.part==="eve" ? null : pickFrom(anchorPool(P.date,"day",w))};
+  if (a.day) otherA.add(a.day.id);
+  a.eve = P.part==="day" ? null : pickFrom(anchorPool(P.date,"eve",w));
+  const idea = (a.day||a.eve) && (buildIdea(a, w, avoid) || buildIdea(a, w, new Set()));
+  if (idea) current[i] = idea; else toast("No other options for this day and budget.");
+}
+
+// Rough Leiden sunset per month (local time, DST included).
+const SUNSET = ["16:55","17:45","18:35","20:25","21:15","22:00","21:55","21:05","20:00","18:55","17:00","16:30"];
+const euro = c => c===0 ? "Free" : "€".repeat(c);
+const PARTS = [["day","Afternoon"],["eve","Evening"],["whole","Whole day"]];
+const VIBES = [["cosy","Cosy"],["active","Active"],["cultural","Cultural"],["surprise","Surprise me"]];
+const BUDGETS = [[0,"Free"],[1,"€"],[2,"€€"],[3,"€€€"]];
+const seg = (name, opts, val) => `<fieldset class="seg"><legend class="flabel">${name}</legend>${opts.map(([v,l])=>`<label><input type="radio" name="${name}" value="${v}" ${String(v)===String(val)?"checked":""}><span>${l}</span></label>`).join("")}</fieldset>`;
+
+function renderPlanner(){
+  const w = wxFor(P.date);
+  let wx;
+  if (w.known) { const [ic,desc]=WXC(w.code); wx = `<span class="wxi" aria-hidden="true">${ic}</span><span><b>${shortNice(P.date)}</b> · ${Math.round(w.tmax)}° / ${Math.round(w.tmin)}° · ${desc} · ${w.pp}% rain · wind ${Math.round(w.wind)} km/h</span>`; }
+  else wx = `<span class="wxi" aria-hidden="true">🗓️</span><span>${wxState==="loading"||wxState==="idle" ? "Loading the forecast…" : wxState==="error" ? "Couldn't load the forecast. Ideas are picked without the weather." : `No forecast yet for ${shortNice(P.date)}. It reaches about two weeks ahead.`}</span>`;
+  $("out").innerHTML = `
+    <form class="planner" id="planform" onsubmit="return false">
+      <div class="inrow field">
+        <div><label class="flabel" for="pdate">Day</label><input type="date" id="pdate" value="${P.date}" min="${TODAY}"></div>
+        <label class="toggle"><input type="checkbox" id="pindoor" ${P.indoor?"checked":""}> Indoor only</label>
+      </div>
+      <div class="field">${seg("Part of day", PARTS, P.part)}</div>
+      <div class="field">${seg("Vibe", VIBES, P.vibe)}</div>
+      <div class="field">${seg("Budget", BUDGETS, P.budget)}</div>
+    </form>
+    <div class="wx">${wx}</div>
+    <div id="ideas">${current.length ? current.map((it,i)=>ideaCard(it,{i})).join("") : `<p class="empty">Nothing fits those filters on ${nice(P.date)}. Try a bigger budget, another part of the day, or turn off Indoor only.</p>`}</div>
+    <div class="cta"><button class="btn" type="button" id="reroll">Three new ideas</button></div>`;
+}
+
+function ideaCard(it, {i, saved:inSaved}){
+  const rec = ideas.find(x=>x.id===it.id);
+  const isSaved = !!rec, isDone = rec?.status==="done";
+  const label = inSaved ? `${shortNice(it.date)} · ${PARTS.find(p=>p[0]===it.part)?.[1]||""}${isDone?" · Done ✓":""}` : `Idea ${i+1}`;
+  const k = inSaved ? `s${i}` : `c${i}`;
+  return `<article class="idea${isDone?" done":""}">
+    <p class="ideahd">${esc(label)}</p>
+    <h3 class="ideatitle">${esc(it.title)}</h3>
+    <div class="meta"><span class="tag">${esc(it.towns.join(" · "))}</span><span>${euro(it.cost)}${it.cost?" per person, roughly":""}</span></div>
+    <ol class="stops">${it.stops.map(s=>`<li><span class="tm">${s.time}</span><div><div class="st">${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.t)}</a>`:esc(s.t)}</div><div class="nt">${esc(s.where && s.kind==="event" ? s.where+". " : "")}${esc(s.note)}</div></div></li>`).join("")}</ol>
+    <p class="why"><b>Weather:</b> ${esc(it.why)}</p>
+    <div class="ideabtns">
+      <button class="btn" type="button" data-act="save" data-k="${k}" aria-pressed="${isSaved}">${isSaved?"★ Saved":"☆ Save"}</button>
+      ${inSaved ? "" : `<button class="btn" type="button" data-act="shuffle" data-k="${k}">↻ Shuffle</button>`}
+      <button class="btn" type="button" data-act="cal" data-k="${k}">${CAL_SVG} Add to calendar</button>
+      <button class="btn" type="button" data-act="copy" data-k="${k}">Copy as message</button>
+      <button class="btn" type="button" data-act="done" data-k="${k}" aria-pressed="${isDone}">${isDone?"✓ Done":"Mark as done"}</button>
+    </div>
+  </article>`;
+}
+
+function messageFor(it){
+  const d = pd(it.date);
+  const when = it.date===TODAY ? "today" : it.date===iso(add(today,1)) ? "tomorrow" : `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+  const parts = it.stops.map((s,j)=> (j===0 ? "" : j===it.stops.length-1 ? " and then " : ", then ") + `${j && s.kind!=="event" ? s.t.charAt(0).toLowerCase()+s.t.slice(1) : s.t} (${s.time})`).join("");
+  const w = wxFor(it.date);
+  const wx = w.known ? (w.wet ? " Looks rainy, so it's all indoors." : ` Forecast says ${Math.round(w.tmax)}° and ${WXC(w.code)[1]}.`) : "";
+  return `Date idea for ${when}: ${parts}.${wx} You in? ❤️`;
+}
+function ideaToCal(it){
+  const first = it.stops[0], last = it.stops.at(-1);
+  const end = plusMin(last.time, last.dur);
+  return {uid:it.id.replace(/[^\w]+/g,"-"), title:"Date: "+it.title, start:it.date, startTime:first.time, endTime:end, endDate: end < first.time ? iso(add(pd(it.date),1)) : it.date,
+    location: it.stops.find(s=>s.kind==="event")?.where || it.towns[0],
+    notes: it.stops.map(s=>`${s.time}  ${s.t}${s.where&&s.kind==="event"?" ("+s.where+")":""}${s.url?"\n       "+s.url:""}`).join("\n") + "\n\n" + it.why};
+}
+
+/* ---------- toast ---------- */
+let toastT;
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove("on"), 2600); }
+
+/* ---------- events ---------- */
+function go(k){ tab=k; cat="All"; query=""; $("q").value=""; try{ history.replaceState(null,"","#"+k); }catch(_){} if (k==="plan"){ loadWeather(); if (!current.length) suggestAll(); } render(); }
+$("tabs").addEventListener("click", e=>{ const b=e.target.closest(".tab"); if(b) go(b.dataset.k); });
+$("goplan").addEventListener("click", ()=>{ go("plan"); window.scrollTo({top:0,behavior:"smooth"}); });
+$("chips").addEventListener("click", e=>{ const b=e.target.closest(".chip"); if(!b) return; cat=b.dataset.c; render(); });
+let qT; $("q").addEventListener("input", e=>{ clearTimeout(qT); qT=setTimeout(()=>{ query=e.target.value.trim(); render(); }, 120); });
+
+$("out").addEventListener("click", async e=>{
+  const star=e.target.closest(".star");
+  if (star){ const id=star.dataset.id; saved.has(id)?saved.delete(id):saved.add(id); persist(); render(); return; }
+  const cal=e.target.closest("[data-cal]");
+  if (cal){ const x=E.find(y=>y.id===cal.dataset.cal); downloadIcs(x.t, eventToCal(x, cal.dataset.on)); return; }
+  if (e.target.id==="reroll"){ current.forEach(it=>it.stops.forEach(s=>{ if (s.anchor) shuffledAway.add(s.id); })); suggestAll(); render(); return; }
+  const b=e.target.closest("[data-act]"); if (!b) return;
+  const k=b.dataset.k, it = k[0]==="s" ? ideas[+k.slice(1)] : current[+k.slice(1)];
+  if (!it) return;
+  const idx = ideas.findIndex(x=>x.id===it.id);
+  switch (b.dataset.act){
+    case "save":
+      if (idx>=0) { ideas.splice(idx,1); toast("Removed from saved."); } else { ideas.unshift({...it, status:"saved"}); toast("Saved. Find it under ★ Saved."); }
+      persist(); render(); break;
+    case "done":
+      if (idx>=0 && ideas[idx].status==="done") ideas[idx].status="saved";
+      else if (idx>=0) ideas[idx].status="done";
+      else ideas.unshift({...it, status:"done"});
+      if (ideas[idx>=0?idx:0].status==="done") toast("Marked as done. It won't come up again soon.");
+      persist(); render(); break;
+    case "shuffle": shuffleOne(+k.slice(1)); render(); break;
+    case "cal": downloadIcs("date-"+it.date, ideaToCal(it)); break;
+    case "copy": {
+      const msg = messageFor(it);
+      try { await navigator.clipboard.writeText(msg); toast("Copied. Paste it into WhatsApp."); }
+      catch(_) { window.prompt("Copy this message:", msg); }
+      break;
+    }
+  }
+});
+$("out").addEventListener("change", e=>{
+  const f=e.target;
+  if (f.id==="pdate"){ if (!f.value) return; P.date = f.value < TODAY ? TODAY : f.value; }
+  else if (f.id==="pindoor") P.indoor = f.checked;
+  else if (f.name==="Part of day") P.part = f.value;
+  else if (f.name==="Vibe") P.vibe = f.value;
+  else if (f.name==="Budget") P.budget = +f.value;
+  else return;
+  store("uil-plan", P); shuffledAway = new Set(); suggestAll(); render();
+});
+
+if (tab==="plan") { loadWeather(); suggestAll(); }
+render();
+</script>
+</body>
+</html>
