@@ -12,7 +12,7 @@ document.getElementById("themecolor").content=document.documentElement.dataset.t
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
 <style>
-/* Layout: bento home over a slow-drifting gradient glow; frosted header with a sliding nav pill;
+/* Layout: bento home; frosted header with a sliding nav pill;
    swipeable rows of gradient-cover event cards; agenda views as card grids grouped by day. */
 @property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
 :root{
@@ -56,17 +56,6 @@ svg{display:block}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 :is(a,button,input,.seg-opt):focus-visible{outline:2px solid var(--g4);outline-offset:3px;border-radius:.75rem}
 
-/* ---- Ambient glow: soft colour fields drifting behind everything ---- */
-.glow{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
-.glow i{position:absolute;border-radius:50%;opacity:var(--glow-o);filter:blur(48px);will-change:transform}
-.glow .b1{width:62vmax;height:62vmax;left:-22vmax;top:-30vmax;background:radial-gradient(circle,var(--g1) 0,transparent 62%);animation:d1 26s ease-in-out infinite alternate}
-.glow .b2{width:54vmax;height:54vmax;right:-22vmax;top:-20vmax;background:radial-gradient(circle,var(--g4) 0,transparent 62%);animation:d2 32s ease-in-out infinite alternate}
-.glow .b3{width:70vmax;height:70vmax;left:5vmax;bottom:-46vmax;background:radial-gradient(circle,var(--g3) 0,transparent 62%);animation:d3 38s ease-in-out infinite alternate}
-.glow .b4{width:50vmax;height:50vmax;right:-16vmax;bottom:-30vmax;background:radial-gradient(circle,var(--g2) 0,transparent 62%);animation:d4 29s ease-in-out infinite alternate}
-@keyframes d1{0%{transform:translate(0,0) scale(1)}50%{transform:translate(14vmax,10vmax) scale(1.18)}100%{transform:translate(4vmax,22vmax) scale(.92)}}
-@keyframes d2{0%{transform:translate(0,0) scale(1.05)}50%{transform:translate(-16vmax,14vmax) scale(.9)}100%{transform:translate(-6vmax,4vmax) scale(1.2)}}
-@keyframes d3{0%{transform:translate(0,0) scale(1)}50%{transform:translate(18vmax,-12vmax) scale(1.12)}100%{transform:translate(-10vmax,-4vmax) scale(.95)}}
-@keyframes d4{0%{transform:translate(0,0) scale(.95)}50%{transform:translate(-12vmax,-16vmax) scale(1.15)}100%{transform:translate(6vmax,-6vmax) scale(1)}}
 
 /* ---- Header ---- */
 .top{position:sticky;top:0;z-index:30;padding:.75rem 0 .625rem}
@@ -382,17 +371,14 @@ footer a{color:inherit;text-underline-offset:2px}
 
 /* ---- Preferences ---- */
 @media (prefers-reduced-motion:reduce){
-  .glow i{animation:none!important}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
 @media (prefers-reduced-transparency:reduce){
   .tile,.planner,.idea,.wx,.empty,.nav,.search input,.pillbtn,.arrow,.top::before{background:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
   .t-hl{background:linear-gradient(140deg,var(--cc),color-mix(in srgb,var(--cc) 45%,#120818))}
-  .glow{opacity:.35}
 }
 @media (prefers-contrast:more){
   :root{--line:color-mix(in srgb,var(--fg) 30%,transparent);--line-strong:color-mix(in srgb,var(--fg) 45%,transparent);--glass-edge:var(--line-strong)}
-  .glow{display:none}
 }
 
 /* ---- Added: theme toggle, photos, detail sheet, shared list ---- */
@@ -465,8 +451,6 @@ body.locked{overflow:hidden}
 .tile,.planner,.idea,.wx,.empty,.banner,.pillbtn,.arrow,.search input,.themebtn,.catpill,.dbadge{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 .dbadge{background:var(--badge)}
 .catpill{background:rgba(0,0,0,.35)}
-.glow{contain:strict}
-.glow i{filter:none;opacity:calc(var(--glow-o) * .9)}
 .motion .grad{animation:none}
 .motion .t-plan::before{animation:none}
 .planglow{display:none}
@@ -529,7 +513,6 @@ body.locked{overflow:hidden}
   .cover .flags{right:.75rem}
 }
 html{background:var(--bg)}
-body{background:transparent}
 
 /* ---- Phones: no fixed bar at the top (so Safari lets the page show under the status bar,
    like Pathé), and the section menu floats at the bottom, within thumb reach ---- */
@@ -546,7 +529,6 @@ body{background:transparent}
 </style>
 </head>
 <body>
-<div class="glow" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
 <header class="top" id="bar">
   <div class="topin">
     <a class="brand" href="#home" data-go="home" aria-label="Uit in Leiden, home">
