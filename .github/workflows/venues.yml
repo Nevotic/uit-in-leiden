@@ -1,0 +1,40 @@
+# Once a month: refresh venue names (street address -> name) from Visit Leiden's location pages.
+# Takes ~12 minutes. The daily "Update and publish" run uses the new names the next morning.
+name: Refresh venue names
+
+on:
+  schedule:
+    - cron: "0 2 1 * *"   # 02:00 UTC on the 1st of every month, well before the daily update
+  workflow_dispatch:       # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write   # commit data/venues.json
+
+concurrency:
+  group: data-commits
+  cancel-in-progress: false
+
+jobs:
+  venues:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Refresh venue names
+        run: python update_venues.py
+
+      - name: Commit venue names
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/venues.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update venue names $(date -u +%Y-%m)"
+            git pull --rebase
+            git push
+          fi
