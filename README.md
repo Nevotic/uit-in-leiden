@@ -50,7 +50,7 @@ The script never overwrites these, except that it adds new entries to `descripti
   - `patch`: change something about a scraped event, keyed by its URL or id, e.g. `{"https://www.visitleiden.nl/nl/agenda/123/foo": {"cat": "Comedy", "hl": 1}}`.
   - `hide`: URLs or ids of events to leave out.
 - **`data/descriptions.json`**: English one-liners by event URL. Edit any text you don't like; your version wins.
-- **`data/venues.json`**: street address → venue name. Visit Leiden often only gives an address; the script learns names from events that have both, and you can add your own (`"Middelstegracht 123": "Café De WW"`) so the page shows a name instead of a street.
+- **`data/venues.json`**: street address → venue name. Visit Leiden often only gives an address. `python3 update_venues.py` (about 12 minutes; run it now and then) fills this from Visit Leiden's own venue pages, `update_events.py` also learns names from events that have both, and you can add your own (`"Middelstegracht 123": "…"`). Your entries are never overwritten.
 - `data/events.json` is generated (the full list, including the Dutch source text). If a source fails, the script falls back to its events from here.
 
 Categories: `Film`, `Music`, `Comedy`, `Talks`, `Theatre`, `Culture`, `Exhibition`, `Outdoors`.

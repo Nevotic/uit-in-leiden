@@ -29,7 +29,8 @@
    "cosy",
    "cultural",
    "surprise"
-  ]
+  ],
+  "img": "https://www.liff.nl/wp-content/uploads/2024/10/audience-photo.png"
  },
  {
   "id": "vl-512531265",
@@ -107,7 +108,7 @@
  {
   "id": "vl-1520841679",
   "t": "EpilepsieLoop Leiden – samen voor meer veiligheid en bewustwording",
-  "where": "Lammermarkt",
+  "where": "Parkeergarage Lammermarkt",
   "url": "https://www.visitleiden.nl/nl/agenda/1520841679/epilepsieloop-leiden-samen-voor-meer-veiligheid-en-bewustwording-1",
   "src": "Visit Leiden",
   "nl": "Epilepsie heeft impact op het hele leven, overdag en in de nacht. Met de EpilepsieLoop willen we laten zien dat we er samen voor staan. We lopen voor belangrijk onderzoek naar betere zorg, behandeling en veiligheid.",
@@ -119,7 +120,7 @@
   "time": "13:00",
   "cat": "Outdoors",
   "catSure": true,
-  "d": "An outdoor outing at Lammermarkt. Tickets from €15.",
+  "d": "An outdoor outing at Parkeergarage Lammermarkt. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -180,7 +181,7 @@
  {
   "id": "vl-637275380",
   "t": "Mete Erker Trio + 1",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/637275380/mete-erker-trio-1",
   "src": "Visit Leiden",
   "nl": "Een wonderlijke combinatie van de rauwe, extraverte muziek van jazzpioniers Albert Ayler en Charlie Haden, met hedendaags Noord-Europees impressionisme. Free Flow Music.",
@@ -192,7 +193,7 @@
   "time": "20:30",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Middelstegracht 123. Tickets from €17.",
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.",
   "auto": 1,
   "c": 2
  },
@@ -438,9 +439,9 @@
   "s": "2026-10-11",
   "e": "2026-10-11",
   "time": "14:00",
-  "cat": "Theatre",
+  "cat": "Music",
   "catSure": true,
-  "d": "Theatre, Driftstraat 49.",
+  "d": "Live music, Driftstraat 49.",
   "auto": 1
  },
  {
@@ -490,7 +491,7 @@
  {
   "id": "vl-3895362809",
   "t": "Storytelling Workshop - Beyond Words: Working With Storyboards (Engels)",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/3895362809/storytelling-workshop-beyond-words-working-with-storyboards",
   "src": "Visit Leiden",
   "nl": "Een workshop storytelling met Nia Mercken voor nieuwsgierige geesten, dagdromers en iedereen die zijn verbeelding wil verkennen – of je nu bruist van de ideeën of ervan overtuigd bent dat je geen enkel verhaal te vertellen hebt. De workshop is in het Engels.",
@@ -502,7 +503,7 @@
   "time": "18:30",
   "cat": "Culture",
   "catSure": false,
-  "d": "Workshop, Middelstegracht 36. Tickets from €30.",
+  "d": "Workshop at Theater de Generator. Tickets from €30.",
   "auto": 1,
   "c": 2
  },
@@ -527,7 +528,7 @@
  {
   "id": "vl-2262592759",
   "t": "Wereldmuziek in de X - Selawy & Hamboz - Bedoeïenenmuziek uit de Levant",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/2262592759/wereldmuziek-in-de-x-selawy-hamboz-bedoeienenmuziek-uit-de-levant",
   "src": "Visit Leiden",
   "nl": "De Bedoeïenen vormen een integraal onderdeel van de Jordaanse samenleving; een groot deel van de bevolking stamt van hen af. Hun belangrijkste nederzettingen bevinden zich in de Wadi Rum-woestijn, het gebied rond Petra en de Dana-vallei in het zuiden van het land.",
@@ -574,7 +575,7 @@
  {
   "id": "vl-1180232018",
   "t": "Zociëteit",
-  "where": "Langegracht 65",
+  "where": "COC de Kroon",
   "url": "https://www.visitleiden.nl/nl/agenda/1180232018/zocieteit",
   "src": "Visit Leiden",
   "nl": "De Zociëteit bijeenkomsten zijn gezellig, ontspannen en relaxed.",
@@ -590,7 +591,7 @@
   ],
   "cat": "Culture",
   "catSure": false,
-  "d": "Cultural event, Langegracht 65. On 3 dates.",
+  "d": "Cultural event at COC de Kroon. On 3 dates.",
   "auto": 1
  },
  {
@@ -656,7 +657,7 @@
  {
   "id": "vl-281382588",
   "t": "Miss Emily: Enige & eerste optreden in Nederland van Canadese Powerhouse!",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/281382588/miss-emily-enige-eerste-optreden-nl-van-canadese-powerhouse",
   "src": "Visit Leiden",
   "nl": "De Canadese Miss Emily (Emily Fennell) levert met haar nieuwe (zesde) album The Medicine een sterk en ontroerend album af.",
@@ -787,7 +788,7 @@
  {
   "id": "vl-48860647",
   "t": "Pitchnight Awesome Leiden",
-  "where": "Papegaaisbolwerk 20",
+  "where": "Uitjes Leiden",
   "url": "https://www.visitleiden.nl/nl/agenda/48860647/pitchnight-awesome-leiden",
   "src": "Visit Leiden",
   "nl": "Heb jij een awesome idee voor Leiden? Maak kans op €1.000 om het waar te maken!",
@@ -863,7 +864,7 @@
  {
   "id": "vl-2670310511",
   "t": "Dé Linkse Talkshow – Marthe van Bronkhorst, Savriël Dillingh en Bo Salomons",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/2670310511/de-linkse-talkshow-marthe-van-bronkhorst-savriel-dillingh-en-bo-salomons",
   "src": "Visit Leiden",
   "nl": "Dé Linkse Talkshow is een terugkerende avond in Theater De Generator waarin we de actualiteit wél serieus nemen. Geen gespeelde neutraliteit. Geen eindeloze meningen die nergens landen. Geen liberaal geneuzel.",
@@ -875,7 +876,7 @@
   "time": "19:30",
   "cat": "Theatre",
   "catSure": true,
-  "d": "Talk, Middelstegracht 36. Tickets from €7.50.",
+  "d": "Talk at Theater de Generator. Tickets from €7.50.",
   "auto": 1,
   "c": 1
  },
@@ -1002,7 +1003,7 @@
  {
   "id": "vl-1927372219",
   "t": "Nederlandse premiere : Ashley Campbell and her Fabulous Band",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/1927372219/nl-premiere-ashley-campbell-and-her-fabulous-band-ergens-tussen-kacey-musgraves-dolly-parton",
   "src": "Visit Leiden",
   "nl": "Als dochter van Glen Campbell zou je toch denken dat een bloeiende loopbaan in de muziek al bij voorbaat een zekerheid is.",
@@ -1014,7 +1015,7 @@
   "time": "20:30",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Middelstegracht 123. Tickets from €18.50.",
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €18.50.",
   "auto": 1,
   "c": 2
  },
@@ -1100,7 +1101,7 @@
  {
   "id": "vl-2918268724",
   "t": "Friend-speeddaten",
-  "where": "Breestraat 28",
+  "where": "TABLE & CHAIRS LEIDEN",
   "url": "https://www.visitleiden.nl/nl/agenda/2918268724/friend-speeddaten",
   "src": "Visit Leiden",
   "nl": "Op zoek naar nieuwe vrienden of gewoon een gezellige avond? Dan wil je dit niet missen.",
@@ -1112,7 +1113,7 @@
   "time": "19:00",
   "cat": "Culture",
   "catSure": false,
-  "d": "Cultural event, Breestraat 28. Tickets from €15.",
+  "d": "Cultural event at TABLE & CHAIRS LEIDEN. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -1174,7 +1175,7 @@
  {
   "id": "vl-3193199418",
   "t": "Synoniem Woordkunst - Open mic avond",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/3193199418/synoniem-woordkunst-open-mic-avond-2",
   "src": "Visit Leiden",
   "nl": "Synoniem Leiden nodigt jou uit je teksten te komen delen bij onze open mic! Van nog nooit iets voorgedragen voor publiek tot seasoned open mic ganger, iedereen is welkom.",
@@ -1189,7 +1190,7 @@
   ],
   "cat": "Comedy",
   "catSure": true,
-  "d": "Comedy, Middelstegracht 36. On 2 dates.",
+  "d": "Comedy at Theater de Generator. On 2 dates.",
   "auto": 1
  },
  {
@@ -1369,7 +1370,7 @@
  {
   "id": "vl-1718479148",
   "t": "REVIBE - 80’s 90’s 00’s party",
-  "where": "Langegracht 65",
+  "where": "COC de Kroon",
   "url": "https://www.visitleiden.nl/nl/agenda/1718479148/revibe-80-s-90-s-00-s-party",
   "src": "Visit Leiden",
   "nl": "REVIBE – Three Decades. One Legacy.",
@@ -1380,7 +1381,7 @@
   "time": "22:00",
   "cat": "Music",
   "catSure": true,
-  "d": "Party, Langegracht 65.",
+  "d": "Party at COC de Kroon.",
   "auto": 1
  },
  {
@@ -1505,7 +1506,7 @@
  {
   "id": "vl-3253328940",
   "t": "\"Gelaagd\"",
-  "where": "Middelstegracht 143",
+  "where": "Museum het Leids Wevershuis",
   "url": "https://www.visitleiden.nl/nl/agenda/3253328940/gelaagd",
   "src": "Visit Leiden",
   "nl": "In het Leids Wevershuis zie je de nieuwe tentoonstelling ‘Gelaagd’ van kunstenaarscollectief Prikkel-Draad.",
@@ -1514,7 +1515,7 @@
   "e": "2026-10-18",
   "cat": "Exhibition",
   "catSure": true,
-  "d": "An exhibition, Middelstegracht 143.",
+  "d": "An exhibition at Museum het Leids Wevershuis.",
   "auto": 1
  },
  {
@@ -1836,7 +1837,7 @@
  {
   "id": "vl-3978659580",
   "t": "Drag Bingo Dinnershow",
-  "where": "Oude Singel 212",
+  "where": "Boutique Hotel Huys van Leyden",
   "url": "https://www.visitleiden.nl/nl/agenda/3978659580/drag-bingo-dinnershow-2",
   "src": "Visit Leiden",
   "nl": "De 'Bingo Dinner Show' van Christine Carringon & Friends is hét event waar je naar toe wilt! Samen gezellig eten, bingo spelen, leuke prijzen winnen en ondertussen naar optredens kijken.",
@@ -1848,14 +1849,14 @@
   "time": "19:00",
   "cat": "Theatre",
   "catSure": true,
-  "d": "Quiz night, Oude Singel 212. Tickets from €57.",
+  "d": "Quiz night at Boutique Hotel Huys van Leyden. Tickets from €57.",
   "auto": 1,
   "c": 3
  },
  {
   "id": "vl-2033309580",
   "t": "Heilig textiel uit Mekka en Medina",
-  "where": "Boerhaavelaan 6",
+  "where": "Textile Research Centre",
   "url": "https://www.visitleiden.nl/nl/agenda/2033309580/heilig-textiel-uit-mekka-en-medina",
   "src": "Visit Leiden",
   "nl": "Deze tentoonstelling van textiel uit Saoedi-Arabië belicht hoe stoffen worden gebruikt op twee van de heiligste plaatsen in de islamitische wereld: de Kaäba (Mekka) en het graf van de profeet Mohammed (Medina).",
@@ -2122,7 +2123,7 @@
  {
   "id": "vl-2372846099",
   "t": "Swingo @ COC De Kroon",
-  "where": "Langegracht 65",
+  "where": "COC de Kroon",
   "url": "https://www.visitleiden.nl/nl/agenda/2372846099/swingo-coc-de-kroon",
   "src": "Visit Leiden",
   "nl": "STOP MET SCROLLEN... de SWINGO KOMT ERAAN",
@@ -2134,7 +2135,7 @@
   "time": "20:30",
   "cat": "Culture",
   "catSure": false,
-  "d": "Cultural event, Langegracht 65. Tickets from €17.50.",
+  "d": "Cultural event at COC de Kroon. Tickets from €17.50.",
   "auto": 1,
   "c": 2
  },
@@ -2296,7 +2297,7 @@
  {
   "id": "vl-4057685089",
   "t": "Wereldmuziek in de X - GOBLIN BAND - rauwe folk muziek uit Engeland",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/4057685089/wereldmuziek-in-de-x-goblin-band-rauwe-folk-muziek-uit-engeland",
   "src": "Visit Leiden",
   "nl": "Goblin Band is een vierkoppige traditionele folk band uit Londen.",
@@ -2308,7 +2309,7 @@
   "time": "15:00",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Middelstegracht 123. Tickets from €17.50.",
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.50.",
   "auto": 1,
   "c": 2
  },
@@ -2574,7 +2575,7 @@
  {
   "id": "vl-1974264295",
   "t": "Tell Me More Clubhouse – Storytelling Community Night (Engels)",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/1974264295/tell-me-more-clubhouse-storytelling-community-night-en-2",
   "src": "Visit Leiden",
   "nl": "Een perfecte bijeenkomst voor iedereen die van verhalen houdt en meer wil leren over de kunst van het vertellen – of je nu hoopt verhalen te delen op het podium of met vrienden, of simpelweg wilt genieten van het proces van het maken van verhalen. Maximaal 12 deelnemers.",
@@ -2590,7 +2591,7 @@
   ],
   "cat": "Theatre",
   "catSure": true,
-  "d": "Theatre, Middelstegracht 36. On 2 dates. Tickets from €3.50.",
+  "d": "Theatre at Theater de Generator. On 2 dates. Tickets from €3.50.",
   "auto": 1,
   "c": 1
  },
@@ -2694,7 +2695,7 @@
  {
   "id": "vl-299916454",
   "t": "BUTFF x CULTfilm: Thy Kingdom Come",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/299916454/butff-x-cultfilm-1",
   "src": "Visit Leiden",
   "nl": "BUTFF x CULTfilm is jouw maandelijkse filmavond voor underground- en trashfilms! Filmwetenschapper Dani van Duin uit Leiden selecteert speciaal voor De Generator zelden vertoonde pareltjes",
@@ -2706,7 +2707,7 @@
   "time": "19:30",
   "cat": "Culture",
   "catSure": false,
-  "d": "Film screening, Middelstegracht 36. Tickets from €7.50.",
+  "d": "Film screening at Theater de Generator. Tickets from €7.50.",
   "auto": 1,
   "c": 1
  },
@@ -2927,7 +2928,7 @@
  {
   "id": "vl-1651267732",
   "t": "Masterclass Borduren: Van Historie tot Paisley-Applicatie",
-  "where": "Boerhaavelaan 6",
+  "where": "Textile Research Centre",
   "url": "https://www.visitleiden.nl/nl/agenda/1651267732/masterclass-borduren-van-historie-tot-paisley-applicatie",
   "src": "Visit Leiden",
   "nl": "Ontdek de rijke wereld van het borduren tijdens deze exclusieve masterclass georganiseerd door de Leidse Mode en Textiel Salon.",
@@ -2939,7 +2940,7 @@
   "time": "09:45",
   "cat": "Culture",
   "catSure": false,
-  "d": "Workshop, Boerhaavelaan 6. Tickets from €200.",
+  "d": "Workshop at Textile Research Centre. Tickets from €200.",
   "auto": 1,
   "c": 3
  },
@@ -3075,7 +3076,7 @@
  {
   "id": "vl-2745596428",
   "t": "Halloween spooktocht door de Kooi",
-  "where": "Ambonstraat 28a",
+  "where": "Speeltuin de kooi",
   "url": "https://www.visitleiden.nl/nl/agenda/2745596428/halloween-spooktocht-door-de-kooi",
   "src": "Visit Leiden",
   "nl": "Op zaterdag 31 oktober is het Halloween en organiseert Speeltuin de Kooi, samen met Incluzio en Stichting Jeugd en Welzijn, een griezelige spooktocht door de Kooi.",
@@ -3087,7 +3088,7 @@
   "time": "18:00",
   "cat": "Culture",
   "catSure": false,
-  "d": "Cultural event, Ambonstraat 28a. Tickets from €1.",
+  "d": "Cultural event at Speeltuin de kooi. Tickets from €1.",
   "auto": 1,
   "c": 1
  },
@@ -3300,7 +3301,7 @@
  {
   "id": "vl-2748326066",
   "t": "NICO I. de voorstelling.",
-  "where": "Breestraat 31",
+  "where": "Trianon Theater",
   "url": "https://www.visitleiden.nl/nl/agenda/2748326066/nico-de-voorstelling-1",
   "src": "Visit Leiden",
   "nl": "Uniek overzicht van het Leidse leven in de jaren '50 en '60.",
@@ -3316,7 +3317,7 @@
   ],
   "cat": "Theatre",
   "catSure": false,
-  "d": "Theatre, Breestraat 31. On 2 dates. Tickets from €10.",
+  "d": "Theatre at Trianon Theater. On 2 dates. Tickets from €10.",
   "auto": 1,
   "c": 1
  },
@@ -3764,7 +3765,7 @@
  {
   "id": "vl-1392196706",
   "t": "Ton Koopman speelt weer met het Leids Barok Ensemble",
-  "where": "Lange Mare 48",
+  "where": "Marekerk",
   "url": "https://www.visitleiden.nl/nl/agenda/1392196706/ton-koopman-speelt-weer-met-het-leids-barok-ensemble",
   "src": "Visit Leiden",
   "nl": "In het 38e concertseizoen van het Leids Barok Ensemble staat een hernieuwde samenwerking met de wereldvermaarde klavecinist en dirigent Ton Koopman op het programma.",
@@ -3776,7 +3777,7 @@
   "time": "20:15",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Lange Mare 48. Tickets from €20.",
+  "d": "Live music at Marekerk. Tickets from €20.",
   "auto": 1,
   "c": 2
  },
@@ -3803,7 +3804,7 @@
  {
   "id": "vl-2434585988",
   "t": "Wereldmuziek in de X - CaboCubaJazz Viva Bana! - een ode aan Bana",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/2434585988/wereldmuziek-in-de-x-cabocubajazz-viva-bana-een-ode-aan-bana",
   "src": "Visit Leiden",
   "nl": "De naam zegt het al, CaboCubaJazz combineert het beste uit de Kaapverdiaanse en Cubaanse muziek en jazz. Met musici uit onder meer Kaapverdië, Cuba en Venezuela staat CaboCubaJazz garant voor een meeslepende live-ervaring die raakt én beweegt.",
@@ -3815,7 +3816,7 @@
   "time": "20:30",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Middelstegracht 123. Tickets from €17.50.",
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.50.",
   "auto": 1,
   "c": 2
  },
@@ -4130,7 +4131,7 @@
  {
   "id": "vl-660408960",
   "t": "Storytelling Workshop - Grow A Story From Scratch (Engels)",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/660408960/storytelling-workshop-grow-a-story-from-scratch",
   "src": "Visit Leiden",
   "nl": "Een perfecte bijeenkomst voor iedereen die van verhalen houdt en meer wil leren over de kunst van het vertellen.",
@@ -4142,7 +4143,7 @@
   "time": "18:30",
   "cat": "Culture",
   "catSure": false,
-  "d": "Workshop, Middelstegracht 36. Tickets from €30.",
+  "d": "Workshop at Theater de Generator. Tickets from €30.",
   "auto": 1,
   "c": 2
  },
@@ -4342,7 +4343,7 @@
  {
   "id": "vl-1243768596",
   "t": "Cirkels - jubileumconcert",
-  "where": "Lange Mare 48",
+  "where": "Marekerk",
   "url": "https://www.visitleiden.nl/nl/agenda/1243768596/cirkels-jubileumconcert",
   "src": "Visit Leiden",
   "nl": "Het Leids Projectkoor bestaat 35 jaar en zingt een groots opgezet programma met muziek uit vijf eeuwen, blazers en een wervelende danseres.",
@@ -4354,7 +4355,7 @@
   "time": "20:15",
   "cat": "Music",
   "catSure": true,
-  "d": "Concert, Lange Mare 48. Tickets from €22.50.",
+  "d": "Concert at Marekerk. Tickets from €22.50.",
   "auto": 1,
   "c": 2
  },
@@ -5352,7 +5353,7 @@
  {
   "id": "vl-3377687468",
   "t": "Workshop Performance Art - Black Sheep Don´t Lie by Larysa Bauge",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/3377687468/workshop-performance-art-black-sheep-don-t-lie-by-larysa-bauge",
   "src": "Visit Leiden",
   "nl": "Black Sheep Don’t Lie is een workshop performancekunst van Larysa Bauge over het omzetten van geleefde ervaringen in een performance.",
@@ -5364,7 +5365,7 @@
   "time": "11:00",
   "cat": "Culture",
   "catSure": false,
-  "d": "Workshop, Middelstegracht 36. Tickets from €15.",
+  "d": "Workshop at Theater de Generator. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -5716,7 +5717,7 @@
  {
   "id": "vl-3107561251",
   "t": "Ik val op foute mannen (try-out) - Lisa Kim An Janssen en Juri Zanger",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/3107561251/ik-val-op-foute-mannen-try-out-lisa-kim-an-janssen-en-juri-zanger",
   "src": "Visit Leiden",
   "nl": "‘Ik val op foute mannen’, een voorstelling over hoe mythes, denkfouten en de menselijke psychologie het voorkomen van femicides en patriarchaal geweld onmogelijk maken.",
@@ -5728,7 +5729,7 @@
   "time": "19:30",
   "cat": "Theatre",
   "catSure": false,
-  "d": "Concert, Middelstegracht 36. Tickets from €7.50.",
+  "d": "Concert at Theater de Generator. Tickets from €7.50.",
   "auto": 1,
   "c": 1
  },
@@ -5903,7 +5904,7 @@
  {
   "id": "vl-3460214709",
   "t": "Stop Femicide – Hoe doorbreken we het patriarchaat?",
-  "where": "Middelstegracht 36",
+  "where": "Theater de Generator",
   "url": "https://www.visitleiden.nl/nl/agenda/3460214709/stop-femicide-hoe-doorbreken-we-het-patriarchaat",
   "src": "Visit Leiden",
   "nl": "In het kader van Orange The World, de internationale campagne tegen geweld tegen vrouwen, presenteert Theater De Generator ieder jaar een programma over het stoppen van femicide in Nederland. Met deze keer o.a. de voorstelling ‘Ik val op foute mannen’ van Lisa Kim An Janssen en Juri Zanger.",
@@ -5915,14 +5916,14 @@
   "time": "19:30",
   "cat": "Theatre",
   "catSure": false,
-  "d": "Theatre, Middelstegracht 36. Tickets from €11.",
+  "d": "Theatre at Theater de Generator. Tickets from €11.",
   "auto": 1,
   "c": 1
  },
  {
   "id": "vl-3259245043",
   "t": "TROOST - Concert Leids Kamerkoor",
-  "where": "Lange Mare 48",
+  "where": "Marekerk",
   "url": "https://www.visitleiden.nl/nl/agenda/3259245043/troost-concert-leids-kamerkoor",
   "src": "Visit Leiden",
   "nl": "Het onbekende, prachtige Requiem van Pizzetti staat centraal in dit najaarsconcert ‘TROOST’ van het Leids Kamerkoor onder leiding van Dody Soetanto.",
@@ -5934,7 +5935,7 @@
   "time": "20:00",
   "cat": "Music",
   "catSure": true,
-  "d": "Concert, Lange Mare 48. Tickets from €25.",
+  "d": "Concert at Marekerk. Tickets from €25.",
   "auto": 1,
   "c": 2
  },
@@ -6897,7 +6898,7 @@
  {
   "id": "vl-2177142028",
   "t": "Weihnachtsoratorium William Byrd Vocaal Ensemble",
-  "where": "Lange Mare 48",
+  "where": "Marekerk",
   "url": "https://www.visitleiden.nl/nl/agenda/2177142028/weihnachtsoratorium-william-byrd-vocaal-ensemble",
   "src": "Visit Leiden",
   "nl": "Het William Byrd Vocaal Ensemble bestaat 45 jaar, en viert dit met de uitvoering van het Weihnachtsoratorium.",
@@ -6909,7 +6910,7 @@
   "time": "20:00",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Lange Mare 48. Tickets from €35.",
+  "d": "Live music at Marekerk. Tickets from €35.",
   "auto": 1,
   "c": 2
  },
@@ -7065,7 +7066,7 @@
  {
   "id": "vl-3860587794",
   "t": "Wereldmuziek in de X - Matthieu Acosta Quinteto",
-  "where": "Middelstegracht 123",
+  "where": "BplusC locatie Muziekhuis/Qbus",
   "url": "https://www.visitleiden.nl/nl/agenda/3860587794/wereldmuziek-in-de-x-matthieu-acosta-quinteto",
   "src": "Visit Leiden",
   "nl": "Twee jaar geleden gaf Matthieu Acosta met z’n kwartet al eens een spetterende voorstelling in De X, en nu is hij terug met een nieuw programma, deze keer met een quintet.",
@@ -7077,7 +7078,7 @@
   "time": "20:30",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music, Middelstegracht 123. Tickets from €17.50.",
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.50.",
   "auto": 1,
   "c": 2
  },
@@ -7276,7 +7277,7 @@
  {
   "id": "vl-2569711374",
   "t": "Comedy Night",
-  "where": "Burgsteeg 14",
+  "where": "Grand Café De Burcht",
   "url": "https://www.visitleiden.nl/nl/agenda/2569711374/comedy-night-3",
   "src": "Visit Leiden",
   "nl": "Op de laatste woensdag van elke maand is het feest bij onze Comedy Night, een avond vol humor en entertainment waar comedians schitteren op het podium!",
@@ -7288,7 +7289,7 @@
   "time": "20:15",
   "cat": "Comedy",
   "catSure": true,
-  "d": "Comedy, Burgsteeg 14. Tickets from €17.",
+  "d": "Comedy at Grand Café De Burcht. Tickets from €17.",
   "auto": 1,
   "c": 2
  },
@@ -7580,7 +7581,7 @@
  {
   "id": "vl-3234160578",
   "t": "Expositie Lijnen & lagen",
-  "where": "Rapenburg 21",
+  "where": "De Kunstkamer",
   "url": "https://www.visitleiden.nl/nl/agenda/3234160578/expositie-lijnen-lagen-1",
   "src": "Visit Leiden",
   "nl": "Tijdens de tentoonstelling Lijnen & Lagen ontdek je het werk van maar liefst 15 kunstenaars, ieder met een geheel eigen stijl, discipline en manier van werken.",
@@ -7589,7 +7590,7 @@
   "e": "2026-12-19",
   "cat": "Exhibition",
   "catSure": true,
-  "d": "An exhibition, Rapenburg 21.",
+  "d": "An exhibition at De Kunstkamer.",
   "auto": 1
  },
  {
@@ -8088,7 +8089,7 @@
  {
   "id": "vl-270677649",
   "t": "Paisley is Back",
-  "where": "Boerhaavelaan 6",
+  "where": "Textile Research Centre",
   "url": "https://www.visitleiden.nl/nl/agenda/270677649/paisley-is-back",
   "src": "Visit Leiden",
   "nl": "Het TRC presenteert een vernieuwde, en vergrote versie voor van een eerdere tentoonstelling, From Buteh to Paisley: The History of a Global Icon.",
@@ -8097,7 +8098,7 @@
   "e": "2027-01-29",
   "cat": "Exhibition",
   "catSure": true,
-  "d": "An exhibition, Boerhaavelaan 6.",
+  "d": "An exhibition at Textile Research Centre.",
   "auto": 1
  },
  {
