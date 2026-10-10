@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Uit in Leiden</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("uil-theme")||"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
 <meta name="description" content="What's on in and around Leiden, plus date ideas that check the weather.">
 <meta name="theme-color" content="#f7f4f6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#09080d" media="(prefers-color-scheme: dark)">
@@ -393,6 +394,70 @@ footer a{color:inherit;text-underline-offset:2px}
   :root{--line:color-mix(in srgb,var(--fg) 30%,transparent);--line-strong:color-mix(in srgb,var(--fg) 45%,transparent);--glass-edge:var(--line-strong)}
   .glow{display:none}
 }
+
+/* ---- Added: theme toggle, photos, detail sheet, shared list ---- */
+:root{--raised:#ffffff;--scrim:rgba(20,14,24,.4);--sheet-ease:cubic-bezier(.32,.72,0,1)}
+:root[data-theme="dark"]{--raised:#1b1922;--scrim:rgba(0,0,0,.58)}
+.themebtn{flex:none;width:2.5rem;height:2.5rem;border-radius:50%;display:grid;place-items:center;cursor:pointer;background:var(--glass-strong);border:.5px solid var(--glass-edge);box-shadow:var(--shadow);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);transition:transform .12s ease-out}
+.themebtn:active{transform:scale(.92)}
+.themebtn svg{width:1.15rem;height:1.15rem}
+/* Photo covers */
+.cover .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--settle)}
+.cover.has-img::before{z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,0) 38%,rgba(0,0,0,0) 55%,rgba(0,0,0,.5))}
+.cover.has-img .glyph{display:none}
+.cover .dbadge,.cover .flags{z-index:2}
+@media (hover:hover){.card:hover .cover .photo{transform:scale(1.05)}}
+.ctitle .open{all:unset;cursor:pointer;text-wrap:pretty}
+.ctitle .open::before{content:"";position:absolute;inset:0;z-index:1}
+.card:has(.open:focus-visible){outline:2px solid var(--g4);outline-offset:3px}
+.t-hl .hlphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.t-hl.has-img::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.05) 35%,rgba(0,0,0,.7))}
+.t-hl.has-img .hlglyph{display:none}
+.t-hl .lbl,.t-hl .hltitle,.t-hl .hlsub{position:relative;z-index:1}
+/* Shared-list banner */
+.banner{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin:.75rem 0 0;padding:.875rem 1.125rem;border-radius:1.25rem;background:var(--glass-strong);border:.5px solid var(--glass-edge);box-shadow:var(--shadow);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+.banner p{margin:0;flex:1 1 14rem}
+.btn.wa{background:#1fa855;color:#fff}
+@media (hover:hover){.btn.wa:hover{background:#178c46}}
+.vhead-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1rem}
+/* Detail sheet: bottom sheet on phones, side panel on wide screens */
+.scrim{position:fixed;inset:0;z-index:60;background:var(--scrim);opacity:0;transition:opacity .35s ease;pointer-events:none}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:61;max-height:92vh;max-height:92dvh;display:flex;flex-direction:column;background:var(--raised);border-radius:1.75rem 1.75rem 0 0;box-shadow:var(--shadow-hi);
+  transform:translateY(105%);transition:transform .5s var(--sheet-ease);will-change:transform}
+.sheet.on{transform:none}
+.sheet.dragging{transition:none}
+.grab{flex:none;display:grid;place-items:center;height:1.5rem;cursor:grab;touch-action:none}
+.grab::before{content:"";width:2.5rem;height:.3rem;border-radius:999px;background:var(--line-strong)}
+.sheet .close{position:absolute;top:.75rem;right:.75rem;z-index:2;width:2.375rem;height:2.375rem;border-radius:50%;display:grid;place-items:center;border:0;cursor:pointer;color:#fff;background:rgba(0,0,0,.4);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.sheet .close svg{width:1.1rem;height:1.1rem}
+.sbody{overflow-y:auto;overscroll-behavior:contain;padding:0 1.25rem calc(1.5rem + env(safe-area-inset-bottom))}
+.shero{position:relative;aspect-ratio:16/10;border-radius:1.125rem;overflow:hidden;background:linear-gradient(140deg,var(--cc),color-mix(in srgb,var(--cc) 45%,#140a1c))}
+.shero img{width:100%;height:100%;object-fit:cover;display:block}
+.shero .glyph{font-size:6rem;right:.5rem;bottom:-1rem}
+.scat{display:flex;flex-wrap:wrap;gap:.375rem;margin-top:1rem}
+.spill{display:inline-flex;align-items:center;font-weight:700;font-size:.75rem;padding:.2rem .6rem;border-radius:999px;color:var(--cc);background:color-mix(in srgb,var(--cc) 14%,transparent)}
+.spill.hot{--cc:var(--red)}
+.stitle{font-family:var(--display);font-weight:800;font-size:1.625rem;line-height:1.1;letter-spacing:-.03em;margin:.5rem 0 0;text-wrap:balance}
+.facts{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:.625rem}
+.facts li{display:grid;grid-template-columns:1.25rem 1fr;gap:.75rem;align-items:start;font-size:.9375rem}
+.facts svg{width:1.25rem;height:1.25rem;color:var(--muted);margin-top:.125rem}
+.facts small{display:block;color:var(--muted);font-size:.8125rem}
+.facts a{text-decoration-color:var(--line-strong);text-underline-offset:3px}
+.sdesc{margin:1rem 0 0;font-size:.9688rem;line-height:1.55}
+.snote{margin:1rem 0 0;font-size:.875rem;color:var(--muted)}
+.sacts{display:grid;gap:.5rem;margin-top:1.25rem}
+.sacts .btn-glow{justify-content:center}
+.rowbtns{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.rowbtns .btn{flex-direction:column;gap:.25rem;justify-content:center;min-height:3.75rem;border-radius:1.125rem;font-size:.75rem}
+.rowbtns .btn svg{width:1.15rem;height:1.15rem}
+@media (min-width:60rem){
+  .sheet{left:auto;top:.75rem;bottom:.75rem;right:.75rem;width:27rem;max-height:none;border-radius:1.75rem;transform:translateX(calc(100% + 1rem))}
+  .grab{display:none}
+  .sbody{padding-top:1.25rem}
+}
+body.locked{overflow:hidden}
 </style>
 </head>
 <body>
@@ -406,8 +471,9 @@ footer a{color:inherit;text-underline-offset:2px}
     <div class="search" role="search">
       <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
       <label class="vh" for="q">Search everything</label>
-      <input id="q" type="search" placeholder="Search events, venues…" autocomplete="off">
+      <input id="q" type="search" placeholder="Search…" autocomplete="off">
     </div>
+    <button class="themebtn" id="themebtn" type="button" aria-label="Switch theme"></button>
   </div>
   <nav class="nav" id="tabs" role="tablist" aria-label="Sections"><span class="navpill" id="navpill" aria-hidden="true"></span><div class="navbtns" id="navbtns"></div></nav>
 </header>
@@ -415,6 +481,12 @@ footer a{color:inherit;text-underline-offset:2px}
 <footer>
   <span id="updated"></span> Weather by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>. Times and tickets can change, so check the event page before you go. Stars and saved ideas are kept in this browser only.
 </footer>
+<div class="scrim" id="scrim"></div>
+<section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheettitle" hidden inert>
+  <div class="grab" id="grab" aria-hidden="true"></div>
+  <button class="close" id="sheetclose" type="button" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="sbody" id="sheetbody"></div>
+</section>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -974,6 +1046,7 @@ function introFor(k){
 }
 
 let tab = "home", cat = "All", query = "", lastSection = "weekend";
+let openId = null, openDay = null, pendingImport = [];
 try { const h = location.hash.slice(1); if (VIEWS.includes(h)) tab = h; } catch(_){}
 
 const $ = id => document.getElementById(id);
@@ -1052,11 +1125,11 @@ function card(x, on, d = 0){
   const place = x.where + (x.town!=="Leiden" && !x.where.includes(x.town) ? ", "+x.town : "");
   const isS = saved.has(x.id);
   return `<article class="card rv" style="--cc:${cc};--d:${d}" data-tilt>
-    <div class="cover"><span class="glyph" aria-hidden="true">${glyph}</span>
+    <div class="cover${x.img?" has-img":""}">${x.img ? `<img class="photo" src="${esc(x.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove('has-img');this.remove()">` : ""}<span class="glyph" aria-hidden="true">${glyph}</span>
       <div class="dbadge"><span>${top}</span><b>${big}</b><span>${bot}</span></div>
       <div class="flags"><span class="catpill">${x.cat}</span>${flags.join("")}</div></div>
     <div class="cbody">
-      <h3 class="ctitle"><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.t)}</a></h3>
+      <h3 class="ctitle"><button class="open" type="button" data-open="${x.id}" data-day="${on||""}">${esc(x.t)}</button></h3>
       <p class="cmeta">${esc(place)}${when?" · "+esc(when):""}</p>
       <p class="cdesc">${esc(x.d)}</p>
       <div class="cacts">
@@ -1100,7 +1173,8 @@ function renderHome(){
   const closing = expo[0];
   const savedN = itemsFor("saved").length + ideas.length;
 
-  let html = `<div class="bento">
+  let html = pendingImport.length ? `<div class="banner rv"><p><b>A shared list:</b> ${pendingImport.length} event${pendingImport.length===1?"":"s"} someone saved for you.</p><button class="btn" type="button" data-import>Add to Saved</button><button class="btn" type="button" data-noimport>No thanks</button></div>` : "";
+  html += `<div class="bento">
     <section class="tile t-hello rv" style="--d:0">
       <span class="hellokeys">${KEYS}</span>
       <span class="hellosub">${greet} 👋</span>
@@ -1110,7 +1184,7 @@ function renderHome(){
     </section>
     ${wxTile()}`;
   if (hl) { const [cc, g] = CAT_STYLE[hl.cat]; const dl = hl.e ? daysBetween(TODAY, hl.e) : 0;
-    html += `<a class="tile t-hl rv" style="--d:3;--cc:${cc}" href="${esc(hl.url)}" target="_blank" rel="noopener" data-tilt><span class="lbl">Highlight</span><span class="hlglyph" aria-hidden="true">${g}</span>
+    html += `<a class="tile t-hl rv${hl.img?" has-img":""}" style="--d:3;--cc:${cc}" href="#e/${hl.id}" data-open="${hl.id}" data-tilt>${hl.img?`<img class="hlphoto" src="${esc(hl.img)}" alt="" referrerpolicy="no-referrer" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:""}<span class="lbl">Highlight</span><span class="hlglyph" aria-hidden="true">${g}</span>
       <b class="hltitle">${esc(hl.t)}</b><span class="hlsub">${hl.s!==hl.e && hl.e ? `Until ${shortNice(hl.e)} · ${dl} day${dl===1?"":"s"} left` : shortNice(hl.s)}</span></a>`; }
   html += `<a class="tile t-ton rv" style="--d:4" href="#${tKey}" data-go="${tKey}" data-tilt><span class="lbl">${tSet[0]}</span>
       <span class="big" data-count="${tSet[1].length}">${tSet[1].length}</span><span class="tsub">thing${tSet[1].length===1?"":"s"} on</span>
@@ -1162,7 +1236,7 @@ function renderSection(){
 
 function renderSaved(){
   const list = itemsFor("saved");
-  let html = vhead("Saved", "Your stars and date ideas. They're kept in this browser only.");
+  let html = `<div class="vhead-row">${vhead("Saved", "Your stars and date ideas, kept on this device. Share the list to put your stars on someone else's phone too.")}${list.length ? `<button class="btn wa rv" type="button" data-sharelist>${SHARE_SVG} Share our list</button>` : ""}</div>`;
   if (ideas.length) html += `<h2 class="day rv" style="--d:1">Date ideas</h2><div class="ideas">${ideas.map((it,i)=>ideaCard(it,{saved:true,i})).join("")}</div>`;
   if (list.length) html += `<h2 class="day rv" style="--d:2">Events and places</h2><div class="grid">${list.map((x,i)=>card(x, undefined, Math.min(i+3,14))).join("")}</div>`;
   if (!ideas.length && !list.length) html += `<div class="empty rv" style="--d:1"><span class="emptyico">✦</span><b>Nothing saved yet</b><p>Tap the star on anything that looks good, or save an idea from Plan a date.</p><a class="btn-glow" href="#plan" data-go="plan">${HEART} Plan a date</a></div>`;
@@ -1464,7 +1538,7 @@ function ideaCard(it, {i, saved:inSaved}){
       <button class="btn" type="button" data-act="save" data-k="${k}" aria-pressed="${isSaved}">${isSaved?STAR_ON+" Saved":STAR+" Save"}</button>
       ${inSaved ? "" : `<button class="btn" type="button" data-act="shuffle" data-k="${k}">${SHUFFLE} Shuffle</button>`}
       <button class="btn" type="button" data-act="cal" data-k="${k}">${CAL_SVG} Calendar</button>
-      <button class="btn" type="button" data-act="copy" data-k="${k}">${COPY} Copy message</button>
+      <button class="btn wa" type="button" data-act="send" data-k="${k}">${SHARE_SVG} Send</button>
       <button class="btn" type="button" data-act="done" data-k="${k}" aria-pressed="${isDone}">${CHECK} ${isDone?"Done":"Mark done"}</button>
     </div>
   </article>`;
@@ -1484,6 +1558,97 @@ function ideaToCal(it){
   return {uid:it.id.replace(/[^\w]+/g,"-"), title:"Date: "+it.title, start:it.date, startTime:first.time, endTime:end, endDate: end < first.time ? iso(add(pd(it.date),1)) : it.date,
     location: it.stops.find(s=>s.kind==="event")?.where || it.towns[0],
     notes: it.stops.map(s=>`${s.time}  ${s.t}${s.where&&s.kind==="event"?" ("+s.where+")":""}${s.url?"\n       "+s.url:""}`).join("\n") + "\n\n" + it.why};
+}
+
+
+/* ---------- detail sheet ---------- */
+const SHARE_SVG = ico(`<path d="M12 15V3M7.5 7.5L12 3l4.5 4.5M5 12v6.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V12"/>`);
+const PIN_SVG = ico(`<path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>`);
+const CLOCK_SVG = ico(`<circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>`);
+const TICKET_SVG = ico(`<path d="M3.5 7.5h17v3a1.5 1.5 0 0 0 0 3v3h-17v-3a1.5 1.5 0 0 0 0-3z"/><path d="M14 7.5v9" stroke-dasharray="1.5 2"/>`);
+const EXT_SVG = ico(`<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>`);
+const venueOf = x => x.where + (x.town && x.town!=="Leiden" && !x.where.includes(x.town) ? ", "+x.town : "");
+const money = p => "€" + (Number.isInteger(p) ? p : p.toFixed(2));
+const dayName = d => d===TODAY ? "Today" : d===iso(add(today,1)) ? "Tomorrow" : nice(d);
+
+function sheetHTML(x, day){
+  const [cc, glyph] = CAT_STYLE[x.cat], t = firstTime(x.time);
+  const ev = !isExpo(x) && !isEvergreen(x), d = ev ? (day || nextDate(x)) : null;
+  let when, sub = "";
+  if (isEvergreen(x)) when = "Any day";
+  else if (isExpo(x)) { const dl = daysBetween(TODAY, x.e); when = `Open until ${nice(x.e)}`; if (dl<=21) sub = dl===0 ? "Last day today" : `Closes in ${dl} day${dl===1?"":"s"}`; }
+  else if (isRun(x)) { when = `${nice(x.s)} – ${nice(x.e)}`; if (t) sub = `From ${t}`; }
+  else {
+    when = dayName(d) + (d===TODAY || d===iso(add(today,1)) ? `, ${shortNice(d)}` : "") + (t ? ` · ${t}` : "");
+    if (x.weekly!==undefined) sub = "Every " + DAYS[x.weekly];
+    const others = (x.dates||[]).filter(o=>o>=TODAY && o!==d);
+    if (others.length) sub = "Also on " + others.map(shortNice).join(", ");
+  }
+  const maps = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${x.where}, ${x.town||"Leiden"}`);
+  const dutch = /\.nl\//.test(x.url||"");
+  const on = saved.has(x.id);
+  return `<div class="shero" style="--cc:${cc}">${x.img ? `<img src="${esc(x.img)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}${x.img ? "" : `<span class="glyph" aria-hidden="true">${glyph}</span>`}</div>
+    <div class="scat" style="--cc:${cc}"><span class="spill">${x.cat}</span>${x.hl?`<span class="spill hot">Highlight</span>`:""}${x.isNew?`<span class="spill hot">New</span>`:""}</div>
+    <h2 class="stitle" id="sheettitle">${esc(x.t)}</h2>
+    <ul class="facts">
+      <li>${CLOCK_SVG}<span>${esc(when)}${sub?`<small>${esc(sub)}</small>`:""}</span></li>
+      <li>${PIN_SVG}<span><a href="${maps}" target="_blank" rel="noopener">${esc(venueOf(x))}</a><small>Open in Maps</small></span></li>
+      <li>${TICKET_SVG}<span>${x.price===0 ? "Free" : x.price ? "From "+money(x.price) : "Price on the event page"}</span></li>
+    </ul>
+    ${x.d && !x.auto ? `<p class="sdesc">${esc(x.d)}</p>` : `<p class="snote">${esc(x.d||"")} Full details are on the organiser's page${dutch?" (in Dutch)":""}.</p>`}
+    <div class="sacts">
+      <a class="btn-glow" href="${esc(x.url)}" target="_blank" rel="noopener">${isEvergreen(x)?"More info":"Tickets & info"} ${EXT_SVG}</a>
+      <div class="rowbtns">
+        <button class="btn star" type="button" data-id="${x.id}" aria-pressed="${on}">${on?STAR_ON:STAR}${on?"Saved":"Save"}</button>
+        ${isEvergreen(x) ? "<span></span>" : `<button class="btn" type="button" data-cal="${x.id}" data-on="${d||""}">${CAL_SVG}Calendar</button>`}
+        <button class="btn" type="button" data-share="${x.id}" data-day="${d||""}">${SHARE_SVG}Share</button>
+      </div>
+    </div>`;
+}
+function openSheet(id, day, updateHash = true){
+  const x = E.find(y=>y.id===id); if (!x) return;
+  openId = id; openDay = day || null;
+  const sh = $("sheet");
+  $("sheetbody").innerHTML = sheetHTML(x, openDay); $("sheetbody").scrollTop = 0;
+  sh.hidden = false; sh.inert = false; void sh.offsetWidth;
+  sh.classList.add("on"); $("scrim").classList.add("on"); document.body.classList.add("locked");
+  if (updateHash) { try { history.replaceState(null, "", "#e/"+id); } catch(_){} }
+  setTimeout(()=>$("sheetclose").focus({preventScroll:true}), 60);
+}
+function closeSheet(){
+  if (!openId) return;
+  const id = openId; openId = null;
+  $("sheet").classList.remove("on"); $("scrim").classList.remove("on"); document.body.classList.remove("locked");
+  $("sheet").inert = true;
+  try { history.replaceState(null, "", "#"+tab); } catch(_){}
+  setTimeout(()=>{ if (!openId) $("sheet").hidden = true; }, 500);
+  document.querySelector(`[data-open="${id}"]`)?.focus({preventScroll:true});
+}
+const baseURL = () => location.href.split("#")[0];
+async function shareText(title, text, url){
+  if (navigator.share) {
+    try { await navigator.share(url ? {title, text, url} : {title, text}); return; }
+    catch (e) { if (e.name==="AbortError") return; }
+  }
+  window.open("https://wa.me/?text=" + encodeURIComponent(url ? `${text} ${url}` : text), "_blank", "noopener");
+}
+function shareEvent(x, day){
+  const when = isExpo(x) ? `until ${shortNice(x.e)}` : isEvergreen(x) ? "" : `${shortNice(day||nextDate(x))}${firstTime(x.time)?" "+firstTime(x.time):""}`;
+  shareText(x.t, `${x.t}${when?" ("+when+")":""} at ${venueOf(x)}. Shall we?`, baseURL()+"#e/"+x.id);
+}
+function toggleStar(id){
+  const on = !saved.has(id); on ? saved.add(id) : saved.delete(id); persist();
+  // Keep the rails where they were while the view redraws.
+  const rails = [...$("out").querySelectorAll(".rail")].map(r=>r.scrollLeft);
+  render(); $("out").querySelectorAll(".rail").forEach((r,i)=>{ r.scrollLeft = rails[i] || 0; });
+  if (openId) { const sb = $("sheetbody"), top = sb.scrollTop; sb.innerHTML = sheetHTML(E.find(x=>x.id===openId), openDay); sb.scrollTop = top; }
+  if (on) document.querySelectorAll(`.star[data-id="${id}"]`).forEach(b=>b.classList.add("pop"));
+  toast(on ? "Saved. Find it under Saved." : "Removed from saved.");
+}
+function themeIcon(){
+  const dark = document.documentElement.dataset.theme==="dark";
+  $("themebtn").innerHTML = dark ? ico(`<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6L6 6M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"/>`) : ico(`<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>`);
+  $("themebtn").setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
 }
 
 /* ---------- toast ---------- */
@@ -1506,9 +1671,37 @@ window.addEventListener("scroll", ()=>{ if (!barTicking){ barTicking = true; req
 window.addEventListener("resize", movePill, {passive:true});
 
 document.addEventListener("click", e=>{
-  const g = e.target.closest("[data-go]");
-  if (g) { e.preventDefault(); go(g.dataset.go); }
+  const t = e.target;
+  const opener = t.closest("[data-open]");
+  if (opener) { e.preventDefault(); openSheet(opener.dataset.open, opener.dataset.day); return; }
+  const g = t.closest("[data-go]");
+  if (g) { e.preventDefault(); go(g.dataset.go); return; }
+  if (t.closest("#themebtn")) {
+    const next = document.documentElement.dataset.theme==="dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next; try { localStorage.setItem("uil-theme", next); } catch(_){}
+    themeIcon(); return;
+  }
+  if (t.closest("#sheetclose") || t.id==="scrim") { closeSheet(); return; }
+  if (t.closest("#sheet")) {
+    const star = t.closest(".star[data-id]"); if (star) { toggleStar(star.dataset.id); return; }
+    const cal = t.closest("[data-cal]"); if (cal) { const x = E.find(y=>y.id===cal.dataset.cal); downloadIcs(x.t, eventToCal(x, cal.dataset.on || undefined)); return; }
+    const sh = t.closest("[data-share]"); if (sh) { shareEvent(E.find(y=>y.id===sh.dataset.share), sh.dataset.day); return; }
+  }
 });
+document.addEventListener("keydown", e=>{ if (e.key==="Escape" && openId) closeSheet(); });
+// Drag the sheet's handle down to dismiss; a quick flick or a long pull closes it.
+{
+  const sh = $("sheet"), grab = $("grab"); let drag = null;
+  grab.addEventListener("pointerdown", e=>{ drag = {y:e.clientY, last:e.clientY, t:performance.now(), v:0}; sh.classList.add("dragging"); grab.setPointerCapture(e.pointerId); });
+  grab.addEventListener("pointermove", e=>{
+    if (!drag) return;
+    const now = performance.now(), dy = e.clientY - drag.y;
+    drag.v = (e.clientY - drag.last) / Math.max(1, now - drag.t); drag.last = e.clientY; drag.t = now;
+    sh.style.transform = `translateY(${dy >= 0 ? dy : -Math.sqrt(-dy) * 2}px)`;
+  });
+  const end = () => { if (!drag) return; const dy = drag.last - drag.y, flick = drag.v > .5; drag = null; sh.classList.remove("dragging"); sh.style.transform = ""; if (dy > 120 || flick) closeSheet(); };
+  grab.addEventListener("pointerup", end); grab.addEventListener("pointercancel", end);
+}
 let qT; $("q").addEventListener("input", e=>{ clearTimeout(qT); qT = setTimeout(()=>{ const was = !!query; query = e.target.value.trim(); render(was !== !!query); }, 140); });
 
 // Tilt and glare follow the pointer on cards and tiles (mouse/trackpad only).
@@ -1532,12 +1725,14 @@ $("out").addEventListener("click", async e=>{
   const chip = e.target.closest("[data-c]");
   if (chip) { cat = chip.dataset.c; render(true); return; }
   const star = e.target.closest(".star");
-  if (star){ const id = star.dataset.id; const on = !saved.has(id); on ? saved.add(id) : saved.delete(id); persist();
-    // Keep rails where they were while the view redraws.
-    const rails = [...$("out").querySelectorAll(".rail")].map(r=>r.scrollLeft);
-    render(); $("out").querySelectorAll(".rail").forEach((r,i)=>{ r.scrollLeft = rails[i] || 0; });
-    if (on) $("out").querySelectorAll(`.star[data-id="${id}"]`).forEach(b=>b.classList.add("pop"));
-    toast(on ? "Saved. Find it under Saved." : "Removed from saved."); return; }
+  if (star){ toggleStar(star.dataset.id); return; }
+  if (e.target.closest("[data-sharelist]")) {
+    const ids = itemsFor("saved").map(x=>x.id);
+    shareText("Our Uit in Leiden list", `Our list for Uit in Leiden (${ids.length} things):`, baseURL()+"#list="+ids.join(","));
+    return;
+  }
+  if (e.target.closest("[data-import]")) { pendingImport.forEach(id=>saved.add(id)); const n = pendingImport.length; pendingImport = []; persist(); render(); toast(`Added ${n} to Saved`); return; }
+  if (e.target.closest("[data-noimport]")) { pendingImport = []; render(); return; }
   const cal = e.target.closest("[data-cal]");
   if (cal){ const x = E.find(y=>y.id===cal.dataset.cal); downloadIcs(x.t, eventToCal(x, cal.dataset.on)); return; }
   if (e.target.closest("#reroll")){ current.forEach(it=>it.stops.forEach(s=>{ if (s.anchor) shuffledAway.add(s.id); })); suggestAll(); render(true); return; }
@@ -1557,12 +1752,7 @@ $("out").addEventListener("click", async e=>{
       persist(); render(); break;
     case "shuffle": reIdx = +k.slice(1); shuffleOne(reIdx); render(); reIdx = -1; break;
     case "cal": downloadIcs("date-"+it.date, ideaToCal(it)); break;
-    case "copy": {
-      const msg = messageFor(it);
-      try { await navigator.clipboard.writeText(msg); toast("Copied. Paste it into WhatsApp."); }
-      catch(_) { window.prompt("Copy this message:", msg); }
-      break;
-    }
+    case "send": shareText("Date idea", messageFor(it)); break;
   }
 });
 $("out").addEventListener("change", e=>{
@@ -1582,9 +1772,16 @@ $("out").addEventListener("change", e=>{
 });
 
 $("updated").textContent = `Agenda updated ${nice(UPDATED)} from ${SOURCES || "Visit Leiden"}, plus a few hand-picked events.`;
+themeIcon();
+const startHash = decodeURIComponent(location.hash.slice(1));
+if (startHash.startsWith("list=")) {
+  pendingImport = startHash.slice(5).split(",").filter(id=>E.some(x=>x.id===id) && !saved.has(id));
+  try { history.replaceState(null, "", "#home"); } catch(_){}
+}
 if (tab==="plan") suggestAll();
 loadWeather();
 render(true);
+if (startHash.startsWith("e/")) openSheet(startHash.slice(2), null, false);
 document.fonts?.ready.then(movePill);
 </script>
 </body>
