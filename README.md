@@ -5,7 +5,7 @@ A one-file website (`index.html`) with what's on in and around Leiden, plus a da
 
 ## Hosting (GitHub Pages)
 
-`.github/workflows/publish.yml` runs every morning at 05:00 UTC on GitHub: it runs `update_events.py`, commits the new data and publishes `index.html` to GitHub Pages. A push of your own changes republishes the page straight away (without fetching events). To refresh by hand: the repository's **Actions** tab → **Update and publish** → **Run workflow**.
+`.github/workflows/publish.yml` runs every morning on GitHub (03:17 UTC, with a backup run at 06:47 UTC because GitHub sometimes starts scheduled runs late): it runs `update_events.py`, commits the new data and publishes `index.html` to GitHub Pages. A push of your own changes republishes the page straight away (without fetching events). To refresh by hand: the repository's **Actions** tab → **Update and publish** → **Run workflow**.
 
 `.github/workflows/venues.yml` runs `update_venues.py` on the 1st of every month (02:00 UTC) and commits `data/venues.json`; the next daily run uses the new names. Run it by hand from the Actions tab → **Refresh venue names**.
 

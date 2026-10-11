@@ -3,8 +3,12 @@
 name: Update and publish
 
 on:
+  # GitHub often starts scheduled runs late (sometimes hours), especially on the hour, and
+  # occasionally skips one. Run at quiet minutes, twice; the second is a backup and commits
+  # nothing if the first already did the work.
   schedule:
-    - cron: "0 5 * * *"   # 05:00 UTC = 06:00 (winter) / 07:00 (summer) in Leiden
+    - cron: "17 3 * * *"   # 03:17 UTC = 04:17 (winter) / 05:17 (summer) in Leiden
+    - cron: "47 6 * * *"   # 06:47 UTC backup
   workflow_dispatch:       # "Run workflow" button on the Actions tab
   push:
     branches: [main]
