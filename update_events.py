@@ -30,7 +30,7 @@ VENUES = DATA / "venues.json"              # street address -> venue name (learn
 
 # Fields the page uses. Everything else (Dutch text, source name...) stays in data/events.json.
 PAGE_FIELDS = ["id", "t", "s", "e", "dates", "time", "weekly", "cat", "where", "town", "d", "auto", "url", "img", "price",
-               "c", "io", "slot", "v", "hl", "isNew", "noIdea", "dry", "calm", "long", "short", "months"]
+               "c", "io", "slot", "v", "hl", "isNew", "noIdea", "dry", "calm", "long", "short", "months", "for2", "priceNote"]
 START, END = "/* AGENDA:START", "/* AGENDA:END */"
 
 
