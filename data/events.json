@@ -2644,6 +2644,23 @@
   "c": 1
  },
  {
+  "id": "vl-2109516606",
+  "t": "Halloween Comedy Night:Jokes on us",
+  "where": "Omegaplantsoen 4",
+  "url": "https://www.visitleiden.nl/nl/agenda/2109516606/halloween-comedy-night-jokes-on-us-1",
+  "src": "Visit Leiden",
+  "nl": "Maak je klaar voor een hilarische avond stand-up comedy bij Vet Gezond in Leiden!",
+  "addr": "Omegaplantsoen 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/f0965935d808cc8dccb778440b6e40754be98b95_01a12fd6-74a4-7b39-ab4d-885ff228b617.jpg",
+  "s": "2026-10-31",
+  "e": "2026-10-31",
+  "time": "19:30",
+  "cat": "Comedy",
+  "catSure": true,
+  "d": "Comedy, Omegaplantsoen 4.",
+  "auto": 1
+ },
+ {
   "id": "vl-2745596428",
   "t": "Halloween spooktocht door de Kooi",
   "where": "Speeltuin de kooi",
