@@ -6,7 +6,6 @@
   "where": "Blauwpoortsbrug",
   "d": "Electric sloep you sail yourself: the canals, or out to the Kagerplassen on a longer trip. Quiet and easy to steer.",
   "url": "https://www.bootjesenbroodjes.nl/sloep-huren",
-  "for2": "from €105 per boat (up to 6 people) + €150 deposit",
   "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 3,
   "dry": 1,
@@ -23,7 +22,8 @@
    "cosy",
    "active",
    "surprise"
-  ]
+  ],
+  "cost": "from €105 per boat (up to 6 people) + €150 deposit"
  },
  {
   "id": "sup",
@@ -32,7 +32,6 @@
   "where": "City canals",
   "d": "Paddle-board through the old town with a short briefing first. Also as SUP + pizza or SUP + drinks.",
   "url": "https://leidensupping.nl/",
-  "for2": "€50 for two (2 hours) · €40 for 1 hour",
   "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 2,
   "dry": 1,
@@ -49,7 +48,8 @@
   "v": [
    "active",
    "surprise"
-  ]
+  ],
+  "cost": "€25 per person (2 hours) · €20 for 1 hour"
  },
  {
   "id": "rondvaart",
@@ -58,13 +58,13 @@
   "where": "Beestenmarkt",
   "d": "Fifty-five minutes along the canals and singels with a skipper telling the city's story. Runs all year.",
   "url": "https://www.fijnuit.nl/3981/rederij-rembrandt",
-  "for2": "≈ €24 for two (55 min)",
   "priceNote": "From a listing site; check the provider for today's price.",
   "c": 1,
   "v": [
    "cosy",
    "cultural"
-  ]
+  ],
+  "cost": "≈ €12 per person (55 min)"
  },
  {
   "id": "naturalis",
@@ -73,14 +73,14 @@
   "where": "Darwinweg 2",
   "d": "The natural history museum with real T. rex skeletons, a dinosaur hall and a lot to wander through together. Free with a Museumkaart.",
   "url": "https://www.naturalis.nl/tickets",
-  "for2": "€36 for two · free with Museumkaart",
   "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 2,
   "io": "in",
   "v": [
    "cultural",
    "surprise"
-  ]
+  ],
+  "cost": "€18 per person · free with Museumkaart"
  },
  {
   "id": "rmo",
@@ -89,14 +89,14 @@
   "where": "Rapenburg 28",
   "d": "Egyptian mummies, a real temple in the hall and Roman finds, audio tour included. Open late on Thursday evenings (19:00–22:00) – good for a date.",
   "url": "https://www.rmo.nl/bezoek/",
-  "for2": "€28 for two · free with Museumkaart",
   "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 2,
   "io": "in",
   "v": [
    "cultural",
    "cosy"
-  ]
+  ],
+  "cost": "€14 per person · free with Museumkaart"
  },
  {
   "id": "lakenhal",
@@ -105,14 +105,14 @@
   "where": "Oude Singel 32",
   "d": "Leiden's art museum: Rembrandt, Lucas van Leyden and Golden Age Leiden in the old cloth hall. Closed on Mondays.",
   "url": "https://www.lakenhal.nl/nl",
-  "for2": "€32 for two · free with Museumkaart",
   "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 2,
   "io": "in",
   "v": [
    "cultural",
    "cosy"
-  ]
+  ],
+  "cost": "€16 per person · free with Museumkaart"
  },
  {
   "id": "hortus",
@@ -121,13 +121,13 @@
   "where": "Rapenburg 73",
   "d": "The oldest botanical garden in the Netherlands, with tropical greenhouses for a rainy day. Open daily.",
   "url": "https://hortusleiden.nl/bezoek-info",
-  "for2": "€27 for two online · free with Museumkaart",
   "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 2,
   "v": [
    "cosy",
    "cultural"
-  ]
+  ],
+  "cost": "€13.50 per person online · free with Museumkaart"
  },
  {
   "id": "escape",
@@ -136,14 +136,14 @@
   "where": "Pieterskerk",
   "d": "‘De Generale Repetitie’: 60 minutes to escape, inside the medieval Pieterskerk. Teams of 2 to 5, 15+.",
   "url": "https://pieterskerk.com/en/the-final-rehearsal/",
-  "for2": "€149 per game (2–5 players)",
   "priceNote": "Checked on pieterskerk.com, 12 Oct 2026; the page doesn't say if that's per team or per person, so check when booking.",
   "c": 3,
   "io": "in",
   "v": [
    "surprise",
    "active"
-  ]
+  ],
+  "cost": "€149 per game (2–5 players)"
  },
  {
   "id": "boulder",
@@ -152,14 +152,14 @@
   "where": "Boulderhal Kunststof",
   "d": "Climbing without ropes on low walls with thick mats. Fine for a first time; climbing shoes are required and can be rented.",
   "url": "https://www.visitleiden.nl/nl/locaties/962910754/boulderhal-kunststof",
-  "for2": "≈ €36 for two incl. shoe rental",
   "priceNote": "From a listing site; check the provider for today's price.",
   "c": 2,
   "io": "in",
   "v": [
    "active",
    "surprise"
-  ]
+  ],
+  "cost": "≈ €18 per person incl. shoe rental"
  },
  {
   "id": "burcht",
@@ -173,7 +173,7 @@
    "cultural"
   ],
   "short": 1,
-  "for2": "Free"
+  "cost": "Free"
  },
  {
   "id": "singel",
@@ -186,7 +186,7 @@
    "cosy",
    "active"
   ],
-  "for2": "Free"
+  "cost": "Free"
  },
  {
   "id": "heem",
@@ -199,7 +199,7 @@
    "cosy",
    "active"
   ],
-  "for2": "Free"
+  "cost": "Free"
  },
  {
   "id": "matilo",
@@ -212,7 +212,7 @@
    "cultural",
    "active"
   ],
-  "for2": "Free"
+  "cost": "Free"
  },
  {
   "id": "rembrandt",
@@ -226,7 +226,7 @@
   "v": [
    "cultural"
   ],
-  "for2": "Free"
+  "cost": "Free"
  },
  {
   "id": "dune",
@@ -241,6 +241,6 @@
   "v": [
    "active"
   ],
-  "for2": "Free with your own bikes"
+  "cost": "Free with your own bikes"
  }
 ]
