@@ -526,7 +526,6 @@ html{background:var(--bg)}
   footer{padding-bottom:7rem}
   .toast{bottom:calc(5.25rem + env(safe-area-inset-bottom))}
 }
-.cprice{margin:.35rem 0 0;font-size:.8125rem;font-weight:700;color:var(--red)}
 </style>
 </head>
 <body>
@@ -1206,7 +1205,7 @@ function card(x, on, d = 0){
       <div class="flags"><span class="catpill">${x.cat}</span>${flags.join("")}</div></div>
     <div class="cbody">
       <h3 class="ctitle"><button class="open" type="button" data-open="${x.id}" data-day="${on||""}">${esc(x.t)}</button></h3>
-      <p class="cmeta">${esc(place)}${when?" · "+esc(when):""}</p>${x.cost ? `<p class="cprice">${esc(x.cost)}</p>` : ""}
+      <p class="cmeta">${esc(place)}${when?" · "+esc(when):""}</p>
       ${x.d && !x.auto ? `<p class="cdesc">${esc(x.d)}</p>` : ""}
       <div class="cacts">
         ${isEvergreen(x) ? "" : `<button class="iconbtn" type="button" title="Add to calendar" aria-label="Add to calendar: ${esc(x.t)}" data-cal="${x.id}"${on?` data-on="${on}"`:""}>${CAL_SVG}</button>`}
