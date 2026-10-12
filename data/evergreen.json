@@ -23,7 +23,8 @@
    "active",
    "surprise"
   ],
-  "cost": "from €105 per boat (up to 6 people) + €150 deposit"
+  "cost": "from €105 per boat (up to 6 people) + €150 deposit",
+  "img": "https://assets.plaece.nl/odp-leiden/image/408efba0-3177-4923-9e1c-1fe8a20831be_1102455366.jpeg"
  },
  {
   "id": "sup",
@@ -49,22 +50,24 @@
    "active",
    "surprise"
   ],
-  "cost": "€25 per person (2 hours) · €20 for 1 hour"
+  "cost": "€25 per person (2 hours) · €20 for 1 hour",
+  "img": "https://leidensupping.nl/sfeer-sup-huren.webp"
  },
  {
   "id": "rondvaart",
-  "t": "Canal cruise (Rederij Rembrandt)",
+  "t": "Canal cruise (Bootjes en Broodjes)",
   "cat": "Outdoors",
-  "where": "Beestenmarkt",
-  "d": "Fifty-five minutes along the canals and singels with a skipper telling the city's story. Runs all year.",
-  "url": "https://www.fijnuit.nl/3981/rederij-rembrandt",
-  "priceNote": "From a listing site; check the provider for today's price.",
+  "where": "Blauwpoortsbrug",
+  "d": "Fifty minutes along the canals with a skipper. Open boat in good weather, covered and heated when it isn't, so it works in autumn and winter too.",
+  "url": "https://www.bootjesenbroodjes.nl/rondvaart",
+  "priceNote": "Checked on the provider's site, 12 Oct 2026.",
   "c": 1,
   "v": [
    "cosy",
    "cultural"
   ],
-  "cost": "≈ €12 per person (55 min)"
+  "cost": "€13.50 per person (50 min)",
+  "img": "https://www.bootjesenbroodjes.nl/wp-content/uploads/2023/05/Header-1-RV-2023-1024x576.jpg"
  },
  {
   "id": "naturalis",
@@ -80,7 +83,8 @@
    "cultural",
    "surprise"
   ],
-  "cost": "€18 per person · free with Museumkaart"
+  "cost": "€18 per person · free with Museumkaart",
+  "img": "https://assets.plaece.nl/odp-leiden/image/naturalis-credit-mike-bink-fotografie_387680941.jpeg"
  },
  {
   "id": "rmo",
@@ -96,7 +100,8 @@
    "cultural",
    "cosy"
   ],
-  "cost": "€14 per person · free with Museumkaart"
+  "cost": "€14 per person · free with Museumkaart",
+  "img": "https://assets.plaece.nl/odp-leiden/image/rijksmuseum-van-oudheden-simone-both-9_3367318423.jpg"
  },
  {
   "id": "lakenhal",
@@ -112,7 +117,8 @@
    "cultural",
    "cosy"
   ],
-  "cost": "€16 per person · free with Museumkaart"
+  "cost": "€16 per person · free with Museumkaart",
+  "img": "https://assets.plaece.nl/odp-leiden/image/museum-de-lakenhal-simone-both_2220207589.jpg"
  },
  {
   "id": "hortus",
@@ -127,7 +133,8 @@
    "cosy",
    "cultural"
   ],
-  "cost": "€13.50 per person online · free with Museumkaart"
+  "cost": "€13.50 per person online · free with Museumkaart",
+  "img": "https://assets.plaece.nl/odp-leiden/image/hortuscampagne219_602483958.jpg"
  },
  {
   "id": "escape",
@@ -143,7 +150,8 @@
    "surprise",
    "active"
   ],
-  "cost": "€149 per game (2–5 players)"
+  "cost": "€149 per game (2–5 players)",
+  "img": "https://assets.plaece.nl/odp-leiden/image/pieterskerk-leiden-1_3962652221.jpg"
  },
  {
   "id": "boulder",
@@ -159,7 +167,8 @@
    "active",
    "surprise"
   ],
-  "cost": "≈ €18 per person incl. shoe rental"
+  "cost": "≈ €18 per person incl. shoe rental",
+  "img": "https://assets.plaece.nl/odp-leiden/image/home-dyno-boulder-ks_939983612.jpg"
  },
  {
   "id": "burcht",
@@ -173,7 +182,8 @@
    "cultural"
   ],
   "short": 1,
-  "cost": "Free"
+  "cost": "Free",
+  "img": "https://assets.plaece.nl/odp-leiden/image/burcht-2020-2_4210346451.jpg"
  },
  {
   "id": "singel",
@@ -186,7 +196,8 @@
    "cosy",
    "active"
   ],
-  "cost": "Free"
+  "cost": "Free",
+  "img": "https://assets.plaece.nl/odp-leiden/image/huigpark-singelpark-2023-08-3_965133658.jpg"
  },
  {
   "id": "heem",
@@ -212,7 +223,8 @@
    "cultural",
    "active"
   ],
-  "cost": "Free"
+  "cost": "Free",
+  "img": "https://assets.plaece.nl/odp-leiden/image/park-matilo_1508561767.jpeg"
  },
  {
   "id": "rembrandt",
@@ -226,7 +238,8 @@
   "v": [
    "cultural"
   ],
-  "cost": "Free"
+  "cost": "Free",
+  "img": "https://assets.plaece.nl/odp-leiden/image/8ae43120-d07a-4ce9-8d32-be1c92df8311_3190737368.jpeg"
  },
  {
   "id": "dune",
@@ -235,12 +248,13 @@
   "where": "Leiden – Wassenaar – Katwijk",
   "town": "Wassenaar & Katwijk",
   "d": "About 33 km through dunes to the coast and back. The sea is only 8 km away.",
-  "url": "https://trainerday.com/nl/events/netherlands/leiden",
+  "url": "https://www.visitleiden.nl/nl/routes/4116151459/duin-zeeroute",
   "dry": 1,
   "long": 1,
   "v": [
    "active"
   ],
-  "cost": "Free with your own bikes"
+  "cost": "Free with your own bikes",
+  "img": "https://assets.plaece.nl/odp-leiden/image/afb-duin-horsten-vlietlanden-3_691938012.jpeg"
  }
 ]
