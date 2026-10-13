@@ -1597,6 +1597,23 @@
   "auto": 1
  },
  {
+  "id": "vl-1321957219",
+  "t": "Nacht van de Nacht in de Hortus",
+  "where": "Hortus botanicus Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/1321957219/nacht-van-de-nacht-in-de-hortus",
+  "src": "Visit Leiden",
+  "nl": "Waar de Hortus normaal gesproken al lang voor zonsondergang haar hekken sluit, krijg je op zaterdag 24 oktober, tijdens de Nacht van de Nacht, een unieke kans om de Hortus in het donker te beleven!",
+  "addr": "Rapenburg 73",
+  "img": "https://assets.plaece.nl/odp-leiden/image/a9a41d1b2f84b92b3c8483867bc10e99108dc98f_01a13272-36c4-72ad-a11a-dc1862b61d30.jpg",
+  "s": "2026-10-24",
+  "e": "2026-10-24",
+  "time": "19:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at Hortus botanicus Leiden.",
+  "auto": 1
+ },
+ {
   "id": "vl-2577818116",
   "t": "New Wave Generation",
   "where": "Nobel",
@@ -6977,6 +6994,23 @@
   "d": "Tribute show at Nobel. Tickets from €37.90.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-969689077",
+  "t": "Zondagwandeling",
+  "where": "Hortus botanicus Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/969689077/zondagwandeling",
+  "src": "Visit Leiden",
+  "nl": "Maak een tijdreis door de Hortus. Geniet van de monumentale bomen en de historische gebouwen. Treed in de voetsporen van Clusius.",
+  "addr": "Rapenburg 73",
+  "img": "https://assets.plaece.nl/odp-leiden/image/749241db0ffabf6200a959b93db2b980c9bc2315_01a13272-2f43-72c3-81af-c34abc883c22.jpg",
+  "s": "2026-12-13",
+  "e": "2026-12-13",
+  "time": "11:00",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "Guided walk or tour at Hortus botanicus Leiden.",
+  "auto": 1
  },
  {
   "id": "vl-1749664224",
