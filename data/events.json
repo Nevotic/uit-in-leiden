@@ -5779,10 +5779,10 @@
   "s": "2026-11-29",
   "e": "2026-11-29",
   "time": "14:30",
-  "cat": "Theatre",
+  "cat": "Music",
   "catSure": true,
-  "genre": "Muziektheater",
-  "d": "Music theatre at Stadsgehoorzaal Leiden. Tickets from €30.",
+  "genre": "Klassieke muziek",
+  "d": "Classical concert at Stadsgehoorzaal Leiden. Tickets from €30.",
   "auto": 1,
   "c": 2
  },
