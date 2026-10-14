@@ -1057,6 +1057,23 @@
   "c": 1
  },
  {
+  "id": "vl-3371527518",
+  "t": "Nottingham High School",
+  "where": "Hartebrugkerk",
+  "url": "https://www.visitleiden.nl/nl/agenda/3371527518/nottingham-high-school",
+  "src": "Visit Leiden",
+  "nl": "De Nottingham High School presenteert haar concertband, koor en kamerensembles.",
+  "addr": "Haarlemmerstraat 110",
+  "img": "https://assets.plaece.nl/odp-leiden/image/06c5abff91739a7808b8dd2513911f388dcba1b9_01a13557-89e4-70be-8922-88a7e2fc265c.jpg",
+  "s": "2026-10-20",
+  "e": "2026-10-20",
+  "time": "19:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at Hartebrugkerk.",
+  "auto": 1
+ },
+ {
   "id": "vl-349007600",
   "t": "STEF ROSEN & The FuzzNotes ! Italian Wolf is Howling the Blues",
   "where": "BplusC locatie Muziekhuis/Qbus",
@@ -1223,6 +1240,25 @@
   "cat": "Comedy",
   "catSure": false,
   "d": "Quiz night at Café de Kroeg. Tickets from €14.75.",
+  "auto": 1,
+  "c": 1
+ },
+ {
+  "id": "vl-653986930",
+  "t": "Lezing door Gert Oostindie",
+  "where": "Boekhandel Kooyker",
+  "url": "https://www.visitleiden.nl/nl/agenda/653986930/lezing-door-gert-oostindie",
+  "src": "Visit Leiden",
+  "nl": "In het indringende boek Oranje en de koloniën, 1600-2025 maakt Gert Oostindie de balans op van vier eeuwen verwevenheid van de Oranjes en het koloniale rijk.",
+  "addr": "Breestraat 89",
+  "img": "https://assets.plaece.nl/odp-leiden/image/3bd14f29e2136356fc087dcbb1240fd887c86944_01a13475-b1fb-7f68-aebc-ebee49a3ebfb.jpg",
+  "price": 6.0,
+  "s": "2026-10-22",
+  "e": "2026-10-22",
+  "time": "19:30",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk at Boekhandel Kooyker. Tickets from €6.",
   "auto": 1,
   "c": 1
  },
@@ -1555,6 +1591,23 @@
   "cat": "Music",
   "catSure": true,
   "d": "Concert at Cultuurhuis Sijthoff.",
+  "auto": 1
+ },
+ {
+  "id": "vl-1334495676",
+  "t": "Orgelkunst in Marekerk",
+  "where": "Marekerk",
+  "url": "https://www.visitleiden.nl/nl/agenda/1334495676/orgelkunst-in-marekerk",
+  "src": "Visit Leiden",
+  "nl": "Léon Berben bespeelt het orgel van de Marekerk in Leiden met muziek uit de Noord-Duitse orgeltraditie.",
+  "addr": "Lange Mare 48",
+  "img": "https://assets.plaece.nl/odp-leiden/image/64eafcb50c29933064f7d1ccd08c395a905018ec_01a1369f-23c4-7adb-9481-399e77a90245.png",
+  "s": "2026-10-24",
+  "e": "2026-10-24",
+  "time": "16:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at Marekerk.",
   "auto": 1
  },
  {
@@ -2673,6 +2726,23 @@
   "c": 2
  },
  {
+  "id": "vl-3220331976",
+  "t": "Lezing Else-Marie van den Eerenbeemt",
+  "where": "Hooglandse Kerkgracht 58",
+  "url": "https://www.visitleiden.nl/nl/agenda/3220331976/lezing-else-marie-van-den-eerenbeemt",
+  "src": "Visit Leiden",
+  "nl": "Else-Marie van den Eerenbeemt komt naar de Hooglandse Kerk om te spreken over rouw in de familie.",
+  "addr": "Hooglandse Kerkgracht 58",
+  "img": "https://assets.plaece.nl/odp-leiden/image/388eb32f030ec24a7d690691fe7d9c24427bcfea_01a134c4-2ac7-745f-b93a-202b1e5634ae.webp",
+  "s": "2026-10-31",
+  "e": "2026-10-31",
+  "time": "16:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk, Hooglandse Kerkgracht 58.",
+  "auto": 1
+ },
+ {
   "id": "vl-618258158",
   "t": "Meowloween (Halloween) met Cat Art",
   "where": "Middelstegracht 89M",
@@ -3279,6 +3349,23 @@
   "d": "Live music at Nobel. Tickets from €17.90.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-1481273551",
+  "t": "Open dag COC Leiden",
+  "where": "langegracht 65",
+  "url": "https://www.visitleiden.nl/nl/agenda/1481273551/open-dag-coc-leiden",
+  "src": "Visit Leiden",
+  "nl": "Heb jij zin om iets tofs te doen, nieuwe mensen te leren kennen en samen iets moois neer te zetten? Kom dan bij ons langs op onze open dag!",
+  "addr": "langegracht 65",
+  "img": "https://assets.plaece.nl/odp-leiden/image/fbe406d87e7939e54762be10647eb4c03718bb90_01a1359b-cf38-7956-a7c6-ee0da5201dfb.jpg",
+  "s": "2026-11-07",
+  "e": "2026-11-07",
+  "time": "16:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, langegracht 65.",
+  "auto": 1
  },
  {
   "id": "vl-1008246091",
