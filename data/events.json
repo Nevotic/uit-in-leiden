@@ -445,6 +445,23 @@
   "auto": 1
  },
  {
+  "id": "ls-47018",
+  "t": "Caat VrijMiBo: Salsa Friday",
+  "where": "Café Caat (Stadsgehoorzaal)",
+  "url": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-vrijmibo-salsa-friday-2/",
+  "src": "Schouwburg & Stadsgehoorzaal",
+  "cat": "Theatre",
+  "catSure": false,
+  "genre": "Specials",
+  "nl": "Verwacht zoals altijd een live DJ die met de lekkerste salsa, bachata en latinmuziek een fijn tropisch sfeertje neerzet.",
+  "s": "2026-10-23",
+  "e": "2026-10-23",
+  "time": "19:00",
+  "img": "https://leidseschouwburg-stadsgehoorzaal.nl/assets/uploads/2026/01/Salsa-Friday-Caat-Vrijmibo-Thumbnail-2-768x768.png",
+  "d": "Special performance at Café Caat (Stadsgehoorzaal).",
+  "auto": 1
+ },
+ {
   "id": "vl-2074069018",
   "t": "Culinair in sijthoff",
   "where": "Cultuurhuis Sijthoff",
@@ -3650,6 +3667,21 @@
   "d": "Quiz night at Nobel. Tickets from €25.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-946487559",
+  "t": "Expositionele happening BUITENBEEN",
+  "where": "Maresingel 51",
+  "url": "https://www.visitleiden.nl/nl/agenda/946487559/expositionele-happening-buitenbeen",
+  "src": "Visit Leiden",
+  "nl": "Een weekend vol kunst, muziek en tekst met kunstenaars Sander ten Napel, Celine van Hoek, Rob Steenhorst en Marjan Waanders.",
+  "addr": "Maresingel 51",
+  "img": "https://assets.plaece.nl/odp-leiden/image/cb92c94eabe0a8caba28ad6e076a5a981108571b_01a14e5e-76e5-7d16-bc06-133c298dda65.jpg",
+  "e": "2026-11-15",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition, Maresingel 51.",
+  "auto": 1
  },
  {
   "id": "vl-4193068779",
