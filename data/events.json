@@ -339,23 +339,6 @@
   "auto": 1
  },
  {
-  "id": "vl-1375485156",
-  "t": "Trakteer Jezelf op Leiden",
-  "where": "Fietsenstalling Lorentz",
-  "url": "https://www.visitleiden.nl/nl/agenda/1375485156/trakteer-jezelf-op-leiden",
-  "src": "Visit Leiden",
-  "nl": "Trakteer jezelf op een GRATIS LEIDSE FOTO en maak kans op een WEEKENDJE LEIDEN VOOR 2 of één van de vele andere winterse prijzen!",
-  "addr": "Stationsplein",
-  "img": "https://assets.plaece.nl/odp-leiden/image/735600f0-4e40-45cb-86ae-bbbc3d5bca66_2269571031.png",
-  "s": "2026-10-22",
-  "e": "2026-10-25",
-  "time": "09:00",
-  "cat": "Culture",
-  "catSure": false,
-  "d": "Cultural event at Fietsenstalling Lorentz. Runs over several days.",
-  "auto": 1
- },
- {
   "id": "nb-wende-22-oct-2026",
   "t": "Wende",
   "where": "Nobel",
@@ -1313,6 +1296,23 @@
   "d": "Concert at Stadsgehoorzaal Leiden. Tickets from €32.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-1223101861",
+  "t": "Ssst! 3 lezingen over stilte",
+  "where": "Rijksmuseum Boerhaave",
+  "url": "https://www.visitleiden.nl/nl/agenda/1223101861/ssst-3-lezingen-over-stilte",
+  "src": "Visit Leiden",
+  "nl": "We verlangen allemaal wel eens naar stilte in een wereld van prikkels, maar gedwongen zwijgen kan ook beklemmend zijn.",
+  "addr": "Lange Sint Agnietenstraat 10",
+  "img": "https://assets.plaece.nl/odp-leiden/image/b7b0cae8c8cf4c17bde8b9382804a506c0b933f1_01a13a87-bb92-75e6-848e-2518a83949a8.png",
+  "s": "2026-10-29",
+  "e": "2026-10-29",
+  "time": "20:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk at Rijksmuseum Boerhaave.",
+  "auto": 1
  },
  {
   "id": "vl-2182302931",
@@ -4244,6 +4244,21 @@
   "c": 2
  },
  {
+  "id": "vl-2707624125",
+  "t": "Lichtjes Kunstmarkt",
+  "where": "Hooglandse Kerk",
+  "url": "https://www.visitleiden.nl/nl/agenda/2707624125/lichtjes-kunstmarkt-1",
+  "src": "Visit Leiden",
+  "nl": "Ook dit jaar is sfeervolle markt met meer dan 100 kunstenaars en makers weer te bezoeken waarbij hun handgemaakte werk wordt getoond. Hier vind je de meest unieke cadeautjes alvast voor Kerst!",
+  "addr": "Nieuwstraat 20",
+  "img": "https://assets.plaece.nl/odp-leiden/image/64bf6493bcbdf16cba43083ef15d99a8b3411bb0_01a1485a-6d54-7f35-9197-d8a3bc6206d2.jpg",
+  "e": "2026-11-21",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "Market at Hooglandse Kerk.",
+  "auto": 1
+ },
+ {
   "id": "vl-1091917070",
   "t": "NIEMANDSLAND (première)",
   "where": "Theater Ins Blau",
@@ -6270,6 +6285,24 @@
   "c": 2
  },
  {
+  "id": "vl-852915398",
+  "t": "Winter Wonder Wandeling",
+  "where": "Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/852915398/winter-wonder-wandeling",
+  "src": "Visit Leiden",
+  "nl": "Een sfeervolle wandeling langs unieke winkeltjes en door kleine straatjes in een historische stad vol lichtjes.",
+  "img": "https://assets.plaece.nl/odp-leiden/image/4319de3d0d90e0f342896d34429861e3517c4daa_019ab58d-ae94-7a55-bd06-dbf73bf85c14.png",
+  "price": 5.0,
+  "s": "2026-12-13",
+  "e": "2026-12-13",
+  "time": "12:00",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "Guided walk or tour at Leiden. Tickets from €5.",
+  "auto": 1,
+  "c": 1
+ },
+ {
   "id": "vl-969689077",
   "t": "Zondagwandeling",
   "where": "Hortus botanicus Leiden",
@@ -7015,6 +7048,23 @@
   "d": "Quiz night, Noordeinde 28. Tickets from €10.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-3710990050",
+  "t": "Heel Leiden telt af (vuurwerkshow)",
+  "where": "Parkeergarage Lammermarkt",
+  "url": "https://www.visitleiden.nl/nl/agenda/3710990050/heel-leiden-telt-af-vuurwerkshow",
+  "src": "Visit Leiden",
+  "nl": "Heel Leiden Telt Af is de centrale oud-en-nieuwviering op de Lammermarkt in Leiden. De overgang naar het nieuwe jaar wordt spectaculair gevierd met een combinatie van professioneel vuurwerk, licht, special effects, muziek en projecties het belangrijkste showmoment van de avond.",
+  "addr": "Lammermarkt",
+  "img": "https://assets.plaece.nl/odp-leiden/image/dc-on-logo-1-main-on-light_433225228.png",
+  "s": "2026-12-31",
+  "e": "2026-12-31",
+  "time": "23:45",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at Parkeergarage Lammermarkt.",
+  "auto": 1
  },
  {
   "id": "vl-2674047245",
