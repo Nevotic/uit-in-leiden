@@ -117,24 +117,6 @@
   "c": 1
  },
  {
-  "id": "vl-2276785049",
-  "t": "CORPUS Kids Academy – De poepfabriek",
-  "where": "CORPUS 'reis door de mens'",
-  "town": "Oegstgeest",
-  "url": "https://www.visitleiden.nl/nl/agenda/2276785049/corpus-kids-academy-de-poepfabriek",
-  "src": "Visit Leiden",
-  "nl": "Tijdens deze editie van de CORPUS Kids Academy ontdekken kinderen hoe het verteringsstelsel werkt en welke belangrijke rol de darmen spelen in je lichaam. Heb je bijvoorbeeld ooit gehoord van de miljoenen bacteriën in je darmen die helpen voedsel te verteren?",
-  "addr": "Willem Einthovenstraat 1",
-  "img": "https://assets.plaece.nl/odp-leiden/image/corpus-reis-door-de-mens-darmen_2262972108.jpg",
-  "s": "2026-10-21",
-  "e": "2026-10-21",
-  "time": "13:00",
-  "cat": "Culture",
-  "catSure": false,
-  "d": "Cultural event at CORPUS 'reis door de mens', Oegstgeest.",
-  "auto": 1
- },
- {
   "id": "vl-1972148642",
   "t": "Caat Comedy (EN) – Boom Chicago’s Comedy Explosion #1",
   "where": "Café Caat",
@@ -865,6 +847,25 @@
   "d": "Concert at Leidse Schouwburg. Tickets from €25.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-911634712",
+  "t": "Full Moon Ritual – Soul (met Dennis Kokmeijer)",
+  "where": "Polderpad 8",
+  "url": "https://www.visitleiden.nl/nl/agenda/911634712/full-moon-ritual-soul-met-dennis-kokmeijer",
+  "src": "Visit Leiden",
+  "nl": "Bij volle maan komen we samen rond het vuur, met een kop cacao: dichter bij de natuur en verbonden met elkaar.",
+  "addr": "Polderpad 8",
+  "img": "https://assets.plaece.nl/odp-leiden/image/7215a1ac607f66e04429960de10485da3ef3b67c_01a13deb-812e-71e3-aa81-520e6a68fbc4.jpg",
+  "price": 65.0,
+  "s": "2026-10-25",
+  "e": "2026-10-25",
+  "time": "18:00",
+  "cat": "Outdoors",
+  "catSure": false,
+  "d": "An outdoor outing, Polderpad 8. Tickets from €65.",
+  "auto": 1,
+  "c": 3
  },
  {
   "id": "vl-155984434",
@@ -1842,6 +1843,23 @@
   "auto": 1
  },
  {
+  "id": "vl-3755109376",
+  "t": "Live Muziek - Brian Solo",
+  "where": "Van Goyen Jeneverhuis",
+  "url": "https://www.visitleiden.nl/nl/agenda/3755109376/live-muziek-brian-solo",
+  "src": "Visit Leiden",
+  "nl": "Op zaterdag 31 oktober staat Brian Solo bij ons in het café!",
+  "addr": "Schoolsteeg 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/f25b367ac8d72772529d686fb29a5acb21a53f5e_01a14fd5-1f48-7cbd-893b-d10d12c2dd29.jpg",
+  "s": "2026-10-31",
+  "e": "2026-10-31",
+  "time": "15:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at Van Goyen Jeneverhuis.",
+  "auto": 1
+ },
+ {
   "id": "vl-618258158",
   "t": "Meowloween (Halloween) met Cat Art",
   "where": "Middelstegracht 89M",
@@ -2107,6 +2125,22 @@
   "c": 3
  },
  {
+  "id": "vl-3507086386",
+  "t": "Consent is Key week",
+  "where": "Leiden",
+  "town": "Leiden/den Haag",
+  "url": "https://www.visitleiden.nl/nl/agenda/3507086386/consent-is-key-week",
+  "src": "Visit Leiden",
+  "nl": "Consent is Key is de jaarlijkse campagne gericht op preventie van seksueel grensoverschrijdend gedrag onder studenten.",
+  "img": "https://assets.plaece.nl/odp-leiden/image/0c9cff1472b69ead95af27844ce94b20f538a98a_01a143e9-e5f3-75e1-96e8-e6bd93e5ab4c.png",
+  "s": "2026-11-02",
+  "e": "2026-11-06",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at Leiden, Leiden/den Haag. Runs over several days.",
+  "auto": 1
+ },
+ {
   "id": "vl-1786516045",
   "t": "Studium generale - Samen praten en beslissen over kanker",
   "where": "Cleveringaplaats 1",
@@ -2199,6 +2233,23 @@
   "cat": "Culture",
   "catSure": false,
   "d": "Cultural event at Café 't Praethuys. On 2 dates.",
+  "auto": 1
+ },
+ {
+  "id": "vl-4129056033",
+  "t": "Boekpresentatie: Een explosie van taal - Provocatie van Baudelaire tot Céline",
+  "where": "Cleveringaplaats 1",
+  "url": "https://www.visitleiden.nl/nl/agenda/4129056033/boekpresentatie-een-explosie-van-taal-provocatie-van-baudelaire-tot-celine",
+  "src": "Visit Leiden",
+  "nl": "‘Ik ken geen betere bom dan een boek,’ schreef Stéphane Mallarmé. Taal is in staat tot een aanslag.",
+  "addr": "Cleveringaplaats 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/39381242bc0fc8d8c5389b72bb577f89e875bc92_01a1549b-643d-789e-b2a5-d81a3448c73b.png",
+  "s": "2026-11-05",
+  "e": "2026-11-05",
+  "time": "19:30",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "A talk, Cleveringaplaats 1.",
   "auto": 1
  },
  {
@@ -2674,6 +2725,23 @@
   "d": "Theatre at Theater Ins Blau. Tickets from €30.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-1562596889",
+  "t": "Banned Books Festival",
+  "where": "Breestraat",
+  "url": "https://www.visitleiden.nl/nl/agenda/1562596889/banned-books-festival",
+  "src": "Visit Leiden",
+  "nl": "Mayflower Bookshop presenteert het Banned Books Festival. Een middag vol lezingen, discussie en toneel.",
+  "addr": "Breestraat",
+  "img": "https://assets.plaece.nl/odp-leiden/image/d8b48c1a77abb99f5e6aeb9548ef5c4a0562f4cb_01a158ff-6fbd-7aee-979e-13b24d7a7c6f.jpg",
+  "s": "2026-11-08",
+  "e": "2026-11-08",
+  "time": "13:30",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Festival at Breestraat.",
+  "auto": 1
  },
  {
   "id": "vl-672249122",
@@ -3296,6 +3364,25 @@
   "c": 2
  },
  {
+  "id": "vl-1129685825",
+  "t": "AVA Trio",
+  "where": "BplusC locatie Muziekhuis/Qbus",
+  "url": "https://www.visitleiden.nl/nl/agenda/1129685825/ava-trio",
+  "src": "Visit Leiden",
+  "nl": "Baritonsaxofonist Guiseppe Doronzo fietst al een paar jaar rond in Groningen. Eerst met de talentvolle Michael Moore Pool, later met het experimentele kwartet Falga.",
+  "addr": "Middelstegracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/06eea646a222724f9e49812aa807929118732473_01a15863-aab6-7362-b5d8-2d0e9934c8b1.jpg",
+  "price": 17.0,
+  "s": "2026-11-14",
+  "e": "2026-11-14",
+  "time": "20:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-736496824",
   "t": "Amuse Festival 2026",
   "where": "Sumatrastraat 201",
@@ -3313,6 +3400,23 @@
   "d": "Festival, Sumatrastraat 201. Tickets from €15.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-2674761967",
+  "t": "Arabic Language & Culture Festival",
+  "where": "Hortus botanicus Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/2674761967/arabic-language-culture-festival",
+  "src": "Visit Leiden",
+  "nl": "Ontdek de rijkdom van de Arabische taal en cultuur.",
+  "addr": "Rapenburg 73",
+  "img": "https://assets.plaece.nl/odp-leiden/image/9e581ae1eafb9872aa05b43426d9dc3028d9518e_01a15460-a920-7a91-a9f7-5ba58deb742e.jpg",
+  "s": "2026-11-14",
+  "e": "2026-11-15",
+  "time": "11:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Festival at Hortus botanicus Leiden. Runs over several days.",
+  "auto": 1
  },
  {
   "id": "vl-2050608872",
@@ -3662,6 +3766,23 @@
   "cat": "Music",
   "catSure": true,
   "d": "Concert at Cultuurhuis Sijthoff.",
+  "auto": 1
+ },
+ {
+  "id": "vl-707028623",
+  "t": "Ochtendconcert Circus Droste",
+  "where": "Maresingel 51",
+  "url": "https://www.visitleiden.nl/nl/agenda/707028623/ochtendconcert-circus-droste",
+  "src": "Visit Leiden",
+  "nl": "Sander ten Napel, Brian Sinnema en Saskia de Korte spelen eigen composities (waaronder ‘De dood van de olifant’) op gitaar, sax en cello.",
+  "addr": "Maresingel 51",
+  "img": "https://assets.plaece.nl/odp-leiden/image/6eac0623f548f637b62e7fbc66430f21b3adddd3_01a158b6-032d-710e-8c59-ea787b404357.jpg",
+  "s": "2026-11-15",
+  "e": "2026-11-15",
+  "time": "11:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert, Maresingel 51.",
   "auto": 1
  },
  {
@@ -4186,6 +4307,24 @@
   "c": 2
  },
  {
+  "id": "vl-561082438",
+  "t": "CORPUS Kids Academy - De Poepfabriek",
+  "where": "Willem Einthovenstraat",
+  "town": "Oegstgeest",
+  "url": "https://www.visitleiden.nl/nl/agenda/561082438/corpus-kids-academy-de-poepfabriek-1",
+  "src": "Visit Leiden",
+  "nl": "Jouw poepfabriek doet veel meer dan alleen voedsel verteren.",
+  "addr": "Willem Einthovenstraat",
+  "img": "https://assets.plaece.nl/odp-leiden/image/485f319175a5facf3dd7b6d0f21945cca35e01ca_01a13ec1-5e65-7680-906b-4580daaa3c2a.png",
+  "s": "2026-11-21",
+  "e": "2026-11-21",
+  "time": "13:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at Willem Einthovenstraat, Oegstgeest.",
+  "auto": 1
+ },
+ {
   "id": "vl-3036366674",
   "t": "Comedy Night International",
   "where": "Leiden",
@@ -4256,6 +4395,23 @@
   "cat": "Exhibition",
   "catSure": true,
   "d": "Market at Hooglandse Kerk.",
+  "auto": 1
+ },
+ {
+  "id": "vl-2832555158",
+  "t": "Live Muziek - Henkie en Erik (kerst editie)",
+  "where": "Van Goyen Jeneverhuis",
+  "url": "https://www.visitleiden.nl/nl/agenda/2832555158/live-muziek-henkie-en-erik-kerst-editie",
+  "src": "Visit Leiden",
+  "nl": "De vroege kerst editie van Henkie en Erik stelt nooit teleur.",
+  "addr": "Schoolsteeg 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/947722b3f5bec787e836fab8ba5ba3c358dfa490_01a14fd6-f52b-79ad-9875-2af302117a0d.jpg",
+  "s": "2026-11-21",
+  "e": "2026-11-21",
+  "time": "17:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at Van Goyen Jeneverhuis.",
   "auto": 1
  },
  {
@@ -4431,6 +4587,21 @@
   "auto": 1
  },
  {
+  "id": "vl-2855667316",
+  "t": "Het spel (met) en de verhalen",
+  "where": "Pieterskerkgracht 9a",
+  "url": "https://www.visitleiden.nl/nl/agenda/2855667316/het-spel-met-en-de-verhalen",
+  "src": "Visit Leiden",
+  "nl": "Wat gebeurt er wanneer een kunstenaar gaat spelen?",
+  "addr": "Pieterskerkgracht 9a",
+  "img": "https://assets.plaece.nl/odp-leiden/image/205e169ea7dc8a672364b697fe8f6a14cd1ec696_01a1585d-2526-70ce-88b8-6da61a8b445f.jpg",
+  "e": "2026-11-22",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition, Pieterskerkgracht 9a.",
+  "auto": 1
+ },
+ {
   "id": "vl-2405658920",
   "t": "Najaarsproeverij Fijnewijnen",
   "where": "Haagweg 4",
@@ -4464,6 +4635,25 @@
   "cat": "Theatre",
   "catSure": true,
   "d": "Guided walk or tour at Leiden. Tickets from €19.95.",
+  "auto": 1,
+  "c": 2
+ },
+ {
+  "id": "vl-2550162678",
+  "t": "Toneelvoorstelling \"De prijs in Bloed en Ketchup\"",
+  "where": "Oude vest 43",
+  "url": "https://www.visitleiden.nl/nl/agenda/2550162678/toneelvoorstelling-de-prijs-in-bloed-en-ketchup",
+  "src": "Visit Leiden",
+  "nl": "Karel Sluiter, een notoir streekromanschrijver, wordt door zijn uitgever gevraagd om nu eens voor de verandering een Thriller te gaan schrijven.",
+  "addr": "Oude vest 43",
+  "img": "https://assets.plaece.nl/odp-leiden/image/f1ccf2c37afe592617bbf317e29242e85c540703_01a15318-3e89-75fc-b7ba-6129a8687826.png",
+  "price": 18.5,
+  "s": "2026-11-23",
+  "e": "2026-11-23",
+  "time": "20:15",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Theatre, Oude vest 43. Tickets from €18.50.",
   "auto": 1,
   "c": 2
  },
