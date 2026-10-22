@@ -3706,7 +3706,7 @@
   "src": "Visit Leiden",
   "nl": "Een weekend vol kunst, muziek en tekst met kunstenaars Sander ten Napel, Celine van Hoek, Rob Steenhorst en Marjan Waanders.",
   "addr": "Maresingel 51",
-  "img": "https://assets.plaece.nl/odp-leiden/image/cb92c94eabe0a8caba28ad6e076a5a981108571b_01a14e5e-76e5-7d16-bc06-133c298dda65.jpg",
+  "img": "https://assets.plaece.nl/odp-leiden/image/buitenbeen_2877563962.jpg",
   "e": "2026-11-15",
   "cat": "Exhibition",
   "catSure": true,
@@ -5339,6 +5339,22 @@
   "c": 1
  },
  {
+  "id": "nb-club-3voor12-leiden-03-dec-2026",
+  "t": "Club 3voor12 Leiden",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/club-3voor12-leiden-03-dec-2026",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Pop",
+  "nl": "Met Steal The Moon, The Morrows & Zikko Lopez",
+  "s": "2026-12-03",
+  "e": "2026-12-03",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-07/Club%203voor12%20Leiden%204-3.png.webp?itok=TEVkfTTj",
+  "d": "Pop gig at Nobel.",
+  "auto": 1
+ },
+ {
   "id": "vl-306507917",
   "t": "Huizingalezing 2026 door Robbert Dijkgraaf – Het recht op verwondering",
   "where": "Stadsgehoorzaal Leiden",
@@ -6708,6 +6724,25 @@
   "c": 2
  },
  {
+  "id": "vl-1144547160",
+  "t": "A Ceremony of Carols van Benjamin Britten, met muziek van John Tavener en Arvo Pärt",
+  "where": "Lange Mare, 48",
+  "url": "https://www.visitleiden.nl/nl/agenda/1144547160/a-ceremony-of-carols-van-benjamin-britten-met-muziek-van-john-tavener-en-arvo-part",
+  "src": "Visit Leiden",
+  "nl": "Red Events en La Chapelle Sauvage presenteren een stralend kerstprogramma rond Benjamin Brittens A Ceremony of Carols.",
+  "addr": "Lange Mare, 48",
+  "img": "https://assets.plaece.nl/odp-leiden/image/db8f0018d90bb9655e34bb93ce63393cb792cba9_01a15800-f532-7026-99ed-44a4ed7d1232.jpg",
+  "price": 25.0,
+  "s": "2026-12-18",
+  "e": "2026-12-18",
+  "time": "20:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music, Lange Mare, 48. Tickets from €25.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-4130165827",
   "t": "De Geopolitieke Eindejaarsshow – Laila Frank, Stefan de Vries en Kiki Schippers",
   "where": "Stadsgehoorzaal Leiden",
@@ -6854,6 +6889,25 @@
   "auto": 1
  },
  {
+  "id": "vl-1038409724",
+  "t": "Holidays are Coming - Kerstconcert",
+  "where": "Theater Ins Blau",
+  "url": "https://www.visitleiden.nl/nl/agenda/1038409724/holidays-are-coming-kerstconcert",
+  "src": "Visit Leiden",
+  "nl": "Musicalgezelschap Otis staat op zaterdag 19 en zondag 20 december in Theater Ins Blau met de hartverwarmende muzikale voorstelling Holidays are Coming.",
+  "addr": "Haagweg 6",
+  "img": "https://assets.plaece.nl/odp-leiden/image/0ca480a860f8865e371bde8e4fad6f29bfe8a5b9_01a15892-b392-7209-a7cb-bbf80a810fe5.png",
+  "price": 20.5,
+  "s": "2026-12-19",
+  "e": "2026-12-20",
+  "time": "15:00",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Concert at Theater Ins Blau. Runs over several days. Tickets from €20.50.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-295008580",
   "t": "Paul de Leeuw, Annick Boer e.a. – We zijn toch familie",
   "where": "Leidse Schouwburg",
@@ -6948,6 +7002,21 @@
   "d": "Guest performance at Stadsgehoorzaal. Tickets from €27.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-2908471917",
+  "t": "Momentum - solotentoonstelling Hetty Arens",
+  "where": "Pieterskerkgracht 9a",
+  "url": "https://www.visitleiden.nl/nl/agenda/2908471917/momentum-solotentoonstelling-hetty-arens",
+  "src": "Visit Leiden",
+  "nl": "Na meer dan 35 jaar als beeldend kunstenaar en 25 jaar als lid van ARS is het voor Hetty Arens een bijzonder moment om haar werk bijeen te brengen in een solotentoonstelling.",
+  "addr": "Pieterskerkgracht 9a",
+  "img": "https://assets.plaece.nl/odp-leiden/image/e1506d0eab2bccb39225c621b653862b10b2fe23_01a15875-bf45-7286-bd32-cbf39f72b5b6.jpg",
+  "e": "2026-12-20",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition, Pieterskerkgracht 9a.",
+  "auto": 1
  },
  {
   "id": "vl-3898319131",
@@ -7427,6 +7496,22 @@
   "d": "Drama at Leidse Schouwburg. Tickets from €29.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "nb-muzikanten-meet-10-jan-2027",
+  "t": "Muzikanten Meet-up",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/muzikanten-meet-10-jan-2027",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Overig",
+  "nl": "Met workshop liveperformance en gezellige borrel voor muzikanten",
+  "s": "2027-01-10",
+  "e": "2027-01-10",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-10/muzikantenborrel%204-3.jpg.webp?itok=XgAvTjYL",
+  "d": "Live music at Nobel.",
+  "auto": 1
  },
  {
   "id": "vl-2009298447",
