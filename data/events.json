@@ -433,7 +433,7 @@
   "s": "2026-10-25",
   "e": "2026-10-25",
   "time": "13:30",
-  "cat": "Music",
+  "cat": "Theatre",
   "catSure": true,
   "d": "Concert, Trix Terwindtstraat 4.",
   "auto": 1
@@ -1632,9 +1632,9 @@
   "s": "2026-11-01",
   "e": "2026-11-01",
   "time": "18:00",
-  "cat": "Music",
+  "cat": "Talks",
   "catSure": true,
-  "d": "Live music at Rijksmuseum van Oudheden. Tickets from €15.",
+  "d": "A talk at Rijksmuseum van Oudheden. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -2248,6 +2248,23 @@
   "d": "Live music at Nobel. Tickets from €17.90.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-620752573",
+  "t": "MakersMaand",
+  "where": "Nieuwstraat 7",
+  "url": "https://www.visitleiden.nl/nl/agenda/620752573/makersmaand",
+  "src": "Visit Leiden",
+  "nl": "Een Leidse groep kunstenaars en ambachtelijke makers presenteert diverse werken",
+  "addr": "Nieuwstraat 7",
+  "img": "https://assets.plaece.nl/odp-leiden/image/dad347e62b2a14b726810a80a824f830f8a02117_01a1655e-074b-75b2-9e66-0b9e787ea617.jpg",
+  "s": "2026-11-07",
+  "e": "2026-11-07",
+  "time": "10:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, Nieuwstraat 7.",
+  "auto": 1
  },
  {
   "id": "vl-1481273551",
@@ -4934,6 +4951,36 @@
   "d": "Workshop, Haven 4. On 2 dates. Tickets from €32.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-4211172843",
+  "t": "Growing Wings, de kleurrijke wereld van Mariska Eyck",
+  "where": "Nieuwstraat 17b",
+  "url": "https://www.visitleiden.nl/nl/agenda/4211172843/growing-wings-de-kleurrijke-wereld-van-mariska-eyck",
+  "src": "Visit Leiden",
+  "nl": "Kan kunst ons meer vrijheid geven, vleugels, zeg maar? Mariska Eyck denkt het wel. Door het maken van kunst, en ook door het kijken naar kunst, openen we delen van onszelf die anders niet zo toegankelijk zijn.",
+  "addr": "Nieuwstraat 17b",
+  "img": "https://assets.plaece.nl/odp-leiden/image/d53b45d461907027beb60c58b4f3a0dedf566516_01a168cb-e51f-72bb-a6ed-fbc140a03225.jpg",
+  "e": "2026-11-29",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition, Nieuwstraat 17b.",
+  "auto": 1
+ },
+ {
+  "id": "vl-2349225341",
+  "t": "Keramiek Conny Pols Water als Metafoor",
+  "where": "Nieuwstraat 17b",
+  "url": "https://www.visitleiden.nl/nl/agenda/2349225341/keramiek-van-conny-pols-water-als-metafoor",
+  "src": "Visit Leiden",
+  "nl": "Conny Pols heeft haar passie gevonden in het werken met klei. Water is voor een keramist onmisbaar, maar ook een essentieel onderdeel van ons leven; we zijn er sterk van afhankelijk. Het stroomt en volgt zijn eigen weg,",
+  "addr": "Nieuwstraat 17b",
+  "img": "https://assets.plaece.nl/odp-leiden/image/b6323773708962541d5ad28efe69aa86c33d2de0_01a1689a-e605-76fc-b2a9-cf9167753ec4.jpg",
+  "e": "2026-11-29",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition, Nieuwstraat 17b.",
+  "auto": 1
  },
  {
   "id": "vl-3859985638",
