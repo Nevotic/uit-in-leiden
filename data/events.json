@@ -7713,6 +7713,21 @@
   "c": 1
  },
  {
+  "id": "vl-2064844048",
+  "t": "Tentoonstelling Ontdekkingstocht",
+  "where": "Museum het Leids Wevershuis",
+  "url": "https://www.visitleiden.nl/nl/agenda/2064844048/tentoonstelling-ontdekkingstocht",
+  "src": "Visit Leiden",
+  "nl": "Liesbeth van der Zee exposeert met 'Ontdekkingstocht' in museum Het Leids Wevershuis.",
+  "addr": "Middelstegracht 143",
+  "img": "https://assets.plaece.nl/odp-leiden/image/08d9a0d2660bc653e955086c36a226b64b70fd67_01a16e27-dc84-77f2-9db2-ab3fe713ba0f.jpg",
+  "e": "2027-02-28",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition at Museum het Leids Wevershuis.",
+  "auto": 1
+ },
+ {
   "id": "vl-2806999675",
   "t": "Protocols of Becoming",
   "where": "Rijksmuseum Boerhaave",
