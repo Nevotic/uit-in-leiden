@@ -1144,9 +1144,9 @@
   "s": "2026-11-01",
   "e": "2026-11-01",
   "time": "18:00",
-  "cat": "Music",
+  "cat": "Talks",
   "catSure": true,
-  "d": "Live music at Rijksmuseum van Oudheden. Tickets from €15.",
+  "d": "A talk at Rijksmuseum van Oudheden. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -1169,6 +1169,23 @@
   "d": "Quiz night at Nobel. Tickets from €25.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-1977722003",
+  "t": "Burchtwandeling met Gilde Leiden",
+  "where": "De Burcht",
+  "url": "https://www.visitleiden.nl/nl/agenda/1977722003/burchtwandeling-met-gilde-leiden-1",
+  "src": "Visit Leiden",
+  "nl": "Wandel mee met de gidsen van Gilde Leiden Stadswandelingen die de Burcht als uitgangspunt nemen voor een aantrekkelijke stadswandeling.",
+  "addr": "Burgsteeg",
+  "img": "https://assets.plaece.nl/odp-leiden/image/burcht-gilde_2015670745.jpg",
+  "s": "2026-11-01",
+  "e": "2026-11-01",
+  "time": "14:00",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "Guided walk or tour at De Burcht.",
+  "auto": 1
  },
  {
   "id": "vl-2785135942",
@@ -1692,6 +1709,23 @@
   "auto": 1
  },
  {
+  "id": "vl-94534061",
+  "t": "GenderCafé",
+  "where": "COC de Kroon",
+  "url": "https://www.visitleiden.nl/nl/agenda/94534061/gendercafe-1",
+  "src": "Visit Leiden",
+  "nl": "Een maandelijkse ontmoetingsplek voor transgenders, crossdressers, non-binaire en genderfluïde personen, mensen met een intersekse conditie en voor mensen die nog zoekende zijn naar hun genderidentiteit.",
+  "addr": "Langegracht 65",
+  "img": "https://assets.plaece.nl/odp-leiden/image/decb9b15d3f26db55db157928047c13e308e3c90_01a174cc-c643-7bb4-93e2-2812d7f61194.png",
+  "s": "2026-11-07",
+  "e": "2026-11-07",
+  "time": "20:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Talk at COC de Kroon.",
+  "auto": 1
+ },
+ {
   "id": "vl-1595311540",
   "t": "Izhar Elias & Brunsvik String Trio – Paganini: duivelskunstenaar en hartenveroveraar",
   "where": "Stadsgehoorzaal Leiden",
@@ -2157,7 +2191,7 @@
   "where": "COC de Kroon",
   "url": "https://www.visitleiden.nl/nl/agenda/1180232018/zocieteit",
   "src": "Visit Leiden",
-  "nl": "De Zociëteit bijeenkomsten zijn gezellig, ontspannen en relaxed.",
+  "nl": "Op één zondagmiddag in de maand organiseert deze werkgroep een gezellige bijeenkomst. Hier krijgen de 40+ bezoekers de kans om elkaar te leren kennen en gezellig een drankje te doen.",
   "addr": "Langegracht 65",
   "img": "https://assets.plaece.nl/odp-leiden/image/a48f2b8ff6a572d45a4006255052e5a4edaad549_01a07d53-49cc-73c4-8911-71ab294df8bb.png",
   "s": "2026-11-08",
@@ -2361,6 +2395,23 @@
   "d": "Theatre at Theater Ins Blau. Tickets from €10.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-542417500",
+  "t": "AutiRoze",
+  "where": "COC de Kroon",
+  "url": "https://www.visitleiden.nl/nl/agenda/542417500/autiroze-1",
+  "src": "Visit Leiden",
+  "nl": "Ontmoetingsgroep, gericht op LHBTQIA+-ers met autisme en/of andere vormen van neurodiversiteit, organiseert maandelijkse bijeenkomsten om in een prikkelarme omgeving autisme en andere vormen van neurodiversiteit bespreekbaar te maken en sociale contacten te bevorderen.",
+  "addr": "Langegracht 65",
+  "img": "https://assets.plaece.nl/odp-leiden/image/b5efab6f79cf4b8f5ea872cf9bbe604a6802e8fd_01a174d2-1bac-7d0d-b8f4-fc7738aa258f.png",
+  "s": "2026-11-12",
+  "e": "2026-11-12",
+  "time": "19:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at COC de Kroon.",
+  "auto": 1
  },
  {
   "id": "vl-2106432092",
@@ -2664,6 +2715,23 @@
   "cat": "Culture",
   "catSure": false,
   "d": "Festival at Hortus botanicus Leiden. Runs over several days.",
+  "auto": 1
+ },
+ {
+  "id": "vl-3109942246",
+  "t": "Cocktail Leiden",
+  "where": "COC de Kroon",
+  "url": "https://www.visitleiden.nl/nl/agenda/3109942246/cocktail-leiden-1",
+  "src": "Visit Leiden",
+  "nl": "De werkgroep wil het isolement van asielzoekers en vluchtelingen met een LHBTI+ geaardheid doorbreken en hen op een veilige manier introduceren in de Nederlandse samenleving.",
+  "addr": "Langegracht 65",
+  "img": "https://assets.plaece.nl/odp-leiden/image/fb249fda8e3e5fb9b9db7a1f5bebd846168e9ae2_01a174d3-94a9-740e-98da-6a40cfd9a5c9.png",
+  "s": "2026-11-14",
+  "e": "2026-11-14",
+  "time": "14:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at COC de Kroon.",
   "auto": 1
  },
  {
@@ -3050,6 +3118,23 @@
   "d": "Comedy at Grand Café De Burcht. Tickets from €15.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-3462054768",
+  "t": "Sunday Times (woman-only)",
+  "where": "COC de Kroon",
+  "url": "https://www.visitleiden.nl/nl/agenda/3462054768/sunday-times-woman-only-1",
+  "src": "Visit Leiden",
+  "nl": "Deze werkgroep organiseert een women- only meeting op de laatste zondag van de maand. Vanaf De Kroon gebruikt om een gezellige avond voor vrouwen van alle leeftijdscategorieën te organiseren.",
+  "addr": "Langegracht 65",
+  "img": "https://assets.plaece.nl/odp-leiden/image/fe11d4699fde61001e56d654645278154f0f5f65_01a174d5-38a2-7a7b-92a9-a0aafea3516d.png",
+  "s": "2026-11-15",
+  "e": "2026-11-15",
+  "time": "18:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at COC de Kroon.",
+  "auto": 1
  },
  {
   "id": "vl-2086203738",
@@ -3608,6 +3693,23 @@
   "d": "Live music at Nobel. Tickets from €14.50.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-1346262739",
+  "t": "Jong & Out",
+  "where": "COC de Kroon",
+  "url": "https://www.visitleiden.nl/nl/agenda/1346262739/jong-out-1",
+  "src": "Visit Leiden",
+  "nl": "De werkgroep Jong&Out organiseert eens per maand een evenement. Van een spelletjes avond tot een kletsmiddag en andere leuke activiteiten. Het doel is om eren veilige plek te creëren waarbij je andere LHBTI+ jongeren kunt ontmoeten.",
+  "addr": "Langegracht 65",
+  "img": "https://assets.plaece.nl/odp-leiden/image/9ca09f504da822f411192959833709d791501cac_01a174d6-7c4a-71eb-806c-b86d0ddd910d.png",
+  "s": "2026-11-21",
+  "e": "2026-11-21",
+  "time": "18:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event at COC de Kroon.",
+  "auto": 1
  },
  {
   "id": "vl-2707624125",
@@ -6676,6 +6778,25 @@
   "cat": "Exhibition",
   "catSure": true,
   "d": "Scientists and artists on how we decide what is true, in a time of fake news and AI."
+ },
+ {
+  "id": "vl-1752756354",
+  "t": "Comedy Dubbel Fabian Franciscus en Teun van den Elzen",
+  "where": "Grand Café De Burcht",
+  "url": "https://www.visitleiden.nl/nl/agenda/1752756354/comedy-dubbel-fabian-franciscus-en-teun-van-den-elzen-1",
+  "src": "Visit Leiden",
+  "nl": "Bereid je voor op een dubbele dosis stand-up bij Comedy Dubbel! Tijdens deze editie brengen twee comedians ieder een langere set, waardoor je echt meer van elke comedian ziet. Geen korte stukjes, maar langere sets. Twee comedians,",
+  "addr": "Burgsteeg 14",
+  "img": "https://assets.plaece.nl/odp-leiden/image/7a7e5b93855f57e89be2cbc30c3b76c3d1333f93_01a155b4-d2c3-7b28-aa6a-aadae4bb51ff.png",
+  "price": 17.0,
+  "s": "2027-01-06",
+  "e": "2027-01-06",
+  "time": "20:15",
+  "cat": "Comedy",
+  "catSure": true,
+  "d": "Comedy at Grand Café De Burcht. Tickets from €17.",
+  "auto": 1,
+  "c": 2
  },
  {
   "id": "vl-3126594547",
