@@ -43,8 +43,7 @@
   "time": "20:15",
   "cat": "Theatre",
   "catSure": true,
-  "genre": "Cabaret",
-  "d": "Dutch-language cabaret at Leidse Schouwburg. Tickets from €27.50.",
+  "d": "Theatre at Leidse Schouwburg. Tickets from €27.50.",
   "auto": 1,
   "c": 2
  },
@@ -2236,6 +2235,23 @@
   "c": 2
  },
  {
+  "id": "vl-1313383307",
+  "t": "SCL Lustrumavond over \"Wetenschap en Sport\"",
+  "where": "Scheltema Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/1313383307/scl-lustrumavond-over-wetenschap-en-sport",
+  "src": "Visit Leiden",
+  "nl": "Het Science Café Leiden bestaat dit jaar 20 jaar en viert dit lustrum met een speciale avond met als thema \"Wetenschap en Sport\".",
+  "addr": "Marktsteeg 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/feb891ae247883c7f5c4637edbdbc7a774274b4c_01a177f2-ec09-7827-aa48-0b33688e2d14.jpg",
+  "s": "2026-11-10",
+  "e": "2026-11-10",
+  "time": "19:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "A talk at Scheltema Leiden.",
+  "auto": 1
+ },
+ {
   "id": "sc-science-cafe-leiden-september-2025-editie-510-18",
   "t": "Science Café Leiden – November 2026 LUSTRUM Editie",
   "where": "Scheltema",
@@ -3092,6 +3108,25 @@
   "catSure": true,
   "d": "Talk at Rijksmuseum van Oudheden.",
   "auto": 1
+ },
+ {
+  "id": "vl-3492558376",
+  "t": "Marie Curie in Leiden: rondleiding en boekpresentatie",
+  "where": "Boekhandel De Kler",
+  "url": "https://www.visitleiden.nl/nl/agenda/3492558376/marie-curie-in-leiden-rondleiding-en-boekpresentatie",
+  "src": "Visit Leiden",
+  "nl": "Ter gelegenheid van het verschijnen van haar boek De liefdes van Marie Curie werkt auteur Jacobine van den Hoek mee aan een bijzondere stadswandeling, georganiseerd door Gert-Jan Hooymans, stadsgids bij Leiden City Guide, in samenwerking met boekhandel De Kler.",
+  "addr": "Breestraat 161",
+  "img": "https://assets.plaece.nl/odp-leiden/image/c2aa77168ce7ffb1060972032c7a6464605a8a54_01a179e6-3fbe-786a-8a0f-e9f544c4d1e9.png",
+  "price": 10.0,
+  "s": "2026-11-15",
+  "e": "2026-11-15",
+  "time": "13:00",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "Guided walk or tour at Boekhandel De Kler. Tickets from €10.",
+  "auto": 1,
+  "c": 1
  },
  {
   "id": "vl-707028623",
