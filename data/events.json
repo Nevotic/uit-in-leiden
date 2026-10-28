@@ -1075,9 +1075,9 @@
   "s": "2026-11-01",
   "e": "2026-11-01",
   "time": "18:00",
-  "cat": "Music",
+  "cat": "Talks",
   "catSure": true,
-  "d": "Live music at Rijksmuseum van Oudheden. Tickets from €15.",
+  "d": "A talk at Rijksmuseum van Oudheden. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -3315,6 +3315,25 @@
   "d": "Theatre lecture at Stadsgehoorzaal Leiden. Tickets from €29.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-967322416",
+  "t": "Albert Verweylezing door schrijver Peter Buwalda",
+  "where": "Hortus botanicus Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/967322416/albert-verweylezing-door-schrijver-peter-buwalda",
+  "src": "Visit Leiden",
+  "nl": "Op woensdagavond 18 november houdt gastschrijver Peter Buwalda de jaarlijkse Albert Verweylezing, met als titel: De opgeslotenheid van de roman in zijn kaft.",
+  "addr": "Rapenburg 73",
+  "img": "https://assets.plaece.nl/odp-leiden/image/19573b2e4021eb677cbcb265d1210ae8313a31c4_01a17e12-4ce5-7cf6-9b25-7b53639c9b04.jpg",
+  "price": 10.0,
+  "s": "2026-11-18",
+  "e": "2026-11-18",
+  "time": "20:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk at Hortus botanicus Leiden. Tickets from €10.",
+  "auto": 1,
+  "c": 1
  },
  {
   "id": "vl-1687595805",
