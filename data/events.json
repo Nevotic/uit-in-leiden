@@ -4524,6 +4524,25 @@
   "auto": 1
  },
  {
+  "id": "vl-1091771672",
+  "t": "Najaarsconcert door piano-virtuoos Connor Rohan",
+  "where": "Lammermarkt 59",
+  "url": "https://www.visitleiden.nl/nl/agenda/1091771672/najaarsconcert-door-piano-virtuoos-connor-rohan",
+  "src": "Visit Leiden",
+  "nl": "Connor Roham, een Amerikaanse jongeman, een leerling van de gevierde Oostenrijkse pianist Ingolf Wunder, zal werken spelen van Beethoven, Liszt en Chopin op de intieme concertzolder van Emile van Leenen.",
+  "addr": "Lammermarkt 59",
+  "img": "https://assets.plaece.nl/odp-leiden/image/bbfb49fccc6296c9564327ce2a50fede463da616_01a18714-b615-78b8-99e2-31e5cc960889.jpg",
+  "price": 30.0,
+  "s": "2026-11-28",
+  "e": "2026-11-28",
+  "time": "20:15",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert, Lammermarkt 59. Tickets from €30.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-202651014",
   "t": "Open zang zaterdag ochtend (vol)",
   "where": "Cultuurhuis Sijthoff",
