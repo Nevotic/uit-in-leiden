@@ -419,6 +419,23 @@
   "auto": 1
  },
  {
+  "id": "vl-4080476001",
+  "t": "Sta op voor je Vrijheid!",
+  "where": "Marnixstraat 18",
+  "url": "https://www.visitleiden.nl/nl/agenda/4080476001/sta-op-voor-je-vrijheid",
+  "src": "Visit Leiden",
+  "nl": "Wat houdt de dienstplicht eigenlijk in? Kan ik deze dan ook weigeren?",
+  "addr": "Marnixstraat 18",
+  "img": "https://assets.plaece.nl/odp-leiden/image/f206fcf0ec251d8928c73206b825f5028b32c6a1_01a1844d-0c00-7af7-b1d9-fdacda391e65.jpg",
+  "s": "2026-10-30",
+  "e": "2026-10-30",
+  "time": "20:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "A talk, Marnixstraat 18.",
+  "auto": 1
+ },
+ {
   "id": "vl-4274778000",
   "t": "Stem van het Hart - verlangen",
   "where": "Haagweg 4F1",
@@ -840,9 +857,9 @@
   "s": "2026-11-01",
   "e": "2026-11-01",
   "time": "18:00",
-  "cat": "Music",
+  "cat": "Talks",
   "catSure": true,
-  "d": "Live music at Rijksmuseum van Oudheden. Tickets from €15.",
+  "d": "A talk at Rijksmuseum van Oudheden. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -2033,6 +2050,23 @@
   "d": "Theatre lecture at Leidse Schouwburg. Tickets from €24.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-1950923651",
+  "t": "New Moon Fireside Talk: TurnStones",
+  "where": "Polderpad 8",
+  "url": "https://www.visitleiden.nl/nl/agenda/1950923651/new-moon-fireside-talk-turnstones",
+  "src": "Visit Leiden",
+  "nl": "Op de avond van de nieuwe maan komen we samen rond het vuur voor een nieuwe Fireside Talk, een samenwerking tussen Kolimbri, Alpamayo Coaching en Dankjewellness.",
+  "addr": "Polderpad 8",
+  "img": "https://assets.plaece.nl/odp-leiden/image/4924da00b6020b44d959b392e8504e283df7d227_01a182e3-6b05-7ab4-8cc5-12a77f262f75.jpg",
+  "s": "2026-11-09",
+  "e": "2026-11-09",
+  "time": "19:30",
+  "cat": "Talks",
+  "catSure": false,
+  "d": "Talk, Polderpad 8.",
+  "auto": 1
  },
  {
   "id": "vl-1313383307",
@@ -3503,6 +3537,29 @@
   "c": 1
  },
  {
+  "id": "vl-69357324",
+  "t": "Resetdag voor Vrouwen",
+  "where": "Polderpad 8",
+  "url": "https://www.visitleiden.nl/nl/agenda/69357324/resetdag-voor-vrouwen",
+  "src": "Visit Leiden",
+  "nl": "Een dag waarop je even nergens hoeft te zijn. Deze resetdag is voor vrouwen die veel doen, veel dragen en vaak maar doorgaan.",
+  "addr": "Polderpad 8",
+  "img": "https://assets.plaece.nl/odp-leiden/image/288fb9b7ec19de8e4fe2dbfff4b27c4019ceca9c_01a18303-c0f5-7a17-97bb-88580fe7a133.jpg",
+  "price": 219.0,
+  "s": "2026-11-20",
+  "e": "2026-12-11",
+  "time": "10:00",
+  "dates": [
+   "2026-11-20",
+   "2026-12-11"
+  ],
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, Polderpad 8. On 2 dates. Tickets from €219.",
+  "auto": 1,
+  "c": 3
+ },
+ {
   "id": "vl-3193199418",
   "t": "Synoniem Woordkunst - Open mic avond",
   "where": "Theater de Generator",
@@ -3821,6 +3878,23 @@
   "d": "Special performance at Stadsgehoorzaal Leiden. Tickets from €22.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-4099595128",
+  "t": "Geloof en Troost – Concert én kennismaken met dirigent Ana Correia",
+  "where": "Rijndijk 283",
+  "url": "https://www.visitleiden.nl/nl/agenda/4099595128/geloof-en-troost-concert-en-kennismaken-met-dirigent-ana-correia",
+  "src": "Visit Leiden",
+  "nl": "Muziek als een warme deken in de donkere maanden. Dat is het uitgangspunt van het nieuwe concert van Kamerkoor Con Passione.",
+  "addr": "Rijndijk 283",
+  "img": "https://assets.plaece.nl/odp-leiden/image/d9df5663bffa3ad1e6d765ab68aed311b5f19d40_01a18332-b000-7845-8c6d-87b74309e496.jpg",
+  "s": "2026-11-22",
+  "e": "2026-11-22",
+  "time": "15:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert, Rijndijk 283.",
+  "auto": 1
  },
  {
   "id": "vl-819982181",
@@ -5295,6 +5369,23 @@
   "d": "Drama at Leidse Schouwburg. Tickets from €18.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-3980519993",
+  "t": "New Moon Fireside Talk: Planting the Seed of Your Dreams",
+  "where": "Polderpad 8",
+  "url": "https://www.visitleiden.nl/nl/agenda/3980519993/new-moon-fireside-talk-planting-the-seed-of-your-dreams",
+  "src": "Visit Leiden",
+  "nl": "De laatste Fireside Talk van het jaar, op de nieuwe maan in aanloop naar de winterzonnewende, het keerpunt van het jaar.",
+  "addr": "Polderpad 8",
+  "img": "https://assets.plaece.nl/odp-leiden/image/2376f6d4ef02955bcaeddd896b5ae742a94205eb_01a182e3-83f3-7201-a82c-2dd0d49fa771.jpg",
+  "s": "2026-12-09",
+  "e": "2026-12-09",
+  "time": "19:30",
+  "cat": "Talks",
+  "catSure": false,
+  "d": "Talk, Polderpad 8.",
+  "auto": 1
  },
  {
   "id": "vl-2694388252",
