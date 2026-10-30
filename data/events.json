@@ -742,9 +742,9 @@
   "s": "2026-11-01",
   "e": "2026-11-01",
   "time": "18:00",
-  "cat": "Talks",
+  "cat": "Music",
   "catSure": true,
-  "d": "A talk at Rijksmuseum van Oudheden. Tickets from €15.",
+  "d": "Live music at Rijksmuseum van Oudheden. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -2413,6 +2413,23 @@
   "c": 2
  },
  {
+  "id": "ls-47266",
+  "t": "VrijMiBo: Popquiz over U2",
+  "where": "Café Caat (Stadsgehoorzaal)",
+  "url": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/vrijmibo-popquiz-over-u2/",
+  "src": "Schouwburg & Stadsgehoorzaal",
+  "cat": "Theatre",
+  "catSure": false,
+  "genre": "Café Caat",
+  "nl": "Voorafgaand aan het concert 50 jaar U2 organiseren ervaren popquizmakers Ronald Walgreen en John van der Steen een korte, gevarieerde muziekquiz over … U2.",
+  "s": "2026-11-13",
+  "e": "2026-11-13",
+  "time": "18:00",
+  "img": "https://leidseschouwburg-stadsgehoorzaal.nl/assets/uploads/2026/10/Popquiz-thumbnail-768x768.png",
+  "d": "Quiz night at Café Caat (Stadsgehoorzaal).",
+  "auto": 1
+ },
+ {
   "id": "vl-1129685825",
   "t": "AVA Trio",
   "where": "BplusC locatie Muziekhuis/Qbus",
@@ -2567,17 +2584,18 @@
  {
   "id": "vl-3982683424",
   "t": "Intocht van Sinterklaas",
-  "where": "Leiden",
+  "where": "Beestenmarkt",
   "url": "https://www.visitleiden.nl/nl/agenda/3982683424/intocht-van-sinterklaas-1",
   "src": "Visit Leiden",
   "nl": "De Sint zet voet aan wal op de Beestenmarkt! Na aankomst volgt een feestelijke optocht door de Haarlemmerstraat, Breestraat en de Steenschuur. Het feestelijke middagprogramma vindt dit jaar plaats op de Garenmarkt.",
+  "addr": "Beestenmarkt",
   "img": "https://assets.plaece.nl/odp-leiden/image/intocht-sinterklaas-2022-jelte-liemburg_1995974040.jpg",
   "s": "2026-11-14",
   "e": "2026-11-14",
   "time": "12:00",
   "cat": "Culture",
   "catSure": false,
-  "d": "Cultural event at Leiden.",
+  "d": "Cultural event at Beestenmarkt.",
   "auto": 1
  },
  {
@@ -3256,6 +3274,23 @@
   "c": 1
  },
  {
+  "id": "ls-47346",
+  "t": "The Floor is Yours: Open mic",
+  "where": "Café Caat (Stadsgehoorzaal)",
+  "url": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/the-floor-is-yours-open-mic-2/",
+  "src": "Schouwburg & Stadsgehoorzaal",
+  "cat": "Theatre",
+  "catSure": false,
+  "genre": "Specials",
+  "nl": "Een verrassende, experimentele en afwisselende avond met optredens van nieuwe makers – van muziek en spoken word tot kleinkunst, theater of comedy.",
+  "s": "2026-11-19",
+  "e": "2026-11-19",
+  "time": "20:30",
+  "img": "https://leidseschouwburg-stadsgehoorzaal.nl/assets/uploads/2026/10/admin-ajax.png",
+  "d": "Special performance at Café Caat (Stadsgehoorzaal).",
+  "auto": 1
+ },
+ {
   "id": "vl-583910590",
   "t": "WIES",
   "where": "Nobel",
@@ -3631,6 +3666,22 @@
   "d": "Theatre at Theater Ins Blau. Tickets from €9.50.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "nb-nazomeren-21-nov-2026",
+  "t": "Nazomeren",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/nazomeren-21-nov-2026",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Hits",
+  "nl": "Waar house en hitjes samenkomen!",
+  "s": "2026-11-21",
+  "e": "2026-11-21",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-10/Copy%20of%20Website%20banner%201600x1200.png.webp?itok=l03gUuIc",
+  "d": "Club night at Nobel.",
+  "auto": 1
  },
  {
   "id": "vl-195060018",
@@ -5664,6 +5715,22 @@
   "c": 2
  },
  {
+  "id": "nb-nobel-award-halve-finale-12-dec-2026",
+  "t": "Nobel Award: halve Finale",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/nobel-award-halve-finale-12-dec-2026",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Pop",
+  "nl": "Muziekprijs voor opkomend talent",
+  "s": "2026-12-12",
+  "e": "2026-12-12",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-10/Afbeelding%201.jpg.webp?itok=4pwXJEof",
+  "d": "Pop gig at Nobel.",
+  "auto": 1
+ },
+ {
   "id": "vl-344928870",
   "t": "Open zang zaterdag ochtend (maria)",
   "where": "Cultuurhuis Sijthoff",
@@ -6414,6 +6481,22 @@
   "cat": "Exhibition",
   "catSure": true,
   "d": "An exhibition, Pieterskerkgracht 9a.",
+  "auto": 1
+ },
+ {
+  "id": "nb-nobel-award-finale-20-dec-2026",
+  "t": "Nobel Award: Finale",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/nobel-award-finale-20-dec-2026",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Pop",
+  "nl": "Ontknoping van muziekprijs voor opkomend talent",
+  "s": "2026-12-20",
+  "e": "2026-12-20",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-10/Afbeelding%201.jpg.webp?itok=4pwXJEof",
+  "d": "Pop gig at Nobel.",
   "auto": 1
  },
  {
@@ -7406,6 +7489,22 @@
   "d": "Tribute show at Nobel. Tickets from €27.90.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "ls-47347",
+  "t": "The Floor is Yours: Open Mic",
+  "where": "Café Caat (Stadsgehoorzaal)",
+  "url": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/the-floor-is-yours-open-mic-4/",
+  "src": "Schouwburg & Stadsgehoorzaal",
+  "cat": "Theatre",
+  "catSure": false,
+  "genre": "Gastprogramma",
+  "nl": "Een verrassende, experimentele en afwisselende avond met optredens van nieuwe makers – van muziek en spoken word tot kleinkunst, theater of comedy.",
+  "s": "2027-01-21",
+  "e": "2027-01-21",
+  "time": "20:30",
+  "d": "Guest performance at Café Caat (Stadsgehoorzaal).",
+  "auto": 1
  },
  {
   "id": "vl-3596886059",
