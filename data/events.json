@@ -802,6 +802,23 @@
   "auto": 1
  },
  {
+  "id": "vl-4182236082",
+  "t": "Muziek in de Bieb Stevenshof",
+  "where": "6 Trix Terwindtstraat",
+  "url": "https://www.visitleiden.nl/nl/agenda/4182236082/muziek-in-de-bieb-stevenshof-6",
+  "src": "Visit Leiden",
+  "nl": "DUO FRAQUÉ wegens succes op herhaling: Frans Bouwmeester op piano en Cees van Wetten, zang, brengen weer een optreden vol bijzondere muzikale ontmoetingen en mooie verhalen.",
+  "addr": "6 Trix Terwindtstraat",
+  "img": "https://assets.plaece.nl/odp-leiden/image/f522f90c26fe51303636dd7bba5739f9ea3d58fd_01a191f5-3916-7d98-8526-f6db1e6f63cf.jpg",
+  "s": "2026-11-07",
+  "e": "2026-11-07",
+  "time": "15:00",
+  "cat": "Music",
+  "catSure": false,
+  "d": "Live music, 6 Trix Terwindtstraat.",
+  "auto": 1
+ },
+ {
   "id": "vl-1481273551",
   "t": "Open dag COC Leiden",
   "where": "langegracht 65",
@@ -1164,6 +1181,24 @@
   "catSure": true,
   "genre": "Cultuur & Maatschappij",
   "d": "Live music at Nobel. Tickets from €15.",
+  "auto": 1,
+  "c": 1
+ },
+ {
+  "id": "vl-1218793779",
+  "t": "Singelpark wandeling met gids",
+  "where": "Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/1218793779/singelpark-wandeling-met-gids",
+  "src": "Visit Leiden",
+  "nl": "Onze gids Walter neemt je graag mee door een deel van het Singelpark! Leuk en leerzaam voor elke Leidenaar en bezoeker van de stad",
+  "img": "https://assets.plaece.nl/odp-leiden/image/216b831d7ebebd9f2e44fdfa78a64d77a6def7d8_01a18930-bc74-7c9e-b0f8-238d11d61d00.png",
+  "price": 5.0,
+  "s": "2026-11-08",
+  "e": "2026-11-08",
+  "time": "14:00",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "Guided walk or tour at Leiden. Tickets from €5.",
   "auto": 1,
   "c": 1
  },
@@ -1666,6 +1701,25 @@
   "catSure": true,
   "d": "Talk at Cultuurhuis Sijthoff.",
   "auto": 1
+ },
+ {
+  "id": "vl-520091317",
+  "t": "Lunchconcert Stevenshof Rondom de vleugel",
+  "where": "Trix Terwindtstraat 4",
+  "url": "https://www.visitleiden.nl/nl/agenda/520091317/lunchconcert-stevenshof-rondom-de-vleugel-8",
+  "src": "Visit Leiden",
+  "nl": "Lieselotte van Tol aan de vleugel met een programma met werken van Brahms, Bach, Liszt en Mendelssohn. Lieselotte is een graag geziene gast in onze serie lunchconcerten met altijd verrassende programmering.",
+  "addr": "Trix Terwindtstraat 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/8eb565466b93a1f5e506ff1d6bb2bf418f5fd24a_01a191fb-ff51-777c-aa8d-3755a9c30163.jpg",
+  "price": 7.5,
+  "s": "2026-11-13",
+  "e": "2026-11-13",
+  "time": "12:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert, Trix Terwindtstraat 4. Tickets from €7.50.",
+  "auto": 1,
+  "c": 1
  },
  {
   "id": "vl-969104919",
@@ -7443,6 +7497,21 @@
   "d": "Theatre at Theater Ins Blau. Tickets from €10.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-3053866357",
+  "t": "Gert van Dijk, stadsprenten van Leiden",
+  "where": "Nieuwstraat 17b",
+  "url": "https://www.visitleiden.nl/nl/agenda/3053866357/gert-van-dijk-stadsprenten-van-leiden",
+  "src": "Visit Leiden",
+  "nl": "Gert van Dijk maakt sfeervolle stadsprenten van Leiden. Vroeg in de ochtend fotografeert hij plekken in de stad met bijzonder licht. Die vertaalt hij in tekeningen met een vaste lijndikte in een stijl die wel Klare Lijn wordt genoemd (denk aan de strips van Kuifje).",
+  "addr": "Nieuwstraat 17b",
+  "img": "https://assets.plaece.nl/odp-leiden/image/f9a62b3d739d05ce2adb9ceeed20b29f7fec901f_01a18dcd-0836-71ec-89c9-4a34afc89612.jpg",
+  "e": "2027-01-31",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition, Nieuwstraat 17b.",
+  "auto": 1
  },
  {
   "id": "vl-468892838",
