@@ -1517,6 +1517,25 @@
   "c": 2
  },
  {
+  "id": "vl-3878760170",
+  "t": "Improvisatietheater: Moeders Mooiste spoelt terug",
+  "where": "Oude Vest 33E",
+  "url": "https://www.visitleiden.nl/nl/agenda/3878760170/improvisatietheater-moeders-mooiste-spoelt-terug",
+  "src": "Visit Leiden",
+  "nl": "Kom kijken naar improvisatietheater. Korte, geïmproviseerde scènes, op basis van jouw suggesties.",
+  "addr": "Oude Vest 33E",
+  "img": "https://assets.plaece.nl/odp-leiden/image/08776dae59677c65f8fa27d3a75d86ef56130532_01a198a3-a14a-725b-9ac0-b5e2e970091e.jpg",
+  "price": 11.5,
+  "s": "2026-11-13",
+  "e": "2026-11-13",
+  "time": "20:15",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Theatre, Oude Vest 33E. Tickets from €11.50.",
+  "auto": 1,
+  "c": 1
+ },
+ {
   "id": "vl-2986867917",
   "t": "Lezing, opvoeden en lesgeven, een kunst",
   "where": "Cultuurhuis Sijthoff",
@@ -1843,23 +1862,6 @@
   "d": "Live music at Nobel. Tickets from €27.90.",
   "auto": 1,
   "c": 2
- },
- {
-  "id": "vl-561932708",
-  "t": "Literair podium frontaal",
-  "where": "Cultuurhuis Sijthoff",
-  "url": "https://www.visitleiden.nl/nl/agenda/561932708/literair-podium-frontaal-5",
-  "src": "Visit Leiden",
-  "nl": ".Frontaal is hét literair podium van nu met terugkerend een gevarieerd programma! Ieder evenement korte verhalen, spoken word en gedichten. Met op de planken Grote Gasten (bekende auteurs) en Literaire Superhelden (aanstormende schrijvers). Frontaal brengt literatuur op een frisse manier",
-  "addr": "Doezastraat 1B",
-  "img": "https://assets.plaece.nl/odp-leiden/image/8a7859d63babbd559b3d71e5719f4194cfa9819f_019f15c8-d23d-7de2-9e49-dd98dd50b1ca.jpg",
-  "s": "2026-11-14",
-  "e": "2026-11-14",
-  "time": "19:30",
-  "cat": "Theatre",
-  "catSure": true,
-  "d": "Theatre at Cultuurhuis Sijthoff.",
-  "auto": 1
  },
  {
   "id": "vl-1950078583",
@@ -5834,7 +5836,8 @@
   "time": "22:00",
   "cat": "Music",
   "catSure": true,
-  "d": "Live music at Nobel. Tickets from €15.40.",
+  "genre": "Hiphop",
+  "d": "Hip-hop at Nobel. Tickets from €15.40.",
   "auto": 1,
   "c": 2
  },
