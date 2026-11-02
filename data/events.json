@@ -3070,6 +3070,25 @@
   "c": 2
  },
  {
+  "id": "vl-1427451027",
+  "t": "Duoconcert - Colloque des Claviers",
+  "where": "Kloksteeg 16",
+  "url": "https://www.visitleiden.nl/nl/agenda/1427451027/duoconcert-colloque-des-claviers",
+  "src": "Visit Leiden",
+  "nl": "Colloque des Claviers, een bijzonder samenspel van piano en orgel in de Pieterskerk Leiden.",
+  "addr": "Kloksteeg 16",
+  "img": "https://assets.plaece.nl/odp-leiden/image/ac4804e679387a5df1215bfff661072fd3906117_01a19c50-6c4b-7e39-887a-a603774f14ce.png",
+  "price": 6.0,
+  "s": "2026-11-22",
+  "e": "2026-11-22",
+  "time": "14:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert, Kloksteeg 16. Tickets from €6.",
+  "auto": 1,
+  "c": 1
+ },
+ {
   "id": "vl-4099595128",
   "t": "Geloof en Troost – Concert én kennismaken met dirigent Ana Correia",
   "where": "Rijndijk 283",
@@ -3239,23 +3258,6 @@
   "auto": 1
  },
  {
-  "id": "vl-1237508031",
-  "t": "Vrienden voor het leven?",
-  "where": "Café Caat",
-  "url": "https://www.visitleiden.nl/nl/agenda/1237508031/vrienden-voor-het-leven",
-  "src": "Visit Leiden",
-  "nl": "Romantisch verlangen naar het Friends beeld, naar vrienden die ongevraagd eindeloos bij je op de bank hangen of oude vrienden met wie we al ons lief en leed delen.",
-  "addr": "Catharinahof",
-  "img": "https://assets.plaece.nl/odp-leiden/image/cb5b4b669c5f96d742760a322fb17bededadf327_01a17ded-1ec2-7e59-a138-034684594a8e.jpg",
-  "s": "2026-11-24",
-  "e": "2026-11-24",
-  "time": "19:30",
-  "cat": "Talks",
-  "catSure": true,
-  "d": "A talk at Café Caat.",
-  "auto": 1
- },
- {
   "id": "vl-2104107633",
   "t": "Boban Braspenning – Bruto",
   "where": "Leidse Schouwburg",
@@ -3334,6 +3336,23 @@
   "cat": "Culture",
   "catSure": false,
   "d": "Cultural event at BplusC. On 3 dates.",
+  "auto": 1
+ },
+ {
+  "id": "vl-1893988194",
+  "t": "Start campagne Orange the World 2026 in Leiden",
+  "where": "Stadhuis",
+  "url": "https://www.visitleiden.nl/nl/agenda/1893988194/start-campagne-orange-the-world-2026-in-leiden",
+  "src": "Visit Leiden",
+  "nl": "Vanaf 18.45 verzamelen op de Beestenmarkt",
+  "addr": "Stadhuisplein 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/3733c4ec93fd8aa50359317c7698ba88face030a_01a19c0e-a0d0-71cd-bf1d-af4283d90789.jpg",
+  "s": "2026-11-25",
+  "e": "2026-11-25",
+  "time": "18:45",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "An outdoor outing at Stadhuis.",
   "auto": 1
  },
  {
@@ -3760,6 +3779,23 @@
   "c": 1
  },
  {
+  "id": "vl-571612165",
+  "t": "Kunst & Kerst Shoppen Haagweg 4",
+  "where": "Haagweg 4",
+  "url": "https://www.visitleiden.nl/nl/agenda/571612165/kunst-kerst-shoppen-haagweg-4",
+  "src": "Visit Leiden",
+  "nl": "Weihnachtseinkäufe im Haagweg 4",
+  "addr": "Haagweg 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/b1e6aa305ee827037fc102bc0af0770a2b0e2d11_01a19c8d-62e6-769f-812c-d6d04433bde0.jpg",
+  "s": "2026-11-28",
+  "e": "2026-11-29",
+  "time": "11:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, Haagweg 4. Runs over several days.",
+  "auto": 1
+ },
+ {
   "id": "vl-1589898930",
   "t": "Leids Vertier XL",
   "where": "Stadsgehoorzaal Leiden",
@@ -4018,6 +4054,23 @@
   "d": "Theatre at Trianon Theater. Tickets from €10.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-132433908",
+  "t": "Orange the World - Voorstelling 'Achter gesloten deuren'",
+  "where": "Theater Ins Blau",
+  "url": "https://www.visitleiden.nl/nl/agenda/132433908/orange-the-world-voorstelling-achter-gesloten-deuren",
+  "src": "Visit Leiden",
+  "nl": "Rosa Manus en de Vrienden van Rosa Manus, in samenwerking met de OtW werkgroep, organiseert deze activiteit in deze OtW periode. Achter Gesloten Deuren een indringende voorstelling van Cat Smit over huiselijk geweld.",
+  "addr": "Haagweg 6",
+  "img": "https://assets.plaece.nl/odp-leiden/image/248d7d45fa85f608ba89b155eb2298abc8a98dc2_01a19c2c-fa1e-74c3-a2b8-05fc96a66b55.jpg",
+  "s": "2026-11-29",
+  "e": "2026-11-29",
+  "time": "20:00",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Theatre at Theater Ins Blau.",
+  "auto": 1
  },
  {
   "id": "vl-3077495323",
@@ -6765,7 +6818,7 @@
   "nl": "Trance clubnacht met live opnames",
   "s": "2027-01-16",
   "e": "2027-01-16",
-  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-09/16012026%20-%201600x1200.png.webp?itok=1pzliYhG",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-11/16012026%20-%201600x1200.png.webp?itok=jIn50c51",
   "d": "Live music at Nobel.",
   "auto": 1
  },
