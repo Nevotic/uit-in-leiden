@@ -4844,6 +4844,28 @@
   "c": 1
  },
  {
+  "id": "vl-3026958867",
+  "t": "Silent Disco op de Drijvende IJsbaan",
+  "where": "Drijvende IJsbaan",
+  "url": "https://www.visitleiden.nl/nl/agenda/3026958867/silent-disco-op-de-drijvende-ijsbaan",
+  "src": "Visit Leiden",
+  "nl": "Met een draadloze hoofdtelefoon kun je kiezen uit drie muziekkanalen, waaronder natuurlijk een feestelijk ‘Christmas Music Channel’. Vanaf ca. 18:00 uur kun je schaatsend genieten van jouw favoriete beats.",
+  "addr": "Nieuwe Rijn",
+  "img": "https://assets.plaece.nl/odp-leiden/image/silent-disco-winter-wonder-weken-sander-neuteboom_1013445896.jpg",
+  "s": "2026-12-10",
+  "e": "2026-12-29",
+  "time": "18:00",
+  "dates": [
+   "2026-12-10",
+   "2026-12-22",
+   "2026-12-29"
+  ],
+  "cat": "Music",
+  "catSure": false,
+  "d": "Party at Drijvende IJsbaan. On 3 dates.",
+  "auto": 1
+ },
+ {
   "id": "vl-2121751210",
   "t": "The Smiths Presumably",
   "where": "Nobel",
