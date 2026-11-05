@@ -1368,8 +1368,8 @@
   "time": "21:30",
   "cat": "Music",
   "catSure": true,
-  "genre": "Gastprogramma",
-  "d": "Guest performance at Nobel.",
+  "genre": "Specials",
+  "d": "Special performance at Nobel.",
   "auto": 1
  },
  {
@@ -1543,6 +1543,23 @@
   "c": 2
  },
  {
+  "id": "ls-47266",
+  "t": "Popquiz over U2",
+  "where": "Café Caat (Stadsgehoorzaal)",
+  "url": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/vrijmibo-popquiz-over-u2/",
+  "src": "Schouwburg & Stadsgehoorzaal",
+  "cat": "Theatre",
+  "catSure": false,
+  "genre": "Specials",
+  "nl": "Voorafgaand aan het concert 50 jaar U2 organiseren ervaren popquizmakers Ronald Walgreen en John van der Steen een korte, gevarieerde muziekquiz over … U2.",
+  "s": "2026-11-13",
+  "e": "2026-11-13",
+  "time": "18:00",
+  "img": "https://leidseschouwburg-stadsgehoorzaal.nl/assets/uploads/2026/10/Popquiz-thumbnail-768x768.png",
+  "d": "Special performance at Café Caat (Stadsgehoorzaal).",
+  "auto": 1
+ },
+ {
   "id": "vl-3482888519",
   "t": "SEA LEVEL - van diepte naar licht",
   "where": "Lammermarkt 59",
@@ -1621,8 +1638,7 @@
   "time": "18:00",
   "cat": "Theatre",
   "catSure": true,
-  "genre": "Gastprogramma",
-  "d": "Guest performance at Café Caat.",
+  "d": "Quiz night at Café Caat.",
   "auto": 1
  },
  {
@@ -4996,32 +5012,12 @@
   "auto": 1
  },
  {
-  "id": "vl-1141462586",
-  "t": "Joep van Deudekom & Rob Urgert – De Grote Oudejaars Kwis 2026",
-  "where": "Leidse Schouwburg",
-  "url": "https://www.visitleiden.nl/nl/agenda/1141462586/joep-van-deudekom-rob-urgert-de-grote-oudejaars-kwis-2026",
-  "src": "Visit Leiden",
-  "nl": "Een avond vol quizvragen, humor en muziek waarin je terugkijkt op het afgelopen jaar. Je speelt mee, beleeft een gezellige sfeer en sluit het jaar op een bijzondere manier af.",
-  "addr": "Oude Vest 43",
-  "img": "https://assets.plaece.nl/odp-leiden/image/479d7c743a258461cbd125df9ec2f5f68b8f66b9_01a1a924-cc41-7786-8c45-27d988b696bf.jpg",
-  "price": 23.5,
-  "s": "2026-12-11",
-  "e": "2026-12-11",
-  "time": "20:15",
-  "cat": "Theatre",
-  "catSure": true,
-  "genre": "Cabaret",
-  "d": "Dutch-language cabaret at Leidse Schouwburg. Tickets from €23.50.",
-  "auto": 1,
-  "c": 2
- },
- {
   "id": "vl-2783016429",
-  "t": "Nostalgische Leidse Kerstmarkt",
+  "t": "De Leidse Kerstmarkt",
   "where": "Hooglandse Kerkgracht",
   "url": "https://www.visitleiden.nl/nl/agenda/2783016429/nostalgische-leidse-kerstmarkt",
   "src": "Visit Leiden",
-  "nl": "De nostalgische Leidse Kerstmarkt brengt de binnenstad van Leiden 7 dagen lang tot leven.",
+  "nl": "De Leidse Kerstmarkt brengt de binnenstad van Leiden 7 dagen lang tot leven.",
   "addr": "Hooglandse Kerkgracht",
   "img": "https://assets.plaece.nl/odp-leiden/image/nostalgische-kerstmarkt_173950960.jpg",
   "s": "2026-12-11",
@@ -5040,6 +5036,26 @@
   "catSure": false,
   "d": "Market at Hooglandse Kerkgracht. On 7 dates.",
   "auto": 1
+ },
+ {
+  "id": "vl-1141462586",
+  "t": "Joep van Deudekom & Rob Urgert – De Grote Oudejaars Kwis 2026",
+  "where": "Leidse Schouwburg",
+  "url": "https://www.visitleiden.nl/nl/agenda/1141462586/joep-van-deudekom-rob-urgert-de-grote-oudejaars-kwis-2026",
+  "src": "Visit Leiden",
+  "nl": "Een avond vol quizvragen, humor en muziek waarin je terugkijkt op het afgelopen jaar. Je speelt mee, beleeft een gezellige sfeer en sluit het jaar op een bijzondere manier af.",
+  "addr": "Oude Vest 43",
+  "img": "https://assets.plaece.nl/odp-leiden/image/479d7c743a258461cbd125df9ec2f5f68b8f66b9_01a1a924-cc41-7786-8c45-27d988b696bf.jpg",
+  "price": 23.5,
+  "s": "2026-12-11",
+  "e": "2026-12-11",
+  "time": "20:15",
+  "cat": "Theatre",
+  "catSure": true,
+  "genre": "Cabaret",
+  "d": "Dutch-language cabaret at Leidse Schouwburg. Tickets from €23.50.",
+  "auto": 1,
+  "c": 2
  },
  {
   "id": "vl-1558123694",
@@ -5339,6 +5355,25 @@
   "d": "Hip-hop at Nobel. Tickets from €25.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-206989584",
+  "t": "Kerstconcert HARTEBRUGKOOR",
+  "where": "Hartebrugkerk",
+  "url": "https://www.visitleiden.nl/nl/agenda/206989584/kerstconcert-hartebrugkoor",
+  "src": "Visit Leiden",
+  "nl": "Op het programma staat de mooiste klassieke kerstmuziek. Dit jaar staat het concert in het teken van het Licht.",
+  "addr": "Haarlemmerstraat 110",
+  "img": "https://assets.plaece.nl/odp-leiden/image/70071afce58d8e8c76ddf1ec84863de4e4af45e9_01a1abf6-e3f6-71eb-bad9-d82ab0d56cf7.jpg",
+  "price": 15.0,
+  "s": "2026-12-13",
+  "e": "2026-12-13",
+  "time": "15:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert at Hartebrugkerk. Tickets from €15.",
+  "auto": 1,
+  "c": 1
  },
  {
   "id": "vl-548608625",
@@ -7186,8 +7221,8 @@
   "time": "20:30",
   "cat": "Comedy",
   "catSure": true,
-  "genre": "Gastprogramma",
-  "d": "Guest performance at Café Caat.",
+  "genre": "Specials",
+  "d": "Special performance at Café Caat.",
   "auto": 1
  },
  {
