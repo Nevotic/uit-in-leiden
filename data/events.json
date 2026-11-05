@@ -118,8 +118,7 @@
   "time": "17:00",
   "cat": "Theatre",
   "catSure": true,
-  "genre": "Specials",
-  "d": "Special performance at Café Caat.",
+  "d": "Theatre at Café Caat.",
   "auto": 1
  },
  {
@@ -2086,6 +2085,23 @@
   "auto": 1
  },
  {
+  "id": "vl-1266967014",
+  "t": "Open Dag ARS Academie: ontdek, probeer en doe mee",
+  "where": "Pieterskerkgracht 9a",
+  "url": "https://www.visitleiden.nl/nl/agenda/1266967014/open-dag-ars-academie-ontdek-probeer-en-doe-mee",
+  "src": "Visit Leiden",
+  "nl": "Benieuwd naar tekenen, schilderen, grafiek of boetseren?",
+  "addr": "Pieterskerkgracht 9a",
+  "img": "https://assets.plaece.nl/odp-leiden/image/130a209ede2f739f92e5131f651c9eb97545b4f6_01a1aadb-8aac-7b52-9184-46319749f5f2.jpg",
+  "s": "2026-11-15",
+  "e": "2026-11-15",
+  "time": "12:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, Pieterskerkgracht 9a.",
+  "auto": 1
+ },
+ {
   "id": "vl-1991618980",
   "t": "Open Mic - Comedy Sunday Afternoon",
   "where": "Grand Café De Burcht",
@@ -2844,6 +2860,23 @@
   "cat": "Music",
   "catSure": true,
   "d": "Live music at Van Goyen Jeneverhuis.",
+  "auto": 1
+ },
+ {
+  "id": "vl-42852642",
+  "t": "Macht van het volk",
+  "where": "Rijksmuseum van Oudheden",
+  "url": "https://www.visitleiden.nl/nl/agenda/42852642/macht-van-het-volk-1",
+  "src": "Visit Leiden",
+  "nl": "Een avond over democratie en gelijkheid.",
+  "addr": "Rapenburg 28",
+  "img": "https://assets.plaece.nl/odp-leiden/image/43e7385c25b6db1fa589e1c2e950c14e3854b5f4_01a1ab3d-a76a-75b7-8a9c-40a518128ac7.png",
+  "s": "2026-11-21",
+  "e": "2026-11-21",
+  "time": "19:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "A talk at Rijksmuseum van Oudheden.",
   "auto": 1
  },
  {
