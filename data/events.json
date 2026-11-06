@@ -2351,6 +2351,23 @@
   "c": 2
  },
  {
+  "id": "vl-462868579",
+  "t": "De zaak van de grotverkenners",
+  "where": "Hortus botanicus Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/462868579/de-zaak-van-de-grotverkenners",
+  "src": "Visit Leiden",
+  "nl": "In deze avond staat een beroemde fictieve rechtszaak centraal.",
+  "addr": "Rapenburg 73",
+  "img": "https://assets.plaece.nl/odp-leiden/image/af6006f547166651fafc0545f779fc8799eda45e_01a1ad26-0ba9-7748-85b8-5091fcd1fd89.png",
+  "s": "2026-11-19",
+  "e": "2026-11-19",
+  "time": "19:30",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "A talk at Hortus botanicus Leiden.",
+  "auto": 1
+ },
+ {
   "id": "vl-2416011016",
   "t": "Jimmy Nelson – Through the Human Lens",
   "where": "Stadsgehoorzaal Leiden",
