@@ -4902,6 +4902,22 @@
   "c": 2
  },
  {
+  "id": "nb-40up-11-dec-2026",
+  "t": "40UP",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/40up-11-dec-2026",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Hits",
+  "nl": "Big Bang tour",
+  "s": "2026-12-11",
+  "e": "2026-12-11",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-11/40UP%20big%20bang.jpg.webp?itok=n8GWB1UM",
+  "d": "Club night at Nobel.",
+  "auto": 1
+ },
+ {
   "id": "vl-3778313629",
   "t": "Caat Peutercafé – Een warm winteravontuur met Pim & Pom",
   "where": "Café Caat",
