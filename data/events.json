@@ -1051,6 +1051,23 @@
   "c": 1
  },
  {
+  "id": "vl-300291248",
+  "t": "Weekend vol ontdekkingen: live naar de steengroeve en klei je eigen monster",
+  "where": "Naturalis",
+  "url": "https://www.visitleiden.nl/nl/agenda/300291248/weekend-vol-ontdekkingen-live-naar-de-steengroeve-en-klei-je-eigen-monster",
+  "src": "Visit Leiden",
+  "nl": "Zin in een weekend vol verwondering? Op 14 en 15 november ontdek je bij Naturalis twee bijzondere activiteiten.",
+  "addr": "Darwinweg 2",
+  "img": "https://assets.plaece.nl/odp-leiden/image/d38dc417ac91df0c596388d0e0971749d49285c0_01a1bfcc-f119-721d-928c-cc60a69924de.jpg",
+  "s": "2026-11-14",
+  "e": "2026-11-15",
+  "time": "13:00",
+  "cat": "Music",
+  "catSure": false,
+  "d": "Live music at Naturalis. Runs over several days.",
+  "auto": 1
+ },
+ {
   "id": "vl-3943097816",
   "t": "ecosysteem maken",
   "where": "Haven 4",
@@ -1833,6 +1850,25 @@
   "catSure": true,
   "genre": "Hits",
   "d": "Club night at Nobel. Tickets from €13.",
+  "auto": 1,
+  "c": 1
+ },
+ {
+  "id": "vl-1588036215",
+  "t": "PIK",
+  "where": "Sumatrastraat 201",
+  "url": "https://www.visitleiden.nl/nl/agenda/1588036215/pik",
+  "src": "Visit Leiden",
+  "nl": "Een absurde, surrealistische multimedia voorstelling over de verdrukking van mannelijke kwetsbaarheid.",
+  "addr": "Sumatrastraat 201",
+  "img": "https://assets.plaece.nl/odp-leiden/image/705148426b6de9aa420e2488cb4e9d095c227809_01a1baa0-ccc7-77bc-9e03-e8d9ada694e4.jpg",
+  "price": 15.0,
+  "s": "2026-11-20",
+  "e": "2026-11-22",
+  "time": "20:30",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Theatre, Sumatrastraat 201. Runs over several days. Tickets from €15.",
   "auto": 1,
   "c": 1
  },
@@ -3354,6 +3390,23 @@
   "c": 2
  },
  {
+  "id": "vl-1649043655",
+  "t": "Orange the World - Bijeenkomst 'Wat doe jij?'",
+  "where": "Stadhuis",
+  "url": "https://www.visitleiden.nl/nl/agenda/1649043655/orange-the-world-bijeenkomst-wat-doe-jij",
+  "src": "Visit Leiden",
+  "nl": "Een veilige omgeving voor vrouwen en meisjes maken we samen. Tijdens de Orange the World-week organiseert het Els Borst Netwerk Leidse regio een bijeenkomst over de veiligheid van vrouwen en meisjes.",
+  "addr": "Stadhuisplein 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/1859565e5fd9b6ef01f97277a7e96b178bdc70e0_01a1b2c6-dbe2-7b75-934b-90fe1f2f5999.png",
+  "s": "2026-12-01",
+  "e": "2026-12-01",
+  "time": "18:30",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "A talk at Stadhuis.",
+  "auto": 1
+ },
+ {
   "id": "vl-3027354190",
   "t": "Theater Oostpool – The Drama",
   "where": "Leidse Schouwburg",
@@ -4029,6 +4082,23 @@
   "d": "Drama at Leidse Schouwburg. Tickets from €18.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-2963923803",
+  "t": "Human in the loop (25 tot 40 jaar) (nieuw)",
+  "where": "Grand Café De Burcht",
+  "url": "https://www.visitleiden.nl/nl/agenda/2963923803/human-in-the-loop-25-tot-40-jaar-nieuw-1",
+  "src": "Visit Leiden",
+  "nl": "Een offline samenzijn met een hapje en drankje voor eind twintigers en dertigers, georganiseerd door de afdeling Leiden en omstreken van het Humanistisch verbond. Iedereen is welkom, lid of geen lid.",
+  "addr": "Burgsteeg 14",
+  "img": "https://assets.plaece.nl/odp-leiden/image/7755715b6f73b3116aa7f10e760c4f449e388fb2_01a1bb6f-76a2-7b4a-80c8-1e4eacfd4019.jpg",
+  "s": "2026-12-09",
+  "e": "2026-12-09",
+  "time": "19:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Run at Grand Café De Burcht.",
+  "auto": 1
  },
  {
   "id": "vl-3980519993",
@@ -5360,6 +5430,25 @@
   "c": 1
  },
  {
+  "id": "vl-3350123469",
+  "t": "Pittige Panter PubQuiz",
+  "where": "stationsweg 30",
+  "url": "https://www.visitleiden.nl/nl/agenda/3350123469/pittige-panter-pubquiz-10",
+  "src": "Visit Leiden",
+  "nl": "Zin in een gezellige middag vol verrassende vragen, leuke weetjes en een flinke dosis quizplezier? Doe mee met de Pittige Panter PubQuiz bij restaurant HotSpot Central in Leiden!! Geen ingekochte standaardquiz, maar een 100% originele PubQuiz met zelfbedachte vragen en verrassende rondes.",
+  "addr": "stationsweg 30",
+  "img": "https://assets.plaece.nl/odp-leiden/image/b94624b69ea9d097f8982e02ebd994782ecd4211_01a1baf4-09e6-77ad-8094-4a3db0c1841a.png",
+  "price": 17.5,
+  "s": "2026-12-20",
+  "e": "2026-12-20",
+  "time": "14:30",
+  "cat": "Comedy",
+  "catSure": false,
+  "d": "Quiz night, stationsweg 30. Tickets from €17.50.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-3898319131",
   "t": "Dunja Jocić – Spellbound Contemporary Ballet – Folk",
   "where": "Leidse Schouwburg",
@@ -5697,6 +5786,21 @@
   "cat": "Exhibition",
   "catSure": true,
   "d": "Scientists and artists on how we decide what is true, in a time of fake news and AI."
+ },
+ {
+  "id": "vl-1811686636",
+  "t": "Yuki Kihara: Darwin in Paradise Camp",
+  "where": "Wereldmuseum Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/1811686636/yuki",
+  "src": "Visit Leiden",
+  "nl": "In Darwin in Paradise Camp presenteert Wereldmuseum Leiden het Nederlandse debuut van de internationaal gevierde kunstenaar Yuki Kihara. In deze visueel spectaculaire tentoonstelling herschrijft Kihara met humor, schoonheid en kritisch onderzoek het westerse verhaal over natuur, gender en identiteit",
+  "addr": "Steenstraat 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/yuki-kihara-darwin-in-paradise-camp-2026-wereldmuseum-leiden-photo-aad-hoogendoorn-12_2621705534.jpg",
+  "e": "2027-01-03",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition at Wereldmuseum Leiden.",
+  "auto": 1
  },
  {
   "id": "vl-1752756354",
@@ -7433,5 +7537,20 @@
   "isNew": 1,
   "d": "The Lakenhal's big new autumn show with The Phoebus Foundation, on the Golden Age in bloom.",
   "c": 2
+ },
+ {
+  "id": "vl-486216826",
+  "t": "Sami Art, Land, Power",
+  "where": "Wereldmuseum Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/486216826/sami-art-land-power",
+  "src": "Visit Leiden",
+  "nl": "Hoe verhoud je je tot land waar je mee leeft? In Sámi Art, Land, Power delen Sámi makers hoe die relatie eruitziet. Hun werk gaat over leven met de natuur, over veranderingen in hun leefgebied en over de vraag wie daarover mag beslissen.",
+  "addr": "Steenstraat 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/sami-1_1246408818.jpg",
+  "e": "2027-09-05",
+  "cat": "Exhibition",
+  "catSure": true,
+  "d": "An exhibition at Wereldmuseum Leiden.",
+  "auto": 1
  }
 ]
