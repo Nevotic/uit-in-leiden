@@ -1117,9 +1117,8 @@
   "s": "2026-11-15",
   "e": "2026-11-15",
   "time": "14:00",
-  "cat": "Music",
-  "catSure": true,
-  "genre": "Overig",
+  "cat": "Culture",
+  "catSure": false,
   "d": "Quiz night at Nobel. Tickets from €25.",
   "auto": 1,
   "c": 2
