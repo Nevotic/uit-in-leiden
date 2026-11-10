@@ -979,6 +979,23 @@
   "auto": 1
  },
  {
+  "id": "vl-1898028373",
+  "t": "Orgelconcert Peter van Dijk",
+  "where": "Breestraat",
+  "url": "https://www.visitleiden.nl/nl/agenda/1898028373/orgelconcert-peter-van-dijk",
+  "src": "Visit Leiden",
+  "nl": "Peter van Dijk geeft een concert op het historische Steevens/Assendelft-orgel (1746) in de Waalse Kerk van Leiden.",
+  "addr": "Breestraat",
+  "img": "https://assets.plaece.nl/odp-leiden/image/3a96e577b0d98fcf99db387f2f90a87f600d2e41_01a1c5de-5c9c-7bc6-a58a-a5e35a9f4586.jpg",
+  "s": "2026-11-14",
+  "e": "2026-11-14",
+  "time": "16:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert at Breestraat.",
+  "auto": 1
+ },
+ {
   "id": "nb-supertrance-14-nov-2026",
   "t": "Supertrance",
   "where": "Nobel",
@@ -4107,6 +4124,23 @@
   "cat": "Talks",
   "catSure": false,
   "d": "Talk, Polderpad 8.",
+  "auto": 1
+ },
+ {
+  "id": "vl-3785261252",
+  "t": "Orange the World - Lezing 'Wat is er aan te doen'",
+  "where": "Breestraat",
+  "url": "https://www.visitleiden.nl/nl/agenda/3785261252/orange-the-world-lezing-wat-is-er-aan-te-doen",
+  "src": "Visit Leiden",
+  "nl": "In het kader van Orange the World organiseert de VVAO dit jaar een lezing door Miranda Freriks, directeur van de Stichting Misbruikt: van grensoverschrijdend gedrag tot intieme terreur.",
+  "addr": "Breestraat",
+  "img": "https://assets.plaece.nl/odp-leiden/image/c68e79d6835341410371d5ee9cbfc7ae7cd15dab_01a1c4f2-347e-7831-9ddd-36b9beb51d8f.png",
+  "s": "2026-12-09",
+  "e": "2026-12-09",
+  "time": "19:30",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk at Breestraat.",
   "auto": 1
  },
  {
