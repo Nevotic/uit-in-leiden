@@ -2637,6 +2637,23 @@
   "c": 2
  },
  {
+  "id": "vl-1510788758",
+  "t": "Pilgrimwandeling met Gilde Leiden",
+  "where": "De Burcht",
+  "url": "https://www.visitleiden.nl/nl/agenda/1510788758/pilgrimwandeling-met-gilde-leiden",
+  "src": "Visit Leiden",
+  "nl": "In de aanloop naar Thanksgiving kunt u met gidsen van Gilde Leiden op zondag 22 november een Pilgrimswandeling lopen die u voert langs plaatsen die nog herinneren aan het verblijf van de Pilgrims in Leiden.",
+  "addr": "Burgsteeg",
+  "img": "https://assets.plaece.nl/odp-leiden/image/gilde-pilgrims-a_389568390.png",
+  "s": "2026-11-26",
+  "e": "2026-11-26",
+  "time": "14:00",
+  "cat": "Outdoors",
+  "catSure": true,
+  "d": "Guided walk or tour at De Burcht.",
+  "auto": 1
+ },
+ {
   "id": "vl-3904924960",
   "t": "Prijsbeest (home is where the hurt is)",
   "where": "Theater Ins Blau",
