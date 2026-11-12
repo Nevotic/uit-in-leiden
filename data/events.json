@@ -3173,6 +3173,25 @@
   "auto": 1
  },
  {
+  "id": "vl-986400627",
+  "t": "Power voor Cuba! Benefiet!!!",
+  "where": "Trix Terwindtstraat 4",
+  "url": "https://www.visitleiden.nl/nl/agenda/986400627/power-voor-cuba-benefiet",
+  "src": "Visit Leiden",
+  "nl": "Power voor Cuba!",
+  "addr": "Trix Terwindtstraat 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/635afa288a25093a8a4e0b06c539a83cea35f2c2_01a1cc5b-5543-7dcd-9a6b-d318fd65100d.jpg",
+  "price": 15.5,
+  "s": "2026-11-29",
+  "e": "2026-11-29",
+  "time": "15:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, Trix Terwindtstraat 4. Tickets from €15.50.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-1518314338",
   "t": "SeaSession & Hein van der Heijden – Regarde bien",
   "where": "Stadsgehoorzaal Leiden",
@@ -4225,6 +4244,23 @@
   "d": "Concert at Hartebrugkerk. Tickets from €22.22.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-1305245669",
+  "t": "Echofest | Met ASTRO TV, Centrepiece Colourised en Talks Make Do",
+  "where": "BplusC locatie Muziekhuis/Qbus",
+  "url": "https://www.visitleiden.nl/nl/agenda/1305245669/echofest-met-astro-tv-centrepiece-colourised-en-talks-make-do",
+  "src": "Visit Leiden",
+  "nl": "Het anti-geluid tegen de huidige vervuilende fast fashion industrie: live muziek en slow fashion merchandise.",
+  "addr": "Middelstegracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/e28c78553f2af10f7af77f2fb0604261a8925558_01a1cb43-6d0e-7611-889f-183f7477d0ae.png",
+  "s": "2026-12-11",
+  "e": "2026-12-12",
+  "time": "19:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Talk at BplusC locatie Muziekhuis/Qbus. Runs over several days.",
+  "auto": 1
  },
  {
   "id": "vl-1141462586",
@@ -5701,6 +5737,22 @@
    "surprise"
   ],
   "d": "From underground scene to global visual culture."
+ },
+ {
+  "id": "nb-nye-funky-fabrique-x-supertrance-31-dec-2026",
+  "t": "NYE: Funky Fabrique x SUPERTRANCE",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/nye-funky-fabrique-x-supertrance-31-dec-2026",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "House",
+  "nl": "Start het jaar met de dikste house bangers van o.a. Sacha Harland!",
+  "s": "2026-12-31",
+  "e": "2026-12-31",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-11/Event%204-3.png.webp?itok=5GWPlIby",
+  "d": "Live music at Nobel.",
+  "auto": 1
  },
  {
   "id": "vl-1053488843",
