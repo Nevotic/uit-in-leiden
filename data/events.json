@@ -3564,6 +3564,25 @@
   "auto": 1
  },
  {
+  "id": "vl-1015677060",
+  "t": "Christmas Experience",
+  "where": "Hooglandse Kerkgracht 26",
+  "url": "https://www.visitleiden.nl/nl/agenda/1015677060/christmas-experience",
+  "src": "Visit Leiden",
+  "nl": "Stap aan boord van de kersttrein en laat je meevoeren naar de mooiste tijd van het jaar! The Christmas Experience, Sound Of The Season 26, keert terug met een gloednieuwe theatershow vol warmte, nostalgie, humor en muzikale verrassingen.",
+  "addr": "Hooglandse Kerkgracht 26",
+  "img": "https://assets.plaece.nl/odp-leiden/image/2726a0a4eff9d3d6a47bb905c2847a0a03689e14_01a1e928-f782-7a8c-b225-e19323344004.jpg",
+  "s": "2026-12-12",
+  "e": "2026-12-13",
+  "cat": "Culture",
+  "catSure": false,
+  "time": "20:00",
+  "price": 25.0,
+  "d": "Cultural event, Hooglandse Kerkgracht 26. Runs over several days. Tickets from €25.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-3707766656",
   "t": "Club Guy & Roni – The Current",
   "where": "Stadsgehoorzaal Leiden",
@@ -3923,25 +3942,6 @@
   "auto": 1
  },
  {
-  "id": "vl-2976614764",
-  "t": "The Christmas Experience Theatershow",
-  "where": "Theater Ins Blau",
-  "url": "https://www.visitleiden.nl/nl/agenda/2976614764/the-christmas-experience-theatershow",
-  "src": "Visit Leiden",
-  "nl": "Stap aan boord van de kersttrein en laat je meevoeren naar de mooiste tijd van het jaar! The Christmas Experience, Sound Of The Season 26, keert terug met een gloednieuwe theatershow vol warmte, nostalgie, humor en muzikale verrassingen.",
-  "addr": "Haagweg 6",
-  "img": "https://assets.plaece.nl/odp-leiden/image/3da192cebf5b99fee5f6c57004eb5cb89d69f2d2_01a18aa1-a135-79ec-852a-f10c646de737.jpg",
-  "price": 25.0,
-  "s": "2026-12-13",
-  "e": "2026-12-13",
-  "time": "20:00",
-  "cat": "Culture",
-  "catSure": false,
-  "d": "Cultural event at Theater Ins Blau. Tickets from €25.",
-  "auto": 1,
-  "c": 2
- },
- {
   "id": "vl-3477158378",
   "t": "Treasure",
   "where": "Nobel",
@@ -4208,6 +4208,23 @@
   "d": "Theatre at Theater Ins Blau. Tickets from €9.50.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-1267544082",
+  "t": "Dansvoorstelling in Rijksmuseum van Oudheden",
+  "where": "Rijksmuseum van Oudheden",
+  "url": "https://www.visitleiden.nl/nl/agenda/1267544082/dansvoorstelling-in-rijksmuseum-van-oudheden",
+  "src": "Visit Leiden",
+  "nl": "Kun je bezit delen of verdeelt het ons? NIEMANDSLAND is een dansvoorstelling over toelaten en uitsluiten, de angst om te verliezen wat je kent en het universele verlangen om begrepen te worden.",
+  "addr": "Rapenburg 28",
+  "img": "https://assets.plaece.nl/odp-leiden/image/d16a9ba3100d5234ce854e5a024f704048cdb59b_01a1e92a-5e9e-7f66-819d-1e2bd813c234.jpg",
+  "s": "2026-12-17",
+  "e": "2026-12-17",
+  "time": "19:45",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Theatre at Rijksmuseum van Oudheden.",
+  "auto": 1
  },
  {
   "id": "vl-404960623",
@@ -4547,6 +4564,23 @@
   "d": "Concert at Leidse Schouwburg. Tickets from €27.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-3531891112",
+  "t": "Candlelight Celebrations",
+  "where": "Hooglandse Kerkgracht 26",
+  "url": "https://www.visitleiden.nl/nl/agenda/3531891112/candlelight-celebrations",
+  "src": "Visit Leiden",
+  "nl": "Neem vlak voor kerst even een moment om op adem te komen. In het warme kaarslicht, met sfeervolle muziek en de boodschap van Kerstmis, nodigen we je uit in de Kerk om de dagelijkse beslommeringen achter je te laten en je bewust voor te bereiden op kerst.",
+  "addr": "Hooglandse Kerkgracht 26",
+  "img": "https://assets.plaece.nl/odp-leiden/image/a191e450c9f67c546ca97e88fe300c09d297e5a6_01a1e92d-07ef-77f6-8023-edbdeb0f6b0f.png",
+  "s": "2026-12-20",
+  "e": "2026-12-20",
+  "time": "11:00",
+  "cat": "Music",
+  "catSure": false,
+  "d": "Live music, Hooglandse Kerkgracht 26.",
+  "auto": 1
  },
  {
   "id": "vl-1034322794",
