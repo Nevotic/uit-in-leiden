@@ -2957,6 +2957,25 @@
   "c": 1
  },
  {
+  "id": "vl-1111194681",
+  "t": "Workshop Christmas Painting",
+  "where": "Cleveringaplaats 1",
+  "url": "https://www.visitleiden.nl/nl/agenda/1111194681/workshop-christmas-painting",
+  "src": "Visit Leiden",
+  "nl": "Breng de kerstsfeer tot leven op doek tijdens deze creatieve schilderworkshop.",
+  "addr": "Cleveringaplaats 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/a42a7c4536c6ceb243ad1d16ef216227bd9b718e_01a1e9ff-01f8-7d8e-b332-e5deca5faa4c.png",
+  "price": 66.0,
+  "s": "2026-12-07",
+  "e": "2026-12-07",
+  "time": "15:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Workshop, Cleveringaplaats 1. Tickets from €66.",
+  "auto": 1,
+  "c": 3
+ },
+ {
   "id": "vl-1130664483",
   "t": "Boekestijn & De Wijk Live – Eindejaarsshow 2026",
   "where": "Stadsgehoorzaal Leiden",
@@ -5882,6 +5901,25 @@
   "catSure": false,
   "d": "Live music, Haagweg 4. Runs over several days.",
   "auto": 1
+ },
+ {
+  "id": "vl-1252111356",
+  "t": "Lance Lopez Band",
+  "where": "Middelste Gracht 123",
+  "url": "https://www.visitleiden.nl/nl/agenda/1252111356/enige-nl-show-lance-lopez-band-leidse-blues-jazzweek-aanrader-de-ultieme-texas-blues-rock-gitaarheld",
+  "src": "Visit Leiden",
+  "nl": "Lance Lopez, een stereotiepe ruige Texaan is een van Amerika 's beste bluesrockgitaristen met zijn Texas hot sauce bluesstijl. Anno 2027 is hij nog steeds 'very exciting and intense \"zoals wijlen Jeff Beck hem noemde.",
+  "addr": "Middelste Gracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/1e628435c8705af39887046938e8fc38cddbb36f_01a1cd83-0952-7e0e-b317-945830030717.jpg",
+  "price": 20.0,
+  "s": "2027-01-19",
+  "e": "2027-01-19",
+  "time": "20:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music, Middelste Gracht 123. Tickets from €20.",
+  "auto": 1,
+  "c": 2
  },
  {
   "id": "vl-3463180818",
