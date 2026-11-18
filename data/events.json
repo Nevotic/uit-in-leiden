@@ -1950,6 +1950,23 @@
   "auto": 1
  },
  {
+  "id": "vl-1528843640",
+  "t": "Leiden Comedy Night: Jokes on us",
+  "where": "Omegaplantsoen 4",
+  "url": "https://www.visitleiden.nl/nl/agenda/1528843640/leiden-comedy-night-jokes-on-us",
+  "src": "Visit Leiden",
+  "nl": "Maak je klaar om je rot te lachen tijdens de Leiden Comedy Night: Jokes on us! – een hilarische avond vol stand-upcomedy en een geweldige sfeer!",
+  "addr": "Omegaplantsoen 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/54821ddf12b502042f9d94e56d7ed9a358cdc00c_01a1ee23-e937-72cb-9339-4a3055550f05.jpg",
+  "s": "2026-11-28",
+  "e": "2026-11-28",
+  "time": "19:30",
+  "cat": "Comedy",
+  "catSure": true,
+  "d": "Comedy, Omegaplantsoen 4.",
+  "auto": 1
+ },
+ {
   "id": "vl-1589898930",
   "t": "Leids Vertier XL",
   "where": "Stadsgehoorzaal Leiden",
@@ -3756,6 +3773,25 @@
   "auto": 1
  },
  {
+  "id": "vl-500668308",
+  "t": "Podium de X - Matthieu Acosta Quinteto",
+  "where": "BplusC locatie Muziekhuis/Qbus",
+  "url": "https://www.visitleiden.nl/nl/agenda/500668308/podium-de-x-matthieu-acosta-quinteto",
+  "src": "Visit Leiden",
+  "nl": "Twee jaar geleden gaf Matthieu Acosta met z’n kwartet al eens een spetterende voorstelling in De X, en nu is hij terug met een nieuw programma, deze keer met een quintet.",
+  "addr": "Middelstegracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/6b001f3a55e2c6924750b9b94e605e4d789ef902_01a1ef22-6ca8-729b-aefc-b31018c84a33.jpg",
+  "price": 17.5,
+  "s": "2026-12-12",
+  "e": "2026-12-12",
+  "time": "20:30",
+  "cat": "Theatre",
+  "catSure": false,
+  "d": "Theatre at BplusC locatie Muziekhuis/Qbus. Tickets from €17.50.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-194072656",
   "t": "Wereldconcert, vòluspá – draumkvedet",
   "where": "Cultuurhuis Sijthoff",
@@ -3806,6 +3842,23 @@
   "cat": "Music",
   "catSure": true,
   "d": "Workshop at Cultuurhuis Sijthoff.",
+  "auto": 1
+ },
+ {
+  "id": "vl-448418701",
+  "t": "Write for rights",
+  "where": "Nieuwstraat 4",
+  "url": "https://www.visitleiden.nl/nl/agenda/448418701/write-for-rights",
+  "src": "Visit Leiden",
+  "nl": "Rond 10 december, de Dag van de Mensenrechten, schrijven mensen over de hele wereld samen brieven voor mensen die onrecht is aangedaan. Daarnaast steunen we de mensen zelf en hun families met hoopvolle kaartjes.",
+  "addr": "Nieuwstraat 4",
+  "img": "https://assets.plaece.nl/odp-leiden/image/679cc16c1df80e3aea24a8197f6f76d85906075b_01a1eecf-d2b3-713c-838c-ac0c91331c44.png",
+  "s": "2026-12-12",
+  "e": "2026-12-12",
+  "time": "10:30",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Cultural event, Nieuwstraat 4.",
   "auto": 1
  },
  {
@@ -4955,6 +5008,32 @@
   "d": "Dutch-language cabaret at Leidse Schouwburg. Tickets from €22.50.",
   "auto": 1,
   "c": 2
+ },
+ {
+  "id": "vl-587003356",
+  "t": "Wintervaart door Leiden",
+  "where": "De Leidse Rederij",
+  "url": "https://www.visitleiden.nl/nl/agenda/587003356/wintervaart-door-leiden",
+  "src": "Visit Leiden",
+  "nl": "Ga mee met onze betoverende wintervaarten en dompel jezelf onder in de gezellige sfeer van de feestdagen. Van 27 december t/m 30 december en zaterdag 2 januari varen we elke dag door onze mooi verlichte stad.",
+  "addr": "Apothekersdijk 5",
+  "img": "https://assets.plaece.nl/odp-leiden/image/8795f502bcf24e57c9919357951070516f82709d_01a1eaf1-dffc-7eba-9f50-28e6efc3a1d6.jpg",
+  "price": 12.5,
+  "s": "2026-12-27",
+  "e": "2027-01-02",
+  "time": "15:00",
+  "dates": [
+   "2026-12-27",
+   "2026-12-28",
+   "2026-12-29",
+   "2026-12-30",
+   "2027-01-02"
+  ],
+  "cat": "Outdoors",
+  "catSure": false,
+  "d": "An outdoor outing at De Leidse Rederij. On 5 dates. Tickets from €12.50.",
+  "auto": 1,
+  "c": 1
  },
  {
   "id": "vl-143542277",
@@ -7010,6 +7089,25 @@
   "d": "Comedy at Grand Café De Burcht. Tickets from €15.",
   "auto": 1,
   "c": 1
+ },
+ {
+  "id": "vl-3176356796",
+  "t": "Parker Barrow",
+  "where": "Middelste Gracht 123",
+  "url": "https://www.visitleiden.nl/nl/agenda/3176356796/parker-barrow",
+  "src": "Visit Leiden",
+  "nl": "What’s in a name: Parker Barrow is vernoemd naar Bonnie Parker en Clyde Barrow,",
+  "addr": "Middelste Gracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/6bdb520c23f36229c00b28cec7625cbf214d6415_01a1d282-af8f-7ea1-ab4d-0460e628a26a.jpg",
+  "price": 20.0,
+  "s": "2027-02-09",
+  "e": "2027-02-09",
+  "time": "20:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music, Middelste Gracht 123. Tickets from €20.",
+  "auto": 1,
+  "c": 2
  },
  {
   "id": "vl-977767033",
