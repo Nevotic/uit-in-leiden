@@ -2485,6 +2485,25 @@
   "auto": 1
  },
  {
+  "id": "vl-1364232619",
+  "t": "Wereldmuziek in de X - Tango - LUX Tango Quartet",
+  "where": "BplusC locatie Muziekhuis/Qbus",
+  "url": "https://www.visitleiden.nl/nl/agenda/1364232619/wereldmuziek-in-de-x-tango-lux-tango-quartet",
+  "src": "Visit Leiden",
+  "nl": "In de schaduw van de grote stad Buenos Aires ontstond eind 19e eeuw de muziek van heimwee en verlangen, van donkere onzekerheid en verfijnde introspectie. Maar juist daar brandde ook vuur: de drang om te leven, te dansen, zich te laten horen.",
+  "addr": "Middelstegracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/1e487dd064b2aa9ba675015928cd53dff6a6b9ad_01a1fac1-2db7-7bd8-aa3b-304c948fdc63.jpg",
+  "price": 17.5,
+  "s": "2026-12-06",
+  "e": "2026-12-06",
+  "time": "15:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.50.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-597892038",
   "t": "Fields of Wonder – Herwondering – De renaissance van de verwondering.",
   "where": "Leidse Schouwburg",
