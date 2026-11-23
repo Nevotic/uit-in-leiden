@@ -1384,6 +1384,25 @@
   "c": 2
  },
  {
+  "id": "vl-3328567310",
+  "t": "Veenproef FRANKENSTEIN",
+  "where": "Scheltema Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/3328567310/veenproef-frankenstein",
+  "src": "Visit Leiden",
+  "nl": "Een bruisend driegangendiner met een proeverij van muziektheater. In 2027 blaast muziektheatergezelschap Veenfabriek het monster van Frankenstein nieuw leven in. Tijdens de Veenproef schuif je aan voor een bijzonder driegangendiner en krijg je een voorproefje van de nieuwe voorstelling.",
+  "addr": "Marktsteeg 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/7c9502d1ab8a0f34a8ca19d3691e0a534f5f32c3_01a20834-4048-73e1-b747-7bd317b3d716.jpg",
+  "price": 20.0,
+  "s": "2026-12-01",
+  "e": "2026-12-01",
+  "time": "19:00",
+  "cat": "Theatre",
+  "catSure": true,
+  "d": "Theatre at Scheltema Leiden. Tickets from €20.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-706041837",
   "t": "De Règâhs – Groeten uit Den Haag",
   "where": "Leidse Schouwburg",
