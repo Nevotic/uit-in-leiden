@@ -2115,6 +2115,23 @@
   "c": 2
  },
  {
+  "id": "vl-1476492717",
+  "t": "Lezing \"Thoriumreactoren: belofte, potentieel en uitdagingen\"",
+  "where": "Scheltema Leiden",
+  "url": "https://www.visitleiden.nl/nl/agenda/1476492717/lezing-thoriumreactoren-belofte-potentieel-en-uitdagingen",
+  "src": "Visit Leiden",
+  "nl": "Het Science Café Leiden organiseert avonden met toegankelijke wetenschap voor een breed publiek in een informele setting.",
+  "addr": "Marktsteeg 1",
+  "img": "https://assets.plaece.nl/odp-leiden/image/c3b4cf74f3f534b11257afb514d9ebd111980eb2_01a20826-d499-75fe-9e11-5486e6c47352.jpg",
+  "s": "2026-12-08",
+  "e": "2026-12-08",
+  "time": "19:40",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk at Scheltema Leiden.",
+  "auto": 1
+ },
+ {
   "id": "vl-1061980284",
   "t": "Orange the World - Over de Drempel",
   "where": "Stationsplein 3",
@@ -3074,6 +3091,23 @@
   "cat": "Culture",
   "catSure": false,
   "d": "Cultural event at Milanenhorst.",
+  "auto": 1
+ },
+ {
+  "id": "vl-788942139",
+  "t": "Leidse Winterlezing: Van zout naar waterstof: de rol van de diepe ondergrond in de energietransitie door:Eddy Kuperus (N.V. Ned Gasunie)",
+  "where": "Rijksmuseum van Oudheden",
+  "url": "https://www.visitleiden.nl/nl/agenda/788942139/leidse-winterlezing-van-zout-naar-waterstof-de-rol-van-de-diepe-ondergrond-in-de-energietransitie-door-eddy-kuperus-n-v-ned-gasunie",
+  "src": "Visit Leiden",
+  "nl": "Van zout naar waterstof: de rol van de diepe ondergrond in de energietransitie, door: Eddy Kuperus (N.V. Nederlandse Gasunie).",
+  "addr": "Rapenburg 28",
+  "img": "https://assets.plaece.nl/odp-leiden/image/b7dee029c32a7668b602a60279865a40022ab761_01a20812-75ec-7e6e-8a11-9340a99d04d0.jpg",
+  "s": "2026-12-13",
+  "e": "2026-12-13",
+  "time": "13:00",
+  "cat": "Talks",
+  "catSure": true,
+  "d": "Talk at Rijksmuseum van Oudheden.",
   "auto": 1
  },
  {
