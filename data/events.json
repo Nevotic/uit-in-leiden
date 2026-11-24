@@ -1553,6 +1553,23 @@
   "c": 2
  },
  {
+  "id": "vl-2826562009",
+  "t": "Orange the World - Training Omstanderinterventie door Fairspace",
+  "where": "Arubapad 2",
+  "url": "https://www.visitleiden.nl/nl/agenda/2826562009/orange-the-world-training-omstanderinterventie-door-fairspace",
+  "src": "Visit Leiden",
+  "nl": "Georganiseerd door Vrouwennetwerk Leiden e.o en de werkrgoep Orange the World, in samenwerking met Incluzio Leiden een bijeenkomst in het kader van Orange the World.",
+  "addr": "Arubapad 2",
+  "img": "https://assets.plaece.nl/odp-leiden/image/82d95f2bf451f8aa9d7d29a3057ec65a270abac5_01a20d5c-b3cd-7be3-9a71-99b1e915c31f.jpg",
+  "s": "2026-12-03",
+  "e": "2026-12-03",
+  "time": "19:00",
+  "cat": "Culture",
+  "catSure": false,
+  "d": "Market, Arubapad 2.",
+  "auto": 1
+ },
+ {
   "id": "vl-3297764120",
   "t": "Pubquiz",
   "where": "Van Goyen Jeneverhuis",
@@ -2257,23 +2274,6 @@
   "cat": "Culture",
   "catSure": false,
   "d": "Run at Grand Café De Burcht.",
-  "auto": 1
- },
- {
-  "id": "vl-2209546807",
-  "t": "Kunst Ontdekdag voor kids",
-  "where": "Stadsgehoorzaal Leiden",
-  "url": "https://www.visitleiden.nl/nl/agenda/2209546807/kunst-ontdekdag-voor-kids",
-  "src": "Visit Leiden",
-  "nl": "De Kunst Ontdekdag voor kids is een gratis middag vol podiumkunsten voor alle kinderen uit groep 4 t/m 8 in de Stadsgehoorzaal!",
-  "addr": "Breestraat 60",
-  "img": "https://assets.plaece.nl/odp-leiden/image/e139487777bd6bbefe11e683667b4b335e966bd5_01a1ef08-1903-744f-a5a6-f8de5d15295c.jpg",
-  "s": "2026-12-09",
-  "e": "2026-12-09",
-  "time": "13:00",
-  "cat": "Culture",
-  "catSure": false,
-  "d": "Cultural event at Stadsgehoorzaal Leiden.",
   "auto": 1
  },
  {
