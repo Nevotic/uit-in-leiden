@@ -5419,6 +5419,22 @@
   "auto": 1
  },
  {
+  "id": "nb-fiesta-macumba-23-jan-2027",
+  "t": "Fiesta Macumba",
+  "where": "Nobel",
+  "url": "https://nobel.nl/agenda/fiesta-macumba-23-jan-2027",
+  "src": "Nobel",
+  "cat": "Music",
+  "catSure": true,
+  "genre": "Latin",
+  "nl": "Party Latino style!",
+  "s": "2027-01-23",
+  "e": "2027-01-23",
+  "img": "https://nobel.nl/sites/default/files/styles/4_3/public/2026-11/20270123_Fiesta_Macumba_Nobel_Web_1600x1200.jpg.webp?itok=u6zm9DmX",
+  "d": "Live music at Nobel.",
+  "auto": 1
+ },
+ {
   "id": "vl-3182748561",
   "t": "Intelligent Bewegen",
   "where": "Theater Ins Blau",
