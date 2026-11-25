@@ -844,9 +844,11 @@
   "time": "20:00",
   "cat": "Theatre",
   "catSure": true,
+  "price": 18.0,
   "genre": "Gastprogramma",
-  "d": "Guest performance at Stadsgehoorzaal Leiden.",
-  "auto": 1
+  "d": "Guest performance at Stadsgehoorzaal Leiden. Tickets from €18.",
+  "auto": 1,
+  "c": 2
  },
  {
   "id": "vl-3066545419",
@@ -5900,6 +5902,25 @@
   "catSure": false,
   "d": "Cultural event, Van Hoornekade 115.",
   "auto": 1
+ },
+ {
+  "id": "vl-2132081854",
+  "t": "Winterconcert Leids Harmonieorkest",
+  "where": "Rijndijk 283",
+  "url": "https://www.visitleiden.nl/nl/agenda/2132081854/winterconcert-leids-harmonieorkest",
+  "src": "Visit Leiden",
+  "nl": "In januari nodigt het Leids Harmonieorkest u uit voor ons jaarlijkse winterconcert in de sfeervolle Maria Middelareskerk.",
+  "addr": "Rijndijk 283",
+  "img": "https://assets.plaece.nl/odp-leiden/image/283ef8af9f98d88d696d9641a3db896a3b774b6f_01a20f9e-a563-77cf-b0d1-0486913aba5f.jpg",
+  "price": 14.5,
+  "s": "2027-01-31",
+  "e": "2027-01-31",
+  "time": "15:00",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Concert, Rijndijk 283. Tickets from €14.50.",
+  "auto": 1,
+  "c": 1
  },
  {
   "id": "vl-356398501",
