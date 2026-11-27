@@ -3362,6 +3362,25 @@
   "c": 2
  },
  {
+  "id": "vl-4118173846",
+  "t": "Artvark: Four Fathers",
+  "where": "BplusC locatie Muziekhuis/Qbus",
+  "url": "https://www.visitleiden.nl/nl/agenda/4118173846/artvark-four-fathers",
+  "src": "Visit Leiden",
+  "nl": "Met Four Fathers presenteert Artvark het tweede hoofdstuk van hun trilogie en het vervolg op hun succesvolle album Mother of Thousand.",
+  "addr": "Middelstegracht 123",
+  "img": "https://assets.plaece.nl/odp-leiden/image/9b01fd192475355941ff4abf120c40f9cf59d484_01a21c8d-6385-7305-b50c-e92f48e4e04a.webp",
+  "price": 17.0,
+  "s": "2026-12-19",
+  "e": "2026-12-19",
+  "time": "20:30",
+  "cat": "Music",
+  "catSure": true,
+  "d": "Live music at BplusC locatie Muziekhuis/Qbus. Tickets from €17.",
+  "auto": 1,
+  "c": 2
+ },
+ {
   "id": "vl-2167039189",
   "t": "Concerto Köln & Max Volbers – Kerstconcert",
   "where": "Stadsgehoorzaal Leiden",
